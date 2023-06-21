@@ -1,0 +1,55 @@
+Host Name: ip-172-31-6-94
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: /opt/nvidia/nsight-systems/2023.1.2/target-linux-x64/libToolsInjection64.so(+0x5701e7) [0x7f3a121701e7]
+    ?? ??:0
+
+ 1: CNS3d.gnu.TPROF.MPI.CUDA.ex(+0x20af25) [0x5615a658df25]
+    amrex::BLBackTrace::print_backtrace_info(_IO_FILE*) at /usr/include/x86_64-linux-gnu/bits/unistd.h:284
+ (inlined by) amrex::BLBackTrace::print_backtrace_info(_IO_FILE*) at /home/ubuntu/amrex/CNS/Exec/Sod/../../../Src/Base/AMReX_BLBackTrace.cpp:196
+
+ 2: CNS3d.gnu.TPROF.MPI.CUDA.ex(+0x20cf1f) [0x5615a658ff1f]
+    amrex::BLBackTrace::handler(int) at /home/ubuntu/amrex/CNS/Exec/Sod/../../../Src/Base/AMReX_BLBackTrace.cpp:96
+
+ 3: CNS3d.gnu.TPROF.MPI.CUDA.ex(+0x7188b) [0x5615a63f488b]
+    std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data() const at /usr/include/c++/11/bits/basic_string.h:195
+ (inlined by) std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_is_local() const at /usr/include/c++/11/bits/basic_string.h:230
+ (inlined by) std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose() at /usr/include/c++/11/bits/basic_string.h:239
+ (inlined by) std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() at /usr/include/c++/11/bits/basic_string.h:672
+ (inlined by) amrex::(anonymous namespace)::bldTable(char const*&, std::__cxx11::list<amrex::ParmParse::PP_entry, std::allocator<amrex::ParmParse::PP_entry> >&) at /home/ubuntu/amrex/CNS/Exec/Sod/../../../Src/Base/AMReX_ParmParse.cpp:744
+
+ 4: CNS3d.gnu.TPROF.MPI.CUDA.ex(+0x71e5a) [0x5615a63f4e5a]
+    std::__cxx11::list<amrex::ParmParse::PP_entry, std::allocator<amrex::ParmParse::PP_entry> >::empty() const at /usr/include/c++/11/bits/stl_list.h:1056
+ (inlined by) std::__cxx11::list<amrex::ParmParse::PP_entry, std::allocator<amrex::ParmParse::PP_entry> >::splice(std::_List_const_iterator<amrex::ParmParse::PP_entry>, std::__cxx11::list<amrex::ParmParse::PP_entry, std::allocator<amrex::ParmParse::PP_entry> >&&) at /usr/include/c++/11/bits/stl_list.h:1523
+ (inlined by) std::__cxx11::list<amrex::ParmParse::PP_entry, std::allocator<amrex::ParmParse::PP_entry> >::splice(std::_List_const_iterator<amrex::ParmParse::PP_entry>, std::__cxx11::list<amrex::ParmParse::PP_entry, std::allocator<amrex::ParmParse::PP_entry> >&) at /usr/include/c++/11/bits/stl_list.h:1538
+ (inlined by) amrex::(anonymous namespace)::ppinit(int, char**, char const*, std::__cxx11::list<amrex::ParmParse::PP_entry, std::allocator<amrex::ParmParse::PP_entry> >&) at /home/ubuntu/amrex/CNS/Exec/Sod/../../../Src/Base/AMReX_ParmParse.cpp:997
+
+ 5: CNS3d.gnu.TPROF.MPI.CUDA.ex(+0x71f5a) [0x5615a63f4f5a]
+    amrex::ParmParse::Initialize(int, char**, char const*) at /home/ubuntu/amrex/CNS/Exec/Sod/../../../Src/Base/AMReX_ParmParse.cpp:1193
+
+ 6: CNS3d.gnu.TPROF.MPI.CUDA.ex(+0x610c3) [0x5615a63e40c3]
+    amrex::Initialize(int&, char**&, bool, ompi_communicator_t*, std::function<void ()> const&, std::ostream&, std::ostream&, void (*)(char const*)) at /home/ubuntu/amrex/CNS/Exec/Sod/../../../Src/Base/AMReX.cpp:424
+
+ 7: CNS3d.gnu.TPROF.MPI.CUDA.ex(+0x31e46) [0x5615a63b4e46]
+    std::_Function_base::~_Function_base() at /usr/include/c++/11/bits/std_function.h:243
+ (inlined by) std::function<void ()>::~function() at /usr/include/c++/11/bits/std_function.h:334
+ (inlined by) main at /home/ubuntu/amrex/CNS/Exec/Sod/../../../CNS/Source/main.cpp:15
+
+ 8: /lib/x86_64-linux-gnu/libc.so.6(+0x29d90) [0x7f3a11029d90]
+
+ 9: /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80) [0x7f3a11029e40]
+
+10: CNS3d.gnu.TPROF.MPI.CUDA.ex(+0x37fc5) [0x5615a63bafc5]
+    ?? ??:0
+
+
+===== TinyProfilers ======
+
