@@ -1,4 +1,4 @@
-AMREX_HOME ?= /home/ziangli/amrex
+AMREX_HOME ?= ../../../../..
 TOP := ../../../CNS
 
 EBASE := CNS
