@@ -1,0 +1,28 @@
+Host Name: gl1015.arc-ts.umich.edu
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: HMM3d.gnu.TPROF.MPI.CUDA.ex() [0x5eef76]
+    amrex::BLBackTrace::print_backtrace_info(_IO_FILE*)
+/home/ziangli/amrex/Src/Base/AMReX_BLBackTrace.cpp:196:28
+
+ 1: HMM3d.gnu.TPROF.MPI.CUDA.ex() [0x5f114d]
+    amrex::BLBackTrace::handler(int)
+/home/ziangli/amrex/Src/Base/AMReX_BLBackTrace.cpp:96:7
+
+ 2: /usr/lib64/libc.so.6(+0x4eb20) [0x14f9f8d3bb20]
+
+
+===== TinyProfilers ======
+Amr::init()
+Amr::initialInit()
+Amr::InitializeInit()
+Amr::readProbinFile()
+

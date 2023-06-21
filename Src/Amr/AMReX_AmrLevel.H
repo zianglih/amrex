@@ -52,6 +52,7 @@ public:
     //! The destructor.
     virtual ~AmrLevel ();
 
+    // SS: added this in 23.03
     AmrLevel (const AmrLevel&) = delete;
     AmrLevel (AmrLevel&&) = delete;
     AmrLevel& operator= (const AmrLevel&) = delete;
@@ -61,6 +62,10 @@ public:
     void LevelDirectoryNames (const std::string &dir,
                               std::string &LevelDir,
                               std::string &FullPath) const;
+    //! Get the level directory names
+    // void LevelDirectoryNames (const std::string &dir,
+    //                           std::string &LevelDir,
+    //                           std::string &FullPath);
     //! Create the Level_ directory for checkpoint and plot files
     virtual void CreateLevelDirectory (const std::string &dir);
     /**
@@ -169,6 +174,23 @@ public:
     * timestep.  The default implementation does nothing.
     */
     virtual void postCoarseTimeStep (Real time);
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // REACTION ADVANCE 
+    /** 
+    * \brief Do a reaction integration step on this level.  Returns maximum safe
+    * time step.  This is a pure virtual function and hence MUST
+    * be implemented by derived classes.
+    */
+    virtual Real advance_react (Real time,
+                                  Real dt) = 0;
+
+    /** 
+    * \brief Contains operations to be done after a reaction timestep.  This is a
+    * pure virtual function and hence MUST be implemented by derived
+    * classes.
+    */
+    virtual  void post_timestep_react (int iteration) = 0;
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
     /**
     * \brief Operations to be done after restart.
     */
@@ -234,6 +256,11 @@ public:
     const DistributionMapping& DistributionMap () const noexcept { return dmap; }
     //
     const FabFactory<FArrayBox>& Factory () const noexcept { return *m_factory; }
+    // //! Number of grids at this level.
+    // int numGrids () const noexcept { return grids.size(); }
+    // //! Number of states at this level.
+    // int numStates () const noexcept { return state.size(); }
+    // SS: changed the return type
     //! Number of grids at this level.
     int numGrids () const noexcept { return static_cast<int>(grids.size()); }
     //! Number of states at this level.
@@ -269,6 +296,7 @@ public:
                            Real         time,
                            int          n_error_buf = 0,
                            int          ngrow = 0) = 0;
+    // SS: changed this to mf from dest.
     //! Interpolate from coarse level to the valid area in mf.
     void FillCoarsePatch (MultiFab& mf,
                           int       dcomp,
@@ -316,7 +344,8 @@ public:
     //! Returns list of derived variables.
     static DeriveList& get_derive_lst () noexcept;
     //! Returns whether or not we want a post-timestep regrid.
-    int postStepRegrid () const noexcept { return post_step_regrid; }
+    // int postStepRegrid () noexcept { return post_step_regrid; }
+    int postStepRegrid () const noexcept { return post_step_regrid; } // SS: added const
     //! Sets a new value for the post-timestep regrid trigger.
     void setPostStepRegrid (int new_val) noexcept { post_step_regrid = new_val; }
 
@@ -326,7 +355,7 @@ public:
     //! Boundary condition access function.
     Vector<int> getBCArray (int State_Type,
                             int gridno,
-                            int strt_comp,
+                            int scomp,                  // SS: changed scomp to strt_comp
                             int ncomp);
     //! Get state data at specified index and time.
     MultiFab& get_data (int  state_indx, Real time) noexcept;
@@ -448,17 +477,20 @@ public:
     static IntVect ProperBlockingFactor (AmrLevel const& amr_level, int boxGrow,
                                          IndexType const& boxType,
                                          StateDescriptor const& desc, int SComp);
-
 protected:
     //! The constructors -- for derived classes.
-    AmrLevel () noexcept {} // NOLINT
+    // AmrLevel () noexcept;
+    AmrLevel () noexcept {} // NOLINT // SS:replaced
 
     AmrLevel (Amr&            papa,
               int             lev,
               const Geometry& level_geom,
-              const BoxArray& ba,
+              const BoxArray& ba,                   // SS: changed from bl
               const DistributionMapping& dm,
               Real            time);
+
+    // AmrLevel (const AmrLevel&) = delete;
+    // AmrLevel& operator = (const AmrLevel&) = delete;
 
     //! Common code used by all constructors.
     void finishConstructor ();
@@ -466,23 +498,23 @@ protected:
     //
     // The Data.
     //
-    int                   level{-1};    // AMR level (0 is coarsest).
+    int                   level{-1};        // AMR level (0 is coarsest). //SS: changed from level to level{-1}
     Geometry              geom;         // Geom at this level.
     BoxArray              grids;        // Cell-centered locations of grids.
     DistributionMapping   dmap;         // Distribution of grids among processes
-    Amr*                  parent{nullptr};// Pointer to parent AMR structure.
+    Amr*                  parent;       // Pointer to parent AMR structure. //SS: changed from parent to parent{nullptr}
     IntVect               crse_ratio;   // Refinement ratio to coarser level.
     IntVect               fine_ratio;   // Refinement ratio to finer level.
     static DeriveList     derive_lst;   // List of derived quantities.
     static DescriptorList desc_lst;     // List of state variables.
     Vector<StateData>     state;        // Array of state data.
 
-    BoxArray m_AreaNotToTag; //Area which shouldn't be tagged on this level.
-    Box      m_AreaToTag;    //Area which is allowed to be tagged on this level.
+    BoxArray              m_AreaNotToTag; //Area which shouldn't be tagged on this level.
+    Box                   m_AreaToTag;    //Area which is allowed to be tagged on this level.
 
-    int post_step_regrid{0}; // Whether or not to do a regrid after the timestep.
+    int                   post_step_regrid{0}; // Whether or not to do a regrid after the timestep. //SS: Changed from post_step_regrid to post_step_regrid{0}
 
-    bool levelDirectoryCreated{false}; // for checkpoints and plotfiles
+    bool                  levelDirectoryCreated{false};    // for checkpoints and plotfiles //SS: changed from levelDirectoryCreated to levelDirectoryCreated{false}
 
     std::unique_ptr<FabFactory<FArrayBox> > m_factory;
 
@@ -522,15 +554,17 @@ class FillPatchIterator
                        MultiFab& leveldata,
                        int       boxGrow,
                        Real      time,
-                       int       idx,
+                       int       idx,               //SS: chnaged from state_indx to idx
                        int       scomp,
                        int       ncomp);
 
     void Initialize (int  boxGrow,
                      Real time,
-                     int  idx,
+                     int  idx,                      //SS: changed from state_indx to idx
                      int  scomp,
                      int  ncomp);
+
+    // ~FillPatchIterator ();                       // SS: not in the new version
 
     FArrayBox& operator() () noexcept { return m_fabs[MFIter::index()]; }
 
@@ -539,7 +573,13 @@ class FillPatchIterator
     MultiFab& get_mf() noexcept { return m_fabs; }
 
 private:
-
+    // // SS: missing in new!
+    // // Disallowed.
+    // //
+    // FillPatchIterator ();
+    // FillPatchIterator (const FillPatchIterator& rhs);
+    // FillPatchIterator& operator= (const FillPatchIterator& rhs);
+    // SS: changed for the two below: index to idx
     void FillFromLevel0 (Real time, int idx, int scomp, int dcomp, int ncomp);
     void FillFromTwoLevels (Real time, int idx, int scomp, int dcomp, int ncomp);
 
@@ -566,21 +606,29 @@ public:
                              MultiFab&     leveldata,
                              int           boxGrow,
                              Real          time,
-                             int           index,
+                             int           index,      // SS: changed from state_indx to index
                              int           scomp,
                              int           ncomp,
                              InterpBase*   mapper);
 
     void Initialize (int           boxGrow,
                      Real          time,
-                     int           idx,
+                     int           state_indx,          // SS: changed from state_indx to idx
                      int           scomp,
                      int           ncomp,
                      InterpBase*   mapper);
 
+    // ~FillPatchIteratorHelper ();                        // SS: missing
+
     void fill (FArrayBox& fab, int dcomp, int idx);
 
 private:
+    // // SS: missing in new!
+    // // Disallowed.
+    // //
+    // FillPatchIteratorHelper ();
+    // FillPatchIteratorHelper (const FillPatchIteratorHelper& rhs);
+    // FillPatchIteratorHelper& operator= (const FillPatchIteratorHelper& rhs);
     //
     // The data.
     //
@@ -588,14 +636,14 @@ private:
     MultiFab&                  m_leveldata;
     MultiFabCopyDescriptor     m_mfcd;
     Vector< Vector<MultiFabId> > m_mfid;     // [level][oldnew]
-    Interpolater*              m_map = nullptr;
+    Interpolater*              m_map;
     std::map<int,Box>          m_ba;
-    Real                       m_time = std::numeric_limits<Real>::lowest();
-    int                        m_growsize = std::numeric_limits<int>::lowest();
-    int                        m_index = -1;
-    int                        m_scomp = -1;
-    int                        m_ncomp = -1;
-    bool                       m_FixUpCorners = false;
+    Real                       m_time;
+    int                        m_growsize;
+    int                        m_index;
+    int                        m_scomp;
+    int                        m_ncomp;
+    bool                       m_FixUpCorners;
 
     std::map< int,Vector< Vector<Box> > >                m_fbox; // [grid][level][validregion]
     std::map< int,Vector< Vector<Box> > >                m_cbox; // [grid][level][fillablesubbox]
@@ -614,7 +662,7 @@ void AmrLevel::RK (int order, int state_type, Real time, Real dt, int iteration,
     MultiFab& S_new = get_new_data(state_type);
     const Real t_old = state[state_type].prevTime();
     const Real t_new = state[state_type].curTime();
-    AMREX_ALWAYS_ASSERT(amrex::almostEqual(time,t_old,10) && amrex::almostEqual(time+dt,t_new,10));
+    AMREX_ALWAYS_ASSERT(amrex::almostEqual(time,t_old) && amrex::almostEqual(time+dt,t_new));
 
     if (order == 2) {
         RungeKutta::RK2(S_old, S_new, time, dt, std::forward<F>(f),

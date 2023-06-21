@@ -1,0 +1,18 @@
+Loading /home/ziangli/amrex/Tools/GNUMake/comps/gnu.mak...
+Loading /home/ziangli/amrex/Tools/GNUMake/comps/nvcc.mak...
+Loading /home/ziangli/amrex/Tools/GNUMake/sites/Make.unknown...
+make: 'HMM3d.gnu.TPROF.MPI.CUDA.ex' is up to date.
+MPI initialized with 2 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+amrex::Abort::1::CUDA error 46 in file /home/ziangli/amrex/Src/Base/AMReX_GpuDevice.cpp line 274: CUDA-capable device(s) is/are busy or unavailable !!!
+SIGABRT
+See Backtrace.1 file for details
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 1 in communicator MPI_COMM_WORLD
+with errorcode 6.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
