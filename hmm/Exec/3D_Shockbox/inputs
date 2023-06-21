@@ -1,0 +1,137 @@
+# ------------------  INPUTS TO MAIN PROGRAM  -------------------
+# RUN TIME
+
+max_step = 1 #100
+#stop_time = 6.0e-4
+
+
+
+# PROBLEM PARAMETERS
+hmm.gamma           = 1.4
+hmm.Pr              = 0.71
+hmm.gas_constant    = 8314.4621
+hmm.MMW             = 28.850732100840336
+
+
+# PROBLEM SIZE & GEOMETRY
+geometry.is_periodic =  0 0 0
+geometry.coord_sys   =  0       # 0 => cart
+geometry.prob_lo     =  -0.2 -0.2 -0.2
+geometry.prob_hi     =   0.2  0.2  0.2
+amr.n_cell = 60 60 60
+
+
+# >>>>>>>>>>>>>  BC FLAGS <<<<<<<<<<<<<<<<
+# 0 = Interior              3 = Symmetry            6 = SlipWall, zeroGrad
+# 1 = CustomBC              4 = SlipWall
+# 2 = Outflow               5 = NoSlipWall
+amr.lo_bc   =   5   5   5
+amr.hi_bc   =   5   5   5
+
+# TIME STEP CONTROL
+hmm.cfl             = 0.25     # cfl number for hyperbolic system
+hmm.dt_max          = 0.1
+hmm.do_reflux       = 1
+
+# >>>>>>>>>>>>> CONVFLUXMETHOD FLAGS <<<<<<<<<<<<<<<<
+# 0 = HLLC                  3 = HLLE           6 = AUSM+up
+# 1 = piroCentral           4 = HLLC_HLL       7 = Roe
+# 2 = HLL                   5 = HLLC_ROTATED   8 = Roe-HLL
+hmm.convFluxMethod  = 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+hmm.use_viscosity = 1
+
+# >>>>>>>>>>>>> INTERPMETHOD FLAGS <<<<<<<<<<<<<<<<
+# 0 = upwind
+# 1 = limited
+# 2 = central
+hmm.interpMethod    = 1 1 1 1 1 1 1 1 1 1 1
+hmm.limiter         = minmod #vanleer #superbee  #minmod # only applies when interpMethod is 1
+
+# >>>>>>>>>>>>> TIME ADVANCE METHOD FLAGS <<<<<<<<<<<<<<<<
+# 0 = Forward euler for convection
+# 1 = Shu's TVD RK2 for convection
+# 2 = Shu's TVD RK3 for convection
+hmm.advanceMethod   = 1 1 1 1 
+hmm.do_reaction     = 0 0 0 0 #0 means reactions off
+hmm.do_reaction_vcycle = 0 
+hmm.do_convection   = 1 1 1 1 1 1 1 1 1 1 1 1
+
+# REACTION
+hmm.mechanism_input = /Users/ahrauch/HMM-AMREX/chemical_mechanisms/cantera_mechanisms/h2_air.xml
+#hmm.reacMinTemp = 200 # cells below this temperature are not treated.
+#hmm.inert_species = N2 # specifies the inert species (ignored if not in mechanism)
+
+# REFINEMENT / REGRIDDING
+amr.subcycling_mode = Auto
+amr.max_level       = 0   # maximum level number allowed
+amr.ref_ratio       = 2 2 2 2 2 2 2   # refinement ratio
+amr.regrid_int      = 1   # how often to regrid
+amr.blocking_factor = 2         # block factor in grid generation
+amr.max_grid_size   = 128 # sets domain decomposition
+amr.n_error_buf     = 16 16 16 16 16 16 32 64  #for 6 levels -- 2 2 2 4 8 16 16 16 16 # number of buffer cells in error est
+
+# CHECKPOINT FILES
+amr.checkpoint_files_output = 1     # 0 will disable checkpoint files
+amr.check_file              = check/chk   # root name of checkpoint file
+#amr.check_int               = 50    # number of timesteps between checkpoints
+amr.check_per = 5e-4
+
+# PLOTFILES
+amr.plot_files_output = 1     # 0 will disable plot files
+amr.plot_file         = plot/plt    # root name of plot file
+#amr.plot_int          = 25 #1000 #500 #250 #125    # number of timesteps between plot files
+amr.plot_per        = 5e-5       # time between plotfiles
+amr.file_name_digits  = 8
+# amr.plot_vars = rho
+amr.derive_plot_vars = pressure temperature mach HRR e_int pressure_grad rho_sensor Umag Y Ux Uy Uz
+
+# VERBOSITY
+hmm.v              = 1       # verbosity in hmm
+amr.v              = 1       # verbosity in Amr
+#amr.grid_log         = grdlog  # name of grid logging file
+
+# TAGGING INFO
+#tagging.refinement_indicators = rho_grad
+#tagging.rho_grad.max_level = 10
+#tagging.rho_grad.gradient =  0.025 #0.05
+#tagging.rho_grad.field_name = rho
+
+#tagging.refinement_indicators = T_grad
+#tagging.T_grad.max_level = 10
+#tagging.T_grad.gradient =  3 #10 #0.1
+#tagging.T_grad.field_name = T
+
+#tagging.refinement_indicators = p_grad
+#tagging.p_grad.max_level = 10
+#tagging.p_grad.gradient =  100
+#tagging.p_grad.value_greater = 1e9
+#tagging.p_grad.field_name = HRR
+
+# tagging.rho_val.max_level = 1000
+# tagging.rho_val.value_greater = 0.3
+# tagging.rho_grad.field_name = rho
+
+
+
+
+# PROBIN FILENAME (DUMMY - never used)
+amr.probin_file = probin
+
+
+
+
+# PROBLEM-SPECIFIC INPUTS:
+hmm.pressure_overdrive_factor = 0.95
+
+# EB inputs
+#eb2.geom_type = "box"
+#eb2.box_lo = -0.2 -0.2
+#eb2.box_hi =  0.2  0.2
+#eb2.box_has_fluid_inside = 1
+
+#eb2.geom_type = "rotBox"
+#eb2.box_lo = -0.2 -0.2 -0.2
+#eb2.box_hi =  0.2  0.2  0.2
+#eb2.has_fluid_inside = 1
+#eb2.theta = 0.0
+#eb2.dir = 0

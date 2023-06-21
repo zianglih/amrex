@@ -1,0 +1,55 @@
+Host Name: gl1018.arc-ts.umich.edu
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: HMM3d.gnu.TPROF.MPI.CUDA.ex() [0x5eef76]
+    amrex::BLBackTrace::print_backtrace_info(_IO_FILE*)
+/home/ziangli/amrex/Src/Base/AMReX_BLBackTrace.cpp:196:28
+
+ 1: HMM3d.gnu.TPROF.MPI.CUDA.ex() [0x5f114d]
+    amrex::BLBackTrace::handler(int)
+/home/ziangli/amrex/Src/Base/AMReX_BLBackTrace.cpp:96:7
+
+ 2: HMM3d.gnu.TPROF.MPI.CUDA.ex() [0x50a578]
+    std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data() const inlined at /sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:222:17 in amrex::Gpu::Device::Initialize()
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:187:24
+std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_is_local() const
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:222:17
+std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:231:17
+std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:658:13
+amrex::Gpu::Device::Initialize()
+/home/ziangli/amrex/Src/Base/AMReX_GpuDevice.cpp:273:412
+
+ 3: HMM3d.gnu.TPROF.MPI.CUDA.ex() [0x45dbde]
+    std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::_Alloc_hider(char*, std::allocator<char> const&) inlined at /sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:525:97 in amrex::Initialize(int&, char**&, bool, ompi_communicator_t*, std::function<void ()> const&, std::ostream&, std::ostream&, void (*)(char const*))
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:156:172
+std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:525:97
+amrex::Initialize(int&, char**&, bool, ompi_communicator_t*, std::function<void ()> const&, std::ostream&, std::ostream&, void (*)(char const*))
+/home/ziangli/amrex/Src/Base/AMReX.cpp:489:21
+
+ 4: HMM3d.gnu.TPROF.MPI.CUDA.ex() [0x424067]
+    std::_Function_base::~_Function_base() inlined at /sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/std_function.h:303:7 in main
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/std_function.h:244:5
+std::function<void ()>::~function()
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/std_function.h:303:7
+main
+../../../hmm/Source/main.cpp:22:18
+
+ 5: /usr/lib64/libc.so.6(__libc_start_main+0xf3) [0x14b55b5f7cf3]
+
+ 6: HMM3d.gnu.TPROF.MPI.CUDA.ex() [0x42913e]
+    _start at ??:?
+
+
+===== TinyProfilers ======
+

@@ -1,0 +1,58 @@
+Host Name: gl1000.arc-ts.umich.edu
+=== If no file names and line numbers are shown below, one can run
+            addr2line -Cpfie my_exefile my_line_address
+    to convert `my_line_address` (e.g., 0x4a6b) into file name and line number.
+    Or one can use amrex/Tools/Backtrace/parse_bt.py.
+
+=== Please note that the line number reported by addr2line may not be accurate.
+    One can use
+            readelf -wl my_exefile | grep my_line_address'
+    to find out the offset for that line.
+
+ 0: /sw/pkgs/arc/cuda/12.1.1/nsight-systems-2023.1.2/target-linux-x64/libToolsInjection64.so(+0x5701e7) [0x14e1600991e7]
+    amrex::CheckRcvStats(amrex::Vector<ompi_status_public_t, std::allocator<ompi_status_public_t> >&, amrex::Vector<unsigned long, std::allocator<unsigned long> > const&, int) at /home/ziangli/amrex/Src/Base/AMReX_FabArrayBase.cpp:2487
+
+ 1: CNS3d.gnu.TPROF.MPI.CUDA.ex() [0x5e0d26]
+    amrex::BLBackTrace::print_backtrace_info(_IO_FILE*)
+/home/ziangli/amrex/Src/Base/AMReX_BLBackTrace.cpp:196:28
+
+ 2: CNS3d.gnu.TPROF.MPI.CUDA.ex() [0x5e2efd]
+    amrex::BLBackTrace::handler(int)
+/home/ziangli/amrex/Src/Base/AMReX_BLBackTrace.cpp:96:7
+
+ 3: CNS3d.gnu.TPROF.MPI.CUDA.ex() [0x4fba78]
+    std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data() const inlined at /sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:222:17 in amrex::Gpu::Device::Initialize()
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:187:24
+std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_is_local() const
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:222:17
+std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:231:17
+std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:658:13
+amrex::Gpu::Device::Initialize()
+/home/ziangli/amrex/Src/Base/AMReX_GpuDevice.cpp:273:412
+
+ 4: CNS3d.gnu.TPROF.MPI.CUDA.ex() [0x44e07e]
+    std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::_Alloc_hider(char*, std::allocator<char> const&) inlined at /sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:525:97 in amrex::Initialize(int&, char**&, bool, ompi_communicator_t*, std::function<void ()> const&, std::ostream&, std::ostream&, void (*)(char const*))
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:156:172
+std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/basic_string.h:525:97
+amrex::Initialize(int&, char**&, bool, ompi_communicator_t*, std::function<void ()> const&, std::ostream&, std::ostream&, void (*)(char const*))
+/home/ziangli/amrex/Src/Base/AMReX.cpp:489:21
+
+ 5: CNS3d.gnu.TPROF.MPI.CUDA.ex() [0x423639]
+    std::_Function_base::~_Function_base() inlined at /sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/std_function.h:303:7 in main
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/std_function.h:244:5
+std::function<void ()>::~function()
+/sw/pkgs/arc/gcc/10.3.0/include/c++/10.3.0/bits/std_function.h:303:7
+main
+../../../CNS/Source/main.cpp:15:18
+
+ 6: /usr/lib64/libc.so.6(__libc_start_main+0xf3) [0x14e15c3fecf3]
+
+ 7: CNS3d.gnu.TPROF.MPI.CUDA.ex() [0x42891e]
+    _start at ??:?
+
+
+===== TinyProfilers ======
+
