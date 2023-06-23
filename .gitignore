@@ -1,3 +1,5 @@
+*.ncu-rep
+
 nohup.out
 *.[oa]
 *.ex
