@@ -1,6 +1,6 @@
 amrex.fpe_trap_invalid=1
 
-max_step  = 1
+max_step  = 4
 # stop_time = 0.2
 
 geometry.is_periodic = 0 1 1

@@ -1,0 +1,215 @@
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+==PROF== Connected to process 2732626 (/home/ziangli/amrex/CNS/Exec/Sod/CNS3d.gnu.COMTR_PROF.MPI.CUDA.ex)
+CUDA initialized with 1 device.
+AMReX (2b1434edf43e-dirty) initialized
+Successfully read inputs file ... 
+Successfully read inputs file ... 
+Starting to call amrex_probinit ... 
+Successfully run amrex_probinit
+INITIAL GRIDS 
+  Level 0   8 grids  262144 cells  100 % of domain
+            smallest grid: 32 x 32 x 32  biggest grid: 32 x 32 x 32
+
+
+[CNS] Total mass       is 147456
+      Total x-momentum is 0
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000006
+[Level 0 step 1] ADVANCE with dt = 0.003961660569
+[Level 0 step 1] Advanced 262144 cells
+
+[CNS] Total mass       is 147456.00000000003
+      Total x-momentum is 934.6729933893613
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000017
+
+[STEP 1] Coarse TimeStep time: 0.169786225
+[STEP 1] FAB kilobyte spread across MPI nodes: [122840 ... 122840]
+
+Bypassing call trace flush, nCT < traceFlushSize:  112  8192000
+Bypassing comm stats flush, nCS < csFlushSize:  12  8192000
+
+STEP = 1 TIME = 0.003961660569 DT = 0.003961660569
+
+[Level 0 step 2] ADVANCE with dt = 0.00270323629
+[Level 0 step 2] Advanced 262144 cells
+
+[CNS] Total mass       is 147456
+      Total x-momentum is 1572.4464499343446
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448
+
+[STEP 2] Coarse TimeStep time: 0.169539252
+[STEP 2] FAB kilobyte spread across MPI nodes: [122840 ... 122840]
+
+Bypassing call trace flush, nCT < traceFlushSize:  196  8192000
+Bypassing comm stats flush, nCS < csFlushSize:  14  8192000
+
+STEP = 2 TIME = 0.006664896859 DT = 0.00270323629
+
+[Level 0 step 3] ADVANCE with dt = 0.00246461758
+[Level 0 step 3] Advanced 262144 cells
+
+[CNS] Total mass       is 147455.99999999997
+      Total x-momentum is 2153.9226896809505
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000017
+
+[STEP 3] Coarse TimeStep time: 0.169784501
+[STEP 3] FAB kilobyte spread across MPI nodes: [122840 ... 122840]
+
+Bypassing call trace flush, nCT < traceFlushSize:  280  8192000
+Bypassing comm stats flush, nCS < csFlushSize:  16  8192000
+
+STEP = 3 TIME = 0.009129514439 DT = 0.00246461758
+
+[Level 0 step 4] ADVANCE with dt = 0.002365837545
+[Level 0 step 4] Advanced 262144 cells
+
+[CNS] Total mass       is 147455.99999999991
+      Total x-momentum is 2712.0937952674672
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448
+
+[STEP 4] Coarse TimeStep time: 0.164692562
+[STEP 4] FAB kilobyte spread across MPI nodes: [122840 ... 122840]
+
+Bypassing call trace flush, nCT < traceFlushSize:  364  8192000
+Bypassing comm stats flush, nCS < csFlushSize:  18  8192000
+
+STEP = 4 TIME = 0.01149535198 DT = 0.002365837545
+
+Run Time total        = 0.686880753
+Run Time init         = 0.01275384
+Run Time advance      = 0.674101938
+
+
+**********************************************************  Processor:           0
+Total times ----------------------------------------------------------------------
+                               Function Name      NCalls        Time     Percent %
+                         Amr::FinalizeInit()           1      0.0001        0.01 %
+                              Amr::InitAmr()           1      0.0002        0.03 %
+                       Amr::InitializeInit()           1      0.0000        0.00 %
+                       Amr::coarseTimeStep()           4      0.0004        0.06 %
+                         Amr::defBaseLevel()           1      0.0001        0.01 %
+                                 Amr::init()           1      0.0000        0.00 %
+                         Amr::initSubcycle()           1      0.0000        0.00 %
+                          Amr::initialInit()           1      0.0000        0.00 %
+                       Amr::readProbinFile()           1      0.0001        0.01 %
+                             Amr::timeStep()           4      0.0001        0.02 %
+                      AmrLevel::AmrLevel(dm)           1      0.0009        0.13 %
+                              CNS::advance()           4      0.0006        0.09 %
+                          CNS::computeTemp()           8      0.0328        4.64 %
+                         CNS::compute_dSdt()           8      0.2646       37.44 %
+                          CNS::estTimeStep()           5      0.0059        0.83 %
+                             CNS::initData()           1      0.0043        0.61 %
+           DistributionMapping::Distribute()           1      0.0000        0.00 %
+        DistributionMapping::LeastUsedCPUs()           1      0.0000        0.00 %
+  DistributionMapping::SFCProcessorMapDoIt()           1      0.0000        0.00 %
+                         FabArray::LinComb()           8      0.0056        0.79 %
+                    FabArray::ParallelCopy()           8      0.0000        0.00 %
+             FabArray::ParallelCopy_finish()           8      0.0000        0.00 %
+             FabArray::ParallelCopy_nowait()           8      0.0053        0.74 %
+                           FabArray::Saxpy()           4      0.0024        0.34 %
+                  FabArray::setDomainBndry()           8      0.0338        4.78 %
+                             FabArray::sum()          25      0.0266        3.77 %
+                 FabArrayBase::CPC::define()           1      0.0001        0.02 %
+                      FabArrayBase::getCPC()           8      0.0000        0.00 %
+               FillPatchIterator::Initialize           8      0.0001        0.02 %
+                        FillPatchSingleLevel           8      0.0000        0.00 %
+         ParallelDescriptor::Gather(TsT1si)d           0      0.0000        0.00 %
+         ParallelDescriptor::Gather(TsT1si)l           0      0.0000        0.00 %
+             ParallelDescriptor::Recv(Tsii)i           0      0.0000        0.00 %
+             ParallelDescriptor::Send(Tsii)i           0      0.0000        0.00 %
+                            ResizeRandomSeed           1      0.0078        1.10 %
+               StateData::FillBoundary(geom)         192      0.1095       15.50 %
+                         StateData::define()           1      0.0000        0.00 %
+                    StateDataPhysBCFunct::()           8      0.1872       26.48 %
+                     The_Arena::Initialize()           1      0.0003        0.04 %
+              The_Device_Arena::Initialize()           1      0.0003        0.05 %
+              The_Pinned_Arena::Initialize()           1      0.0050        0.71 %
+                               amrex::Copy()           8      0.0058        0.82 %
+                        amrex_mempool_init()           1      0.0063        0.90 %
+                                      main()           1      0.0002        0.03 %
+                        postCoarseTimeStep()           4      0.0000        0.00 %
+                               post_timestep           4      0.0000        0.00 %
+
+Total Timers     =       0.71 seconds.
+
+
+Total times ----------------------------------------------------------------------
+                               Function Name      NCalls        Time     Percent %
+                         CNS::compute_dSdt()           8      0.2646       37.44 %
+                    StateDataPhysBCFunct::()           8      0.1872       26.48 %
+               StateData::FillBoundary(geom)         192      0.1095       15.50 %
+                  FabArray::setDomainBndry()           8      0.0338        4.78 %
+                          CNS::computeTemp()           8      0.0328        4.64 %
+                             FabArray::sum()          25      0.0266        3.77 %
+                            ResizeRandomSeed           1      0.0078        1.10 %
+                        amrex_mempool_init()           1      0.0063        0.90 %
+                          CNS::estTimeStep()           5      0.0059        0.83 %
+                               amrex::Copy()           8      0.0058        0.82 %
+                         FabArray::LinComb()           8      0.0056        0.79 %
+             FabArray::ParallelCopy_nowait()           8      0.0053        0.74 %
+              The_Pinned_Arena::Initialize()           1      0.0050        0.71 %
+                             CNS::initData()           1      0.0043        0.61 %
+                           FabArray::Saxpy()           4      0.0024        0.34 %
+                      AmrLevel::AmrLevel(dm)           1      0.0009        0.13 %
+                              CNS::advance()           4      0.0006        0.09 %
+                       Amr::coarseTimeStep()           4      0.0004        0.06 %
+              The_Device_Arena::Initialize()           1      0.0003        0.05 %
+                     The_Arena::Initialize()           1      0.0003        0.04 %
+                              Amr::InitAmr()           1      0.0002        0.03 %
+                                      main()           1      0.0002        0.03 %
+                 FabArrayBase::CPC::define()           1      0.0001        0.02 %
+               FillPatchIterator::Initialize           8      0.0001        0.02 %
+                             Amr::timeStep()           4      0.0001        0.02 %
+                       Amr::readProbinFile()           1      0.0001        0.01 %
+                         Amr::FinalizeInit()           1      0.0001        0.01 %
+                         Amr::defBaseLevel()           1      0.0001        0.01 %
+                        postCoarseTimeStep()           4      0.0000        0.00 %
+                                 Amr::init()           1      0.0000        0.00 %
+                         Amr::initSubcycle()           1      0.0000        0.00 %
+                    FabArray::ParallelCopy()           8      0.0000        0.00 %
+                        FillPatchSingleLevel           8      0.0000        0.00 %
+                         StateData::define()           1      0.0000        0.00 %
+                          Amr::initialInit()           1      0.0000        0.00 %
+                      FabArrayBase::getCPC()           8      0.0000        0.00 %
+  DistributionMapping::SFCProcessorMapDoIt()           1      0.0000        0.00 %
+                       Amr::InitializeInit()           1      0.0000        0.00 %
+             FabArray::ParallelCopy_finish()           8      0.0000        0.00 %
+                               post_timestep           4      0.0000        0.00 %
+        DistributionMapping::LeastUsedCPUs()           1      0.0000        0.00 %
+           DistributionMapping::Distribute()           1      0.0000        0.00 %
+         ParallelDescriptor::Gather(TsT1si)d           0      0.0000        0.00 %
+==================================================================================
+
+ MaxCallStackDepth = 9
+
+BLProfiler::Finalize():  time:  0.021
+BLProfiler::WriteCallTrace():  time:  0.013
+BLProfiler::WriteCommStats():  time:  0.048
+Unused ParmParse Variables:
+  [TOP]::amr.ref_ratio(nvals = 4)  :: [2, 2, 2, 2]
+  [TOP]::amr.regrid_int(nvals = 4)  :: [2, 2, 2, 2]
+  [TOP]::amr.derive_plot_vars(nvals = 4)  :: [pressure, x_velocity, y_velocity, z_velocity]
+
+Total GPU global memory (MB) spread across MPI: [16151 ... 16151]
+Free  GPU global memory (MB) spread across MPI: [15483 ... 15483]
+[The         Arena] space (MB) allocated spread across MPI: [12113 ... 12113]
+[The         Arena] space (MB) used      spread across MPI: [0 ... 0]
+[The  Device Arena] space (MB) allocated spread across MPI: [8 ... 8]
+[The  Device Arena] space (MB) used      spread across MPI: [0 ... 0]
+[The  Pinned Arena] space (MB) allocated spread across MPI: [8 ... 8]
+[The  Pinned Arena] space (MB) used      spread across MPI: [0 ... 0]
+AMReX (2b1434edf43e-dirty) finalized
+==PROF== Disconnected from process 2732626
+==WARNING== No kernels were profiled.
+==WARNING== Refer https://docs.nvidia.com/nsight-compute/NsightComputeCli/index.html#nvtx-filtering for NVTX Filtering usage.

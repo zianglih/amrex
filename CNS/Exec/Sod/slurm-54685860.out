@@ -1,0 +1,12 @@
+==ERROR== 'CNS3d.gnu.COMTR_PROF.MPI.CUDA.ex' does not exist or is not an executable. Please make sure to specify the absolute path to 'CNS3d.gnu.COMTR_PROF.MPI.CUDA.ex' if the executable is not in the local directory.
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[4306,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------

@@ -1,0 +1,24 @@
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+==PROF== Connected to process 2217268 (/home/ziangli/amrex/CNS/Exec/Sod/CNS3d.gnu.COMTR_PROF.MPI.CUDA.ex)
+CUDA initialized with 1 device.
+==PROF== Profiling "launch_global" - 0: 0%
+==ERROR== Failed to profile "launch_global" in process 2217268
+==PROF== Trying to shutdown target application
+==ERROR== The application returned an error code (9).
+==ERROR== An error occurred while trying to profile.
+==WARNING== No kernels were profiled.
+==WARNING== Profiling kernels launched by child processes requires the --target-processes all option.
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[21801,1],0]
+  Exit code:    9
+--------------------------------------------------------------------------
+slurmstepd: error: Detected 1 oom_kill event in StepId=54682942.batch. Some of the step tasks have been OOM Killed.

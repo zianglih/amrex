@@ -1,0 +1,2 @@
+/var/spool/slurmd.spool/job54683046/slurm_script: line 19: syntax error near unexpected token `('
+/var/spool/slurmd.spool/job54683046/slurm_script: line 19: `mpirun -np 1 ncu --nvtx --nvtx-include compute_dSdt() CNS3d.gnu.COMTR_PROF.MPI.CUDA.ex inputs amrex.fpe_trap_invalid=0'
