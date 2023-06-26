@@ -1,0 +1,11 @@
+MPI initialized with 2 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+CUDA initialized with 2 devices.
+AMReX (234fcec69077-dirty) initialized
+Successfully read inputs file ... 
+slurmstepd: error: *** JOB 54844549 ON gl1023 CANCELLED AT 2023-06-26T16:30:19 DUE TO TIME LIMIT ***
