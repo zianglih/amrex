@@ -7,11 +7,11 @@
 
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=2
-#SBATCH --mem-per-cpu=4g
+#SBATCH --mem-per-cpu=8g
 #SBATCH --gpus-per-node=2
 ##SBATCH --gpu-bind=per_task:1
-#SBATCH --gpu-bind=closest
-##SBATCH --gpu-bind=map_gpu:0,1
+##SBATCH --gpu-bind=closest
+#SBATCH --gpu-bind=map_gpu:0,1
 
 module load cuda gcc openmpi
 

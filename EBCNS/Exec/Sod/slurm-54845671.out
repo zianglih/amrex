@@ -1,0 +1,52 @@
+MPI initialized with 2 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+CUDA initialized with 2 devices.
+AMReX (259c56c21c4e-dirty) initialized
+Successfully read inputs file ... 
+Successfully read inputs file ... 
+Starting to call amrex_probinit ... 
+Successfully run amrex_probinit
+grid_places() time: 0.002149191 new finest: 1
+grid_places() time: 0.001242852 new finest: 2
+grid_places() time: 0.004436538 new finest: 3
+grid_places() time: 0.010498066 new finest: 4
+grid_places() time: 0.041714019 new finest: 5
+Now regridding at level lbase = 0
+grid_places() time: 0.040462512 new finest: 6
+STEP = 0 TIME = 0 : REGRID  with lbase = 0
+  Level 1   4 grids  491520 cells  23.4375 % of domain
+            smallest grid: 32 x 64 x 32  biggest grid: 48 x 64 x 64
+  Level 2   4 grids  786432 cells  4.6875 % of domain
+            smallest grid: 32 x 64 x 64  biggest grid: 64 x 64 x 64
+  Level 3   6 grids  1572864 cells  1.171875 % of domain
+            smallest grid: 64 x 64 x 64  biggest grid: 64 x 64 x 64
+  Level 4   15 grids  3932160 cells  0.3662109375 % of domain
+            smallest grid: 64 x 64 x 64  biggest grid: 64 x 64 x 64
+  Level 5   45 grids  11796480 cells  0.1373291016 % of domain
+            smallest grid: 64 x 64 x 64  biggest grid: 64 x 64 x 64
+  Level 6   153 grids  40108032 cells  0.05836486816 % of domain
+            smallest grid: 64 x 64 x 64  biggest grid: 64 x 64 x 64
+
+Now regridding at level lbase = 0
+grid_places() time: 0.073728125 new finest: 6
+STEP = 0 TIME = 0 : REGRID  with lbase = 0
+  Level 1   4 grids  491520 cells  23.4375 % of domain
+            smallest grid: 32 x 64 x 32  biggest grid: 48 x 64 x 64
+  Level 2   14 grids  1114112 cells  6.640625 % of domain
+            smallest grid: 16 x 16 x 64  biggest grid: 48 x 48 x 64
+  Level 3   44 grids  3727360 cells  2.777099609 % of domain
+            smallest grid: 16 x 16 x 32  biggest grid: 48 x 64 x 64
+  Level 4   107 grids  10698752 cells  0.9963989258 % of domain
+            smallest grid: 16 x 16 x 32  biggest grid: 64 x 64 x 64
+  Level 5   120 grids  31457280 cells  0.3662109375 % of domain
+            smallest grid: 64 x 64 x 64  biggest grid: 64 x 64 x 64
+  Level 6   360 grids  94371840 cells  0.1373291016 % of domain
+            smallest grid: 64 x 64 x 64  biggest grid: 64 x 64 x 64
+
+Now regridding at level lbase = 0
+grid_places() time: 0.282499816 new finest: 6
