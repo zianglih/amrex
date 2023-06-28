@@ -1,5 +1,5 @@
 AMREX_HOME := ../../..
-TOP := $(AMREX_HOME)/EBCNS
+TOP := $(AMREX_HOME)/GPU_EBCNS
 
 EBASE := CNS
 
@@ -17,10 +17,6 @@ DEFINES += -DAMREX_CRSEGRNDOMP
 include $(TOP)/Source/Make.package
 INCLUDE_LOCATIONS += $(TOP)/Source
 VPATH_LOCATIONS   += $(TOP)/Source
-
-include $(TOP)/Source/fortran/Make.package
-INCLUDE_LOCATIONS += $(TOP)/Source/fortran
-VPATH_LOCATIONS   += $(TOP)/Source/fortran
 
 include $(TOP)/Source/hydro/Make.package
 INCLUDE_LOCATIONS += $(TOP)/Source/hydro

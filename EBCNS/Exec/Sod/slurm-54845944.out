@@ -11,13 +11,13 @@ Successfully read inputs file ...
 Successfully read inputs file ... 
 Starting to call amrex_probinit ... 
 Successfully run amrex_probinit
-grid_places() time: 0.002149191 new finest: 1
-grid_places() time: 0.001242852 new finest: 2
-grid_places() time: 0.004436538 new finest: 3
-grid_places() time: 0.010498066 new finest: 4
-grid_places() time: 0.041714019 new finest: 5
+grid_places() time: 0.004913294 new finest: 1
+grid_places() time: 0.019768493 new finest: 2
+grid_places() time: 0.018504997 new finest: 3
+grid_places() time: 0.012769376 new finest: 4
+grid_places() time: 0.032074754 new finest: 5
 Now regridding at level lbase = 0
-grid_places() time: 0.040462512 new finest: 6
+grid_places() time: 0.040356762 new finest: 6
 STEP = 0 TIME = 0 : REGRID  with lbase = 0
   Level 1   4 grids  491520 cells  23.4375 % of domain
             smallest grid: 32 x 64 x 32  biggest grid: 48 x 64 x 64
@@ -33,7 +33,7 @@ STEP = 0 TIME = 0 : REGRID  with lbase = 0
             smallest grid: 64 x 64 x 64  biggest grid: 64 x 64 x 64
 
 Now regridding at level lbase = 0
-grid_places() time: 0.073728125 new finest: 6
+grid_places() time: 0.073931185 new finest: 6
 STEP = 0 TIME = 0 : REGRID  with lbase = 0
   Level 1   4 grids  491520 cells  23.4375 % of domain
             smallest grid: 32 x 64 x 32  biggest grid: 48 x 64 x 64
@@ -49,7 +49,7 @@ STEP = 0 TIME = 0 : REGRID  with lbase = 0
             smallest grid: 64 x 64 x 64  biggest grid: 64 x 64 x 64
 
 Now regridding at level lbase = 0
-grid_places() time: 0.282499816 new finest: 6
+grid_places() time: 0.279182932 new finest: 6
 STEP = 0 TIME = 0 : REGRID  with lbase = 0
   Level 1   4 grids  491520 cells  23.4375 % of domain
             smallest grid: 32 x 64 x 32  biggest grid: 48 x 64 x 64
@@ -65,16 +65,13 @@ STEP = 0 TIME = 0 : REGRID  with lbase = 0
             smallest grid: 64 x 48 x 64  biggest grid: 64 x 64 x 64
 
 Now regridding at level lbase = 0
-grid_places() time: 0.309984414 new finest: 6
+grid_places() time: 0.319583233 new finest: 6
 --------------------------------------------------------------------------
 Primary job  terminated normally, but 1 process returned
 a non-zero exit code. Per user-direction, the job has been aborted.
 --------------------------------------------------------------------------
 --------------------------------------------------------------------------
-mpirun noticed that process rank 1 with PID 3794603 on node gl1023 exited on signal 9 (Killed).
+mpirun noticed that process rank 1 with PID 3796753 on node gl1023 exited on signal 9 (Killed).
 --------------------------------------------------------------------------
-The target application terminated. One or more process it created re-parented.
-Waiting for termination of re-parented processes.
-Use the `--wait` option to modify this behavior.
-slurmstepd: error: *** JOB 54845671 ON gl1023 CANCELLED AT 2023-06-26T16:59:21 DUE TO TIME LIMIT ***
-slurmstepd: error: Detected 1 oom_kill event in StepId=54845671.batch. Some of the step tasks have been OOM Killed.
+slurmstepd: error: *** JOB 54845944 ON gl1023 CANCELLED AT 2023-06-26T17:09:08 DUE TO TIME LIMIT ***
+slurmstepd: error: Detected 1 oom_kill event in StepId=54845944.batch. Some of the step tasks have been OOM Killed.

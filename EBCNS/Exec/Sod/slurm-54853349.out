@@ -1,0 +1,448 @@
+MPI initialized with 2 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+CUDA initialized with 2 devices.
+AMReX (cb96a31066cb-dirty) initialized
+Successfully read inputs file ... 
+Successfully read inputs file ... 
+Starting to call amrex_probinit ... 
+Successfully run amrex_probinit
+grid_places() time: 0.035315982 new finest: 1
+grid_places() time: 0.001473069 new finest: 2
+grid_places() time: 0.003341429 new finest: 3
+Now regridding at level lbase = 0
+grid_places() time: 0.01103933 new finest: 4
+STEP = 0 TIME = 0 : REGRID  with lbase = 0
+  Level 1   4 grids  491520 cells  23.4375 % of domain
+            smallest grid: 32 x 64 x 32  biggest grid: 48 x 64 x 64
+  Level 2   4 grids  786432 cells  4.6875 % of domain
+            smallest grid: 32 x 64 x 64  biggest grid: 64 x 64 x 64
+  Level 3   6 grids  1572864 cells  1.171875 % of domain
+            smallest grid: 64 x 64 x 64  biggest grid: 64 x 64 x 64
+  Level 4   15 grids  3932160 cells  0.3662109375 % of domain
+            smallest grid: 64 x 64 x 64  biggest grid: 64 x 64 x 64
+
+Now regridding at level lbase = 0
+grid_places() time: 0.010118604 new finest: 4
+STEP = 0 TIME = 0 : REGRID  with lbase = 0
+  Level 1   4 grids  491520 cells  23.4375 % of domain
+            smallest grid: 32 x 64 x 32  biggest grid: 48 x 64 x 64
+  Level 2   14 grids  1114112 cells  6.640625 % of domain
+            smallest grid: 16 x 16 x 64  biggest grid: 48 x 48 x 64
+  Level 3   44 grids  3727360 cells  2.777099609 % of domain
+            smallest grid: 16 x 16 x 32  biggest grid: 48 x 64 x 64
+  Level 4   48 grids  9437184 cells  0.87890625 % of domain
+            smallest grid: 64 x 32 x 64  biggest grid: 64 x 64 x 64
+
+Now regridding at level lbase = 0
+grid_places() time: 0.025795494 new finest: 4
+STEP = 0 TIME = 0 : REGRID  with lbase = 0
+  Level 1   4 grids  491520 cells  23.4375 % of domain
+            smallest grid: 32 x 64 x 32  biggest grid: 48 x 64 x 64
+  Level 2   8 grids  1146880 cells  6.8359375 % of domain
+            smallest grid: 48 x 32 x 64  biggest grid: 64 x 48 x 64
+  Level 3   24 grids  4415488 cells  3.289794922 % of domain
+            smallest grid: 48 x 48 x 32  biggest grid: 64 x 64 x 64
+  Level 4   105 grids  21299200 cells  1.983642578 % of domain
+            smallest grid: 64 x 32 x 32  biggest grid: 64 x 64 x 64
+
+Now regridding at level lbase = 0
+grid_places() time: 0.029929754 new finest: 4
+STEP = 0 TIME = 0 : REGRID  with lbase = 0
+  Level 1   4 grids  491520 cells  23.4375 % of domain
+            smallest grid: 32 x 64 x 32  biggest grid: 48 x 64 x 64
+  Level 2   8 grids  1146880 cells  6.8359375 % of domain
+            smallest grid: 48 x 32 x 64  biggest grid: 64 x 48 x 64
+  Level 3   24 grids  4415488 cells  3.289794922 % of domain
+            smallest grid: 48 x 48 x 32  biggest grid: 64 x 64 x 64
+  Level 4   105 grids  21299200 cells  1.983642578 % of domain
+            smallest grid: 64 x 32 x 32  biggest grid: 64 x 64 x 64
+
+INITIAL GRIDS 
+  Level 0   2 grids  262144 cells  100 % of domain
+            smallest grid: 64 x 64 x 32  biggest grid: 64 x 64 x 32
+  Level 1   4 grids  491520 cells  23.4375 % of domain
+            smallest grid: 32 x 64 x 32  biggest grid: 48 x 64 x 64
+  Level 2   8 grids  1146880 cells  6.8359375 % of domain
+            smallest grid: 48 x 32 x 64  biggest grid: 64 x 48 x 64
+  Level 3   24 grids  4415488 cells  3.289794922 % of domain
+            smallest grid: 48 x 48 x 32  biggest grid: 64 x 64 x 64
+  Level 4   105 grids  21299200 cells  1.983642578 % of domain
+            smallest grid: 64 x 32 x 32  biggest grid: 64 x 64 x 64
+
+grid_places() time: 0.0372728 new finest: 4
+
+[CNS] Total mass       is 147187.9253778815
+      Total x-momentum is 0
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 359911.85075576301
+[Level 0 step 1] ADVANCE with dt = 0.003961660569
+[Level 0 step 1] Advanced 262144 cells
+[Level 1 step 1] ADVANCE with dt = 0.001980830285
+[Level 1 step 1] Advanced 491520 cells
+[Level 2 step 1] ADVANCE with dt = 0.0009904151423
+[Level 2 step 1] Advanced 1146880 cells
+[Level 3 step 1] ADVANCE with dt = 0.0004952075711
+[Level 3 step 1] Advanced 4415488 cells
+[Level 4 step 1] ADVANCE with dt = 0.0002476037856
+[Level 4 step 1] Advanced 21299200 cells
+[Level 4 step 2] ADVANCE with dt = 0.0002476037856
+[Level 4 step 2] Advanced 21299200 cells
+[Level 3 step 2] ADVANCE with dt = 0.0004952075711
+[Level 3 step 2] Advanced 4415488 cells
+[Level 4 step 3] ADVANCE with dt = 0.0002476037856
+[Level 4 step 3] Advanced 21299200 cells
+[Level 4 step 4] ADVANCE with dt = 0.0002476037856
+[Level 4 step 4] Advanced 21299200 cells
+Now regridding at level lbase = 3
+Load balance on level 4 at t = 0.0009904151423
+grid_places() time: 0.021052897 new finest: 4
+TIME = 0.0009904151423 : REGRID  with lbase = 3
+  Level 4   105 grids  21299200 cells  1.983642578 % of domain
+            smallest grid: 64 x 32 x 32  biggest grid: 64 x 64 x 64
+
+[Level 2 step 2] ADVANCE with dt = 0.0009904151423
+[Level 2 step 2] Advanced 1146880 cells
+[Level 3 step 3] ADVANCE with dt = 0.0004952075711
+[Level 3 step 3] Advanced 4415488 cells
+[Level 4 step 5] ADVANCE with dt = 0.0002476037856
+[Level 4 step 5] Advanced 21299200 cells
+[Level 4 step 6] ADVANCE with dt = 0.0002476037856
+[Level 4 step 6] Advanced 21299200 cells
+[Level 3 step 4] ADVANCE with dt = 0.0004952075711
+[Level 3 step 4] Advanced 4415488 cells
+[Level 4 step 7] ADVANCE with dt = 0.0002476037856
+[Level 4 step 7] Advanced 21299200 cells
+[Level 4 step 8] ADVANCE with dt = 0.0002476037856
+[Level 4 step 8] Advanced 21299200 cells
+Now regridding at level lbase = 2
+Load balance on level 3 at t = 0.001980830285
+grid_places() time: 0.028134655 new finest: 4
+Load balance on level 4 at t = 0.001980830285
+TIME = 0.001980830285 : REGRID  with lbase = 2
+  Level 3   24 grids  4415488 cells  3.289794922 % of domain
+            smallest grid: 48 x 48 x 32  biggest grid: 64 x 64 x 64
+  Level 4   105 grids  21299200 cells  1.983642578 % of domain
+            smallest grid: 64 x 32 x 32  biggest grid: 64 x 64 x 64
+
+[Level 1 step 2] ADVANCE with dt = 0.001980830285
+[Level 1 step 2] Advanced 491520 cells
+[Level 2 step 3] ADVANCE with dt = 0.0009904151423
+[Level 2 step 3] Advanced 1146880 cells
+[Level 3 step 5] ADVANCE with dt = 0.0004952075711
+[Level 3 step 5] Advanced 4415488 cells
+[Level 4 step 9] ADVANCE with dt = 0.0002476037856
+[Level 4 step 9] Advanced 21299200 cells
+[Level 4 step 10] ADVANCE with dt = 0.0002476037856
+[Level 4 step 10] Advanced 21299200 cells
+[Level 3 step 6] ADVANCE with dt = 0.0004952075711
+[Level 3 step 6] Advanced 4415488 cells
+[Level 4 step 11] ADVANCE with dt = 0.0002476037856
+[Level 4 step 11] Advanced 21299200 cells
+[Level 4 step 12] ADVANCE with dt = 0.0002476037856
+[Level 4 step 12] Advanced 21299200 cells
+Now regridding at level lbase = 3
+Load balance on level 4 at t = 0.002971245427
+grid_places() time: 0.079347568 new finest: 4
+TIME = 0.002971245427 : REGRID  with lbase = 3
+  Level 4   105 grids  21299200 cells  1.983642578 % of domain
+            smallest grid: 64 x 32 x 32  biggest grid: 64 x 64 x 64
+
+[Level 2 step 4] ADVANCE with dt = 0.0009904151423
+[Level 2 step 4] Advanced 1146880 cells
+[Level 3 step 7] ADVANCE with dt = 0.0004952075711
+[Level 3 step 7] Advanced 4415488 cells
+[Level 4 step 13] ADVANCE with dt = 0.0002476037856
+[Level 4 step 13] Advanced 21299200 cells
+[Level 4 step 14] ADVANCE with dt = 0.0002476037856
+[Level 4 step 14] Advanced 21299200 cells
+[Level 3 step 8] ADVANCE with dt = 0.0004952075711
+[Level 3 step 8] Advanced 4415488 cells
+[Level 4 step 15] ADVANCE with dt = 0.0002476037856
+[Level 4 step 15] Advanced 21299200 cells
+[Level 4 step 16] ADVANCE with dt = 0.0002476037856
+[Level 4 step 16] Advanced 21299200 cells
+
+STEP = 1 TIME = 0.003961660569 DT = 0.003961660569
+
+
+[CNS] Total mass       is 147187.9253778815
+      Total x-momentum is 934.67299338936118
+      Total y-momentum is -4.5820552213582388e-14
+      Total z-momentum is 1.3877787807814457e-17
+      Total energy     is 359911.85075576301
+
+[STEP 1] Coarse TimeStep time: 293.4911902
+[STEP 1] FAB kilobyte spread across MPI nodes: [11034865 ... 11192410]
+
+Run Time total        = 299.0536962
+Run Time init         = 5.561700404
+Run Time advance      = 293.4912334
+
+
+TinyProfiler total time across processes [min...avg...max]: 299.1 ... 299.1 ... 299.1
+
+--------------------------------------------------------------------------------------------
+Name                                         NCalls  Excl. Min  Excl. Avg  Excl. Max   Max %
+--------------------------------------------------------------------------------------------
+CNS::compute_dSdt()                              62      251.7        252      252.3  84.37%
+CNS::computeTemp()                               81      13.96      14.01      14.06   4.70%
+FabArray::ParallelCopy_finish()                 716      9.263      9.855      10.45   3.49%
+FabArray::LinComb()                              62      6.691       6.83      6.969   2.33%
+FabArray::ParallelCopy_nowait()                 716      6.499      6.681      6.864   2.30%
+FabArray::Saxpy()                                31      2.432       2.49      2.548   0.85%
+CNS::initData()                                  21      1.541      1.555      1.569   0.52%
+Amr::timeStep()                                  31      1.335      1.347      1.359   0.45%
+FabArray::setVal()                              594     0.7849     0.8093     0.8336   0.28%
+EB_average_down                                  19     0.6269     0.6675     0.7081   0.24%
+amrex::Copy()                                   103     0.4224     0.4734     0.5243   0.18%
+FillPatchSingleLevel                            134     0.4249     0.4439      0.463   0.15%
+AmrLevel::AmrLevel(dm)                           25     0.3705     0.3833     0.3961   0.13%
+CNS::estTimeStep()                                6     0.3443     0.3447      0.345   0.12%
+DistributionMapping::LeastUsedCPUs()             30     0.1678     0.2261     0.2845   0.10%
+EB2::GShopLevel()-fine                            1     0.1777     0.1777     0.1777   0.06%
+CNS::errorEst()                                  24     0.1152     0.1223     0.1294   0.04%
+TagBoxArray::collate()                           24    0.03514    0.05576    0.07638   0.03%
+AmrMesh::MakeNewGrids()                          11    0.05096    0.05688     0.0628   0.02%
+CellConservativeLinear::interp()                178    0.03472    0.04729    0.05986   0.02%
+EB2::GShopLevel()-coarse                          4    0.05552    0.05575    0.05598   0.02%
+StateData::FillBoundary(dx)                      14    0.02084    0.03681    0.05278   0.02%
+EB2::Initialize()                                 1    0.04964     0.0499    0.05016   0.02%
+FillBoundary_finish()                            72    0.03741    0.03973    0.04204   0.01%
+FillPatchInterp(Fab)                             60    0.03478    0.03535    0.03591   0.01%
+FillBoundary_nowait()                            72    0.03393    0.03406    0.03419   0.01%
+FabArrayBase::CPC::define()                     320    0.03191    0.03294    0.03397   0.01%
+CNS::advance()                                   31    0.03241    0.03277    0.03313   0.01%
+Amr::regrid()                                     7     0.0264     0.0269     0.0274   0.01%
+makeKnapSack                                      4      0.011    0.01619    0.02138   0.01%
+FabArray::BuildMask()                            25    0.01501    0.01532    0.01562   0.01%
+FabArrayBase::FB::FB()                           52    0.01501    0.01504    0.01507   0.01%
+FillPatchIterator::Initialize                    74   0.007911    0.00812   0.008329   0.00%
+StateData::define()                              50   0.007015   0.007197    0.00738   0.00%
+FabArray::setVal(val, thecmd, scomp, ncomp)      73    0.00478   0.005634   0.006488   0.00%
+amrex::Add()                                     39   0.006291   0.006293   0.006295   0.00%
+FabArray::ParallelCopy()                        716   0.005516   0.005893    0.00627   0.00%
+CNS::avgDown()                                   19   0.003883   0.004685   0.005486   0.00%
+FillPatchTwoLevels                               72   0.004404     0.0048   0.005196   0.00%
+FabArray::setDomainBndry()                      134   0.003123   0.004139   0.005155   0.00%
+FPinfo::FPinfo()                                 16   0.002521   0.002965   0.003409   0.00%
+StateDataPhysBCFunct::()                        134   0.002662   0.003008   0.003353   0.00%
+TagBoxArray::mapPRD                              24   0.002413   0.002514   0.002614   0.00%
+FabArrayBase::getCPC()                          736    0.00258   0.002585   0.002589   0.00%
+main()                                            1   0.001773   0.001934   0.002095   0.00%
+OwnerMask()                                      24   0.001077    0.00113   0.001183   0.00%
+CNS::buildMetrics()                              25  0.0007192  0.0009041   0.001089   0.00%
+Amr::bldFineLevels()                              1  0.0009819  0.0009929   0.001004   0.00%
+makeLoadBalanceDistributionMap()                  4  0.0006319  0.0008157  0.0009996   0.00%
+FabArray::FillBoundary()                         72   0.000226  0.0003354  0.0004447   0.00%
+MultiFab::Multiply()                             10  0.0003599  0.0003853  0.0004107   0.00%
+FabArrayBase::getFB()                            97  0.0002174  0.0003087  0.0003999   0.00%
+FabArray::sum()                                  10  0.0003394  0.0003573  0.0003753   0.00%
+FabArray::RecvLayoutMask()                       24  0.0002326  0.0002676  0.0003025   0.00%
+FabArrayBase::TheFPinfo()                        68  0.0002072  0.0002141  0.0002211   0.00%
+knapsack()                                       12  0.0001898  0.0001971  0.0002043   0.00%
+DistributionMapping::SFCProcessorMapDoIt()       18  0.0001814  0.0001923  0.0002032   0.00%
+Amr::readProbinFile()                             1  3.558e-05  0.0001119  0.0001882   0.00%
+AmrMesh-cluster                                  12          0  7.996e-05  0.0001599   0.00%
+Amr::InitAmr()                                    1  0.0001335  0.0001378  0.0001422   0.00%
+Amr::FinalizeInit()                               1  6.005e-05  0.0001009  0.0001418   0.00%
+BoxList::complementIn                            59  9.661e-05  0.0001064  0.0001163   0.00%
+Amr::coarseTimeStep()                             1  0.0001004   0.000103  0.0001055   0.00%
+ClusterList::intersect()                         12          0  5.146e-05  0.0001029   0.00%
+ClusterList::chop()                              12          0  3.994e-05  7.988e-05   0.00%
+DistributionMapping::KnapSackDoIt()              12  6.712e-05   6.75e-05  6.787e-05   0.00%
+Amr::grid_places()                               11  5.298e-05  5.407e-05  5.515e-05   0.00%
+BoxList::parallelComplementIn()                  35  4.091e-05   4.11e-05   4.13e-05   0.00%
+DistributionMapping::Distribute()                18  2.894e-05  3.001e-05  3.109e-05   0.00%
+Amr::InitializeInit()                             1  1.191e-05  1.748e-05  2.305e-05   0.00%
+Amr::defBaseLevel()                               1  1.628e-05  1.639e-05   1.65e-05   0.00%
+initializeEB2                                     1  1.151e-05  1.196e-05  1.241e-05   0.00%
+Amr::initialInit()                                1  9.044e-06  1.031e-05  1.158e-05   0.00%
+Amr::initSubcycle()                               1  9.646e-06  9.811e-06  9.976e-06   0.00%
+Amr::init()                                       1   2.06e-06  2.262e-06  2.464e-06   0.00%
+knapsack()swap                                    1   8.28e-07  1.066e-06  1.304e-06   0.00%
+--------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------
+Name                                         NCalls  Incl. Min  Incl. Avg  Incl. Max   Max %
+--------------------------------------------------------------------------------------------
+main()                                            1      299.1      299.1      299.1 100.00%
+Amr::coarseTimeStep()                             1      293.5      293.5      293.5  98.14%
+Amr::timeStep()                                  31      293.1      293.1      293.1  98.02%
+CNS::advance()                                   31      285.7      285.9      286.2  95.69%
+CNS::compute_dSdt()                              62      251.7        252      252.3  84.37%
+FabArray::ParallelCopy()                        716      16.26      16.67      17.08   5.71%
+CNS::computeTemp()                               81      13.96      14.01      14.06   4.70%
+FillPatchIterator::Initialize                    74      12.48      12.78      13.09   4.38%
+FillPatchTwoLevels                               72      12.45      12.75      13.05   4.37%
+FillPatchSingleLevel                            134      11.36      11.61      11.87   3.97%
+FabArray::ParallelCopy_finish()                 716      9.263      9.855      10.45   3.49%
+Amr::regrid()                                     7      7.384      7.393      7.402   2.48%
+FabArray::ParallelCopy_nowait()                 716      6.624      6.808      6.991   2.34%
+FabArray::LinComb()                              62      6.691       6.83      6.969   2.33%
+Amr::init()                                       1       5.21      5.211      5.211   1.74%
+Amr::initialInit()                                1       5.21      5.211      5.211   1.74%
+Amr::FinalizeInit()                               1      5.198      5.199        5.2   1.74%
+Amr::bldFineLevels()                              1      4.739      4.745       4.75   1.59%
+AmrLevel::AmrLevel(dm)                           25      4.036      4.038      4.041   1.35%
+FabArray::Saxpy()                                31      2.432       2.49      2.548   0.85%
+CNS::avgDown()                                   19      2.029      2.178      2.326   0.78%
+CNS::initData()                                  21      1.569      1.577      1.585   0.53%
+EB_average_down                                  19     0.9447     0.9514      0.958   0.32%
+FabArray::setVal()                              594     0.7849     0.8093     0.8336   0.28%
+amrex::Copy()                                   103     0.4224     0.4734     0.5243   0.18%
+initializeEB2                                     1     0.3504     0.3504     0.3505   0.12%
+EB2::Initialize()                                 1     0.3504     0.3504     0.3505   0.12%
+CNS::estTimeStep()                                6     0.3443     0.3447      0.345   0.12%
+DistributionMapping::LeastUsedCPUs()             30     0.1678     0.2261     0.2845   0.10%
+FabArrayBase::TheFPinfo()                        68     0.1707     0.2233     0.2759   0.09%
+FPinfo::FPinfo()                                 16     0.1705     0.2231     0.2757   0.09%
+Amr::grid_places()                               11     0.2363     0.2443     0.2523   0.08%
+AmrMesh::MakeNewGrids()                          11     0.2363     0.2443     0.2523   0.08%
+DistributionMapping::KnapSackDoIt()              12     0.1453     0.1973     0.2494   0.08%
+EB2::GShopLevel()-fine                            1     0.1777     0.1777     0.1778   0.06%
+CNS::errorEst()                                  24     0.1152     0.1223     0.1294   0.04%
+makeLoadBalanceDistributionMap()                  4     0.1206     0.1222     0.1239   0.04%
+EB2::GShopLevel()-coarse                          4     0.1225     0.1228     0.1231   0.04%
+FillPatchInterp(Fab)                             60    0.07063    0.08264    0.09464   0.03%
+FabArray::FillBoundary()                         72    0.08348    0.08584     0.0882   0.03%
+TagBoxArray::collate()                           24    0.03514    0.05576    0.07638   0.03%
+CellConservativeLinear::interp()                178    0.03472    0.04729    0.05986   0.02%
+StateDataPhysBCFunct::()                        134     0.0235    0.03981    0.05613   0.02%
+StateData::FillBoundary(dx)                      14    0.02084    0.03681    0.05278   0.02%
+FillBoundary_nowait()                            72    0.04571    0.04578    0.04584   0.02%
+FillBoundary_finish()                            72    0.03741    0.03973    0.04204   0.01%
+FabArrayBase::getCPC()                          736    0.03449    0.03552    0.03656   0.01%
+DistributionMapping::SFCProcessorMapDoIt()       18    0.02303    0.02932     0.0356   0.01%
+FabArrayBase::CPC::define()                     320    0.03191    0.03294    0.03397   0.01%
+CNS::buildMetrics()                              25    0.02213    0.02275    0.02337   0.01%
+FabArray::BuildMask()                            25    0.02141    0.02185    0.02228   0.01%
+makeKnapSack                                      4    0.01119    0.01652    0.02184   0.01%
+FabArrayBase::getFB()                            97    0.01528    0.01535    0.01541   0.01%
+FabArrayBase::FB::FB()                           52    0.01501    0.01504    0.01507   0.01%
+Amr::InitializeInit()                             1    0.01089    0.01167    0.01245   0.00%
+Amr::defBaseLevel()                               1    0.01069    0.01154    0.01239   0.00%
+StateData::define()                              50   0.007015   0.007197    0.00738   0.00%
+FabArray::setVal(val, thecmd, scomp, ncomp)      73    0.00478   0.005634   0.006488   0.00%
+amrex::Add()                                     39   0.006291   0.006293   0.006295   0.00%
+TagBoxArray::mapPRD                              24    0.00487   0.005107   0.005345   0.00%
+FabArray::setDomainBndry()                      134   0.003123   0.004139   0.005155   0.00%
+OwnerMask()                                      24   0.001077    0.00113   0.001183   0.00%
+MultiFab::Multiply()                             10  0.0003599  0.0003853  0.0004107   0.00%
+FabArray::sum()                                  10  0.0003394  0.0003573  0.0003753   0.00%
+AmrMesh-cluster                                  12          0  0.0001714  0.0003427   0.00%
+FabArray::RecvLayoutMask()                       24  0.0002326  0.0002676  0.0003025   0.00%
+knapsack()                                       12  0.0001906  0.0001981  0.0002056   0.00%
+Amr::readProbinFile()                             1  3.558e-05  0.0001119  0.0001882   0.00%
+Amr::InitAmr()                                    1  0.0001435  0.0001477  0.0001518   0.00%
+BoxList::parallelComplementIn()                  35  0.0001188  0.0001241  0.0001295   0.00%
+BoxList::complementIn                            59  9.661e-05  0.0001064  0.0001163   0.00%
+ClusterList::intersect()                         12          0  5.146e-05  0.0001029   0.00%
+ClusterList::chop()                              12          0  3.994e-05  7.988e-05   0.00%
+DistributionMapping::Distribute()                18  2.894e-05  3.001e-05  3.109e-05   0.00%
+Amr::initSubcycle()                               1  9.646e-06  9.811e-06  9.976e-06   0.00%
+knapsack()swap                                    1   8.28e-07  1.066e-06  1.304e-06   0.00%
+--------------------------------------------------------------------------------------------
+
+Unused ParmParse Variables:
+  [TOP]::amr.derive_plot_vars(nvals = 4)  :: [pressure, x_velocity, y_velocity, z_velocity]
+
+Managed Memory Usage:
+----------------------------------------------------------------------------------------------------------------------------------
+Name                                         Nalloc  Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+----------------------------------------------------------------------------------------------------------------------------------
+The_Arena::Initialize()                           2      2     855 KiB     859 KiB     864 KiB      11 GiB      11 GiB      11 GiB
+AmrLevel::AmrLevel(dm)                        25254  25254    2246 MiB    2255 MiB    2264 MiB    4315 MiB    4347 MiB    4380 MiB
+CNS::advance()                                 4792   4792    2425 MiB    2452 MiB    2479 MiB    2853 MiB    2862 MiB    2870 MiB
+EB2::GShopLevel()-fine                         6002   6002    2536 MiB    2536 MiB    2536 MiB    2563 MiB    2563 MiB    2563 MiB
+StateData::define()                            1985   1985    1277 MiB    1293 MiB    1310 MiB    2283 MiB    2319 MiB    2354 MiB
+FillPatchIterator::Initialize                  4845   4845      31 MiB      32 MiB      33 MiB     939 MiB     942 MiB     945 MiB
+EB2::GShopLevel()-coarse                       3786   3786     408 MiB     408 MiB     408 MiB     436 MiB     437 MiB     437 MiB
+Amr::regrid()                                  5110   5110     189 MiB     194 MiB     199 MiB     322 MiB     336 MiB     349 MiB
+Amr::timeStep()                                1194   1194     337 KiB     340 KiB     342 KiB     125 MiB     133 MiB     142 MiB
+FillPatchSingleLevel                            468    468     710 KiB     718 KiB     726 KiB     112 MiB     120 MiB     127 MiB
+CNS::buildMetrics()                             787    787      57 MiB      58 MiB      58 MiB     102 MiB     104 MiB     105 MiB
+FillPatchTwoLevels                              720    720     393 KiB     411 KiB     428 KiB      87 MiB      87 MiB      87 MiB
+CNS::avgDown()                                 1097   1097     495 KiB     527 KiB     560 KiB      84 MiB      84 MiB      84 MiB
+makeLoadBalanceDistributionMap()                339    339      31 KiB      32 KiB      32 KiB      80 MiB      82 MiB      84 MiB
+EB_average_down                                1097   1097     199 KiB     203 KiB     206 KiB      73 MiB      73 MiB      73 MiB
+FPinfo::FPinfo()                                282    282      40 MiB      40 MiB      40 MiB      43 MiB      43 MiB      43 MiB
+Amr::bldFineLevels()                            241    241      26 KiB      26 KiB      27 KiB      31 MiB      32 MiB      33 MiB
+CellConservativeLinear::interp()                712    712    2198   B    2543   B    2888   B      31 MiB      31 MiB      31 MiB
+ResizeRandomSeed                                  2      2      30 MiB      30 MiB      30 MiB      30 MiB      30 MiB      30 MiB
+CNS::compute_dSdt()                            7440   7440    3225 KiB    3242 KiB    3259 KiB    4223 KiB    4223 KiB    4223 KiB
+AmrMesh::MakeNewGrids()                         484    484    1102   B    1136   B    1170   B    2068 KiB    2200 KiB    2332 KiB
+Amr::FinalizeInit()                               2      2       9   B       9   B      10   B    1024 KiB    1024 KiB    1024 KiB
+Amr::coarseTimeStep()                             2      2      10   B      11   B      13   B    1024 KiB    1024 KiB    1024 KiB
+FabArray::setVal()                             1179   1179     110 KiB     111 KiB     113 KiB     160 KiB     170 KiB     180 KiB
+FabArray::sum()                                  24     24       0   B       0   B       0   B     160 KiB     160 KiB     160 KiB
+makeKnapSack                                    339    339       1   B       2   B       3   B     160 KiB     160 KiB     160 KiB
+FabArray::ParallelCopy_nowait()                2706   2706    1135   B    1188   B    1241   B     117 KiB     120 KiB     123 KiB
+FillBoundary_nowait()                           278    278       1   B       1   B       1   B      80 KiB      80 KiB      80 KiB
+FabArray::ParallelCopy_finish()                1338   1338     104   B     107   B     110   B      70 KiB      70 KiB      70 KiB
+FabArray::setVal(val, thecmd, scomp, ncomp)     278    278       0   B       0   B       0   B      63 KiB      64 KiB      66 KiB
+amrex::Copy()                                   271    271      20 KiB      20 KiB      20 KiB      41 KiB      42 KiB      42 KiB
+TagBoxArray::mapPRD                             444    444       0   B       0   B       0   B      32 KiB      34 KiB      36 KiB
+FabArray::LinComb()                              80     80      12 KiB      12 KiB      13 KiB      22 KiB      24 KiB      26 KiB
+FabArray::BuildMask()                            71     71      10 KiB      10 KiB      11 KiB      19 KiB      19 KiB      20 KiB
+FillBoundary_finish()                           144    144       0   B       0   B       0   B      19 KiB      19 KiB      19 KiB
+OwnerMask()                                     222    222       0   B       0   B       0   B      16 KiB      17 KiB      18 KiB
+amrex::Add()                                     27     27       0   B       0   B       0   B    1920   B    2816   B    3712   B
+----------------------------------------------------------------------------------------------------------------------------------
+
+Device Memory Usage:
+---------------------------------------------------------------------------------------------------------------------
+Name                            Nalloc  Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+---------------------------------------------------------------------------------------------------------------------
+The_Device_Arena::Initialize()       2      2      10   B      11   B      12   B    8192 KiB    8192 KiB    8192 KiB
+TagBoxArray::collate()             144    144       0   B       0   B       0   B      42 KiB      42 KiB      42 KiB
+---------------------------------------------------------------------------------------------------------------------
+
+Pinned Memory Usage:
+----------------------------------------------------------------------------------------------------------------------------------
+Name                                         Nalloc  Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+----------------------------------------------------------------------------------------------------------------------------------
+FabArray::ParallelCopy_nowait()                5382   5382    8218 KiB    8317 KiB    8416 KiB     647 MiB     647 MiB     647 MiB
+FillBoundary_nowait()                           566    566     892   B     986   B    1080   B    8491 KiB    8491 KiB    8491 KiB
+The_Pinned_Arena::Initialize()                    2      2     191   B     206   B     222   B    8192 KiB    8192 KiB    8192 KiB
+FabArray::setVal()                             1179   1179     110 KiB     111 KiB     113 KiB     160 KiB     170 KiB     180 KiB
+TagBoxArray::collate()                          192    192       2   B       5   B       9   B      42 KiB      73 KiB     105 KiB
+FabArray::ParallelCopy_finish()                1338   1338     104   B     107   B     110   B      70 KiB      70 KiB      70 KiB
+FabArray::setVal(val, thecmd, scomp, ncomp)     278    278       0   B       0   B       0   B      63 KiB      64 KiB      66 KiB
+amrex::Copy()                                   271    271      20 KiB      20 KiB      20 KiB      41 KiB      42 KiB      42 KiB
+FabArray::LinComb()                              80     80      12 KiB      12 KiB      13 KiB      22 KiB      24 KiB      26 KiB
+FabArray::BuildMask()                            71     71      10 KiB      10 KiB      11 KiB      19 KiB      19 KiB      20 KiB
+FillBoundary_finish()                           144    144       0   B       0   B       0   B      19 KiB      19 KiB      19 KiB
+amrex::Add()                                     27     27       0   B       0   B       0   B    1920   B    2816   B    3712   B
+AmrMesh::MakeNewGrids()                          40     40       0   B       0   B       0   B    2512   B    2864   B    3216   B
+CellConservativeLinear::interp()                356    356       0   B       0   B       0   B     528   B     528   B     528   B
+FabArray::sum()                                  24     24       0   B       0   B       0   B     144   B     144   B     144   B
+StateData::define()                             411    411       0   B       0   B       0   B      16   B      16   B      16   B
+makeKnapSack                                    339    339       0   B       0   B       0   B      16   B      16   B      16   B
+Amr::timeStep()                                   4      4       0   B       0   B       0   B      16   B      16   B      16   B
+FillPatchTwoLevels                                8      8       0   B       0   B       0   B      16   B      16   B      16   B
+FPinfo::FPinfo()                                 94     94       0   B       0   B       0   B      16   B      16   B      16   B
+EB2::GShopLevel()-fine                         4248   4248       0   B       0   B       0   B      16   B      16   B      16   B
+EB2::GShopLevel()-coarse                         47     47       0   B       0   B       0   B      16   B      16   B      16   B
+CNS::compute_dSdt()                            6528   6528       0   B       0   B       0   B      16   B      16   B      16   B
+AmrLevel::AmrLevel(dm)                         2431   2431       0   B       0   B       0   B      16   B      16   B      16   B
+----------------------------------------------------------------------------------------------------------------------------------
+
+Total GPU global memory (MB) spread across MPI: [16151 ... 16151]
+Free  GPU global memory (MB) spread across MPI: [4801 ... 4931]
+[The         Arena] space (MB) allocated spread across MPI: [12113 ... 12113]
+[The         Arena] space (MB) used      spread across MPI: [0 ... 0]
+[The  Device Arena] space (MB) allocated spread across MPI: [8 ... 8]
+[The  Device Arena] space (MB) used      spread across MPI: [0 ... 0]
+[The  Pinned Arena] space (MB) allocated spread across MPI: [1301 ... 1441]
+[The  Pinned Arena] space (MB) used      spread across MPI: [0 ... 0]
+AMReX (cb96a31066cb-dirty) finalized
+Generating '/tmp/nsys-report-a20c.qdstrm'
+[1/1] [0%                          ] report3.nsys-rep[1/1] [0%                          ] report3.nsys-rep[1/1] [5%                          ] report3.nsys-rep[1/1] [6%                          ] report3.nsys-rep[1/1] [5%                          ] report3.nsys-rep[1/1] [6%                          ] report3.nsys-rep[1/1] [5%                          ] report3.nsys-rep[1/1] [6%                          ] report3.nsys-rep[1/1] [5%                          ] report3.nsys-rep[1/1] [6%                          ] report3.nsys-rep[1/1] [5%                          ] report3.nsys-rep[1/1] [6%                          ] report3.nsys-rep[1/1] [7%                          ] report3.nsys-rep[1/1] [8%                          ] report3.nsys-rep[1/1] [7%                          ] report3.nsys-rep[1/1] [8%                          ] report3.nsys-rep[1/1] [9%                          ] report3.nsys-rep[1/1] [10%                         ] report3.nsys-rep[1/1] [9%                          ] report3.nsys-rep[1/1] [10%                         ] report3.nsys-rep[1/1] [11%                         ] report3.nsys-rep[1/1] [10%                         ] report3.nsys-rep[1/1] [11%                         ] report3.nsys-rep[1/1] [12%                         ] report3.nsys-rep[1/1] [11%                         ] report3.nsys-rep[1/1] [12%                         ] report3.nsys-rep[1/1] [13%                         ] report3.nsys-rep[1/1] [12%                         ] report3.nsys-rep[1/1] [13%                         ] report3.nsys-rep[1/1] [14%                         ] report3.nsys-rep[1/1] [13%                         ] report3.nsys-rep[1/1] [14%                         ] report3.nsys-rep[1/1] [=15%                        ] report3.nsys-rep[1/1] [14%                         ] report3.nsys-rep[1/1] [=15%                        ] report3.nsys-rep[1/1] [=16%                        ] report3.nsys-rep[1/1] [=15%                        ] report3.nsys-rep[1/1] [=16%                        ] report3.nsys-rep[1/1] [=17%                        ] report3.nsys-rep[1/1] [=16%                        ] report3.nsys-rep[1/1] [=17%                        ] report3.nsys-rep[1/1] [==18%                       ] report3.nsys-rep[1/1] [=17%                        ] report3.nsys-rep[1/1] [==18%                       ] report3.nsys-rep[1/1] [=17%                        ] report3.nsys-rep[1/1] [==18%                       ] report3.nsys-rep[1/1] [==19%                       ] report3.nsys-rep[1/1] [==18%                       ] report3.nsys-rep[1/1] [==19%                       ] report3.nsys-rep[1/1] [==18%                       ] report3.nsys-rep[1/1] [==19%                       ] report3.nsys-rep[1/1] [==20%                       ] report3.nsys-rep[1/1] [==19%                       ] report3.nsys-rep[1/1] [==20%                       ] report3.nsys-rep[1/1] [==19%                       ] report3.nsys-rep[1/1] [==20%                       ] report3.nsys-rep[1/1] [==21%                       ] report3.nsys-rep[1/1] [===22%                      ] report3.nsys-rep[1/1] [===23%                      ] report3.nsys-rep[1/1] [===24%                      ] report3.nsys-rep[1/1] [====25%                     ] report3.nsys-rep[1/1] [====26%                     ] report3.nsys-rep[1/1] [====27%                     ] report3.nsys-rep[1/1] [====28%                     ] report3.nsys-rep[1/1] [=====29%                    ] report3.nsys-rep[1/1] [=====30%                    ] report3.nsys-rep[1/1] [=====31%                    ] report3.nsys-rep[1/1] [=====32%                    ] report3.nsys-rep[1/1] [======33%                   ] report3.nsys-rep[1/1] [======34%                   ] report3.nsys-rep[1/1] [======35%                   ] report3.nsys-rep[1/1] [=======36%                  ] report3.nsys-rep[1/1] [=======37%                  ] report3.nsys-rep[1/1] [=======38%                  ] report3.nsys-rep[1/1] [=======39%                  ] report3.nsys-rep[1/1] [========40%                 ] report3.nsys-rep[1/1] [========41%                 ] report3.nsys-rep[1/1] [========42%                 ] report3.nsys-rep[1/1] [=========43%                ] report3.nsys-rep[1/1] [=========44%                ] report3.nsys-rep[1/1] [=========45%                ] report3.nsys-rep[1/1] [=========46%                ] report3.nsys-rep[1/1] [==========47%               ] report3.nsys-rep[1/1] [==========48%               ] report3.nsys-rep[1/1] [==========49%               ] report3.nsys-rep[1/1] [===========50%              ] report3.nsys-rep[1/1] [===========51%              ] report3.nsys-rep[1/1] [===========52%              ] report3.nsys-rep[1/1] [===========53%              ] report3.nsys-rep[1/1] [============54%             ] report3.nsys-rep[1/1] [============55%             ] report3.nsys-rep[1/1] [============56%             ] report3.nsys-rep[1/1] [============57%             ] report3.nsys-rep[1/1] [=============58%            ] report3.nsys-rep[1/1] [=============59%            ] report3.nsys-rep[1/1] [=============60%            ] report3.nsys-rep[1/1] [==============61%           ] report3.nsys-rep[1/1] [==============62%           ] report3.nsys-rep[1/1] [==============63%           ] report3.nsys-rep[1/1] [==============64%           ] report3.nsys-rep[1/1] [===============65%          ] report3.nsys-rep[1/1] [===============66%          ] report3.nsys-rep[1/1] [===============67%          ] report3.nsys-rep[1/1] [================68%         ] report3.nsys-rep[1/1] [================69%         ] report3.nsys-rep[1/1] [================70%         ] report3.nsys-rep[1/1] [================71%         ] report3.nsys-rep[1/1] [========================100%] report3.nsys-rep[1/1] [========================100%] report3.nsys-rep
+Generated:
+    /home/ziangli/amrex/EBCNS/Exec/Sod/report3.nsys-rep

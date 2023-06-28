@@ -1,13 +1,13 @@
 #!/bin/bash
 
 #SBATCH --job-name=run_ebcns_sod
-#SBATCH --time=05:00
+#SBATCH --time=30:00
 #SBATCH --account=ramanvr0
 #SBATCH --partition=gpu
 
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=2
-#SBATCH --mem-per-cpu=8g
+#SBATCH --mem-per-cpu=32g
 #SBATCH --gpus-per-node=2
 ##SBATCH --gpu-bind=per_task:1
 ##SBATCH --gpu-bind=closest

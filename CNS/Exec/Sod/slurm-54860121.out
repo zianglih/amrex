@@ -1,0 +1,2133 @@
+MPI initialized with 2 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+==PROF== Connected to process 3838493 (/home/ziangli/amrex/CNS/Exec/Sod/CNS3d.gnu.TPROF.MPI.CUDA.ex)
+==PROF== Connected to process 3838492 (/home/ziangli/amrex/CNS/Exec/Sod/CNS3d.gnu.TPROF.MPI.CUDA.ex)
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+CUDA initialized with 2 devices.
+AMReX (2b1434edf43e-dirty) initialized
+Successfully read inputs file ... 
+Successfully read inputs file ... 
+Starting to call amrex_probinit ... 
+Successfully run amrex_probinit
+INITIAL GRIDS 
+  Level 0   8 grids  262144 cells  100 % of domain
+            smallest grid: 32 x 32 x 32  biggest grid: 32 x 32 x 32
+
+
+[CNS] Total mass       is 147456
+      Total x-momentum is 0
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000006
+[Level 0 step 1] ADVANCE with dt = 0.003961660569
+[Level 0 step 1] Advanced 262144 cells
+
+STEP = 1 TIME = 0.003961660569 DT = 0.003961660569
+
+
+[CNS] Total mass       is 147456.00000000003
+      Total x-momentum is 934.6729933893613
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000017
+
+[STEP 1] Coarse TimeStep time: 0.082302088
+[STEP 1] FAB kilobyte spread across MPI nodes: [62878 ... 62878]
+
+[Level 0 step 2] ADVANCE with dt = 0.00270323629
+==PROF== Profiling "launch_global": 0%
+==WARNING== An error was reported by the driver
+
+==WARNING== Backing up device memory in system memory. Kernel replay might be slow. Consider using "--replay-mode application" to avoid memory save-and-restore.
+....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%
+==WARNING== An error was reported by the driver
+
+==WARNING== Backing up device memory in system memory. Kernel replay might be slow. Consider using "--replay-mode application" to avoid memory save-and-restore.
+....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global": 0%....50%....100% - 20 passes
+[Level 0 step 2] Advanced 262144 cells
+
+STEP = 2 TIME = 0.006664896859 DT = 0.00270323629
+
+
+[CNS] Total mass       is 147456
+      Total x-momentum is 1572.4464499343446
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448
+
+[STEP 2] Coarse TimeStep time: 248.7724805
+[STEP 2] FAB kilobyte spread across MPI nodes: [62878 ... 62878]
+
+[Level 0 step 3] ADVANCE with dt = 0.00246461758
+[Level 0 step 3] Advanced 262144 cells
+
+STEP = 3 TIME = 0.009129514439 DT = 0.00246461758
+
+
+[CNS] Total mass       is 147455.99999999997
+      Total x-momentum is 2153.9226896809505
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000017
+
+[STEP 3] Coarse TimeStep time: 0.023689967
+[STEP 3] FAB kilobyte spread across MPI nodes: [62878 ... 62878]
+
+[Level 0 step 4] ADVANCE with dt = 0.002365837545
+[Level 0 step 4] Advanced 262144 cells
+
+STEP = 4 TIME = 0.01149535198 DT = 0.002365837545
+
+
+[CNS] Total mass       is 147455.99999999991
+      Total x-momentum is 2712.0937952674672
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448
+
+[STEP 4] Coarse TimeStep time: 0.021673202
+[STEP 4] FAB kilobyte spread across MPI nodes: [62878 ... 62878]
+
+Run Time total        = 248.896728
+Run Time init         = 0.008041067
+Run Time advance      = 248.8886429
+
+
+TinyProfiler total time across processes [min...avg...max]: 248.9 ... 248.9 ... 248.9
+
+-------------------------------------------------------------------------------------------
+Name                                        NCalls  Excl. Min  Excl. Avg  Excl. Max   Max %
+-------------------------------------------------------------------------------------------
+CNS::compute_dSdt()                              8      187.5      204.8        222  89.19%
+CNS::computeTemp()                               8   0.005062      22.48      44.95  18.06%
+FabArray::LinComb()                              8   0.005891      8.154       16.3   6.55%
+StateDataPhysBCFunct::()                         8    0.04006      6.767      13.49   5.42%
+amrex::Copy()                                    8   0.003567      6.666      13.33   5.35%
+StateData::FillBoundary(geom)                   96    0.01815     0.0245    0.03085   0.01%
+FabArray::ParallelCopy_finish()                  8     0.0088     0.0163    0.02381   0.01%
+CNS::estTimeStep()                               5   0.004881    0.01174     0.0186   0.01%
+FabArray::setDomainBndry()                       8   0.007449    0.01127    0.01509   0.01%
+FabArray::sum()                                 25   0.007857   0.008863   0.009869   0.00%
+FabArray::ParallelCopy_nowait()                  8   0.005261   0.005311   0.005362   0.00%
+CNS::initData()                                  1   0.001434   0.001663   0.001893   0.00%
+FabArray::Saxpy()                                4  0.0006925  0.0007479  0.0008032   0.00%
+CNS::advance()                                   4  0.0003256  0.0003614  0.0003972   0.00%
+Amr::InitAmr()                                   1  0.0002134  0.0002429  0.0002723   0.00%
+main()                                           1  0.0001372  0.0001524  0.0001677   0.00%
+DistributionMapping::LeastUsedCPUs()             1  7.037e-06  7.153e-05   0.000136   0.00%
+Amr::timeStep()                                  4  0.0001006   0.000106  0.0001114   0.00%
+Amr::coarseTimeStep()                            4  8.525e-05  9.242e-05  9.959e-05   0.00%
+FabArrayBase::CPC::define()                      1  6.681e-05  8.249e-05  9.816e-05   0.00%
+FillPatchIterator::Initialize                    8  7.983e-05  8.872e-05  9.761e-05   0.00%
+Amr::readProbinFile()                            1  3.332e-05  3.659e-05  3.985e-05   0.00%
+Amr::FinalizeInit()                              1  6.635e-06  1.902e-05   3.14e-05   0.00%
+FabArray::ParallelCopy()                         8  1.269e-05  1.895e-05   2.52e-05   0.00%
+AmrLevel::AmrLevel(dm)                           1  1.107e-05  1.498e-05  1.889e-05   0.00%
+FillPatchSingleLevel                             8  1.298e-05  1.548e-05  1.797e-05   0.00%
+Amr::defBaseLevel()                              1  1.649e-05  1.676e-05  1.702e-05   0.00%
+StateData::define()                              1  1.443e-05  1.565e-05  1.687e-05   0.00%
+postCoarseTimeStep()                             4  1.118e-05  1.229e-05   1.34e-05   0.00%
+FabArrayBase::getCPC()                           8  8.398e-06  8.546e-06  8.693e-06   0.00%
+Amr::initSubcycle()                              1  7.431e-06  7.743e-06  8.056e-06   0.00%
+Amr::InitializeInit()                            1  2.886e-06  4.837e-06  6.789e-06   0.00%
+DistributionMapping::SFCProcessorMapDoIt()       1   5.64e-06   6.11e-06  6.579e-06   0.00%
+post_timestep                                    4  1.942e-06  2.283e-06  2.625e-06   0.00%
+Amr::initialInit()                               1  1.653e-06  1.735e-06  1.818e-06   0.00%
+DistributionMapping::Distribute()                1   1.24e-06  1.245e-06   1.25e-06   0.00%
+Amr::init()                                      1   8.88e-07   9.37e-07   9.86e-07   0.00%
+-------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------
+Name                                        NCalls  Incl. Min  Incl. Avg  Incl. Max   Max %
+-------------------------------------------------------------------------------------------
+main()                                           1      248.9      248.9      248.9 100.00%
+Amr::coarseTimeStep()                            4      248.9      248.9      248.9 100.00%
+Amr::timeStep()                                  4      248.9      248.9      248.9  99.99%
+CNS::advance()                                   4      248.9      248.9      248.9  99.99%
+CNS::compute_dSdt()                              8      187.5      204.8        222  89.19%
+CNS::computeTemp()                               8   0.005062      22.48      44.95  18.06%
+FabArray::LinComb()                              8   0.005891      8.154       16.3   6.55%
+FillPatchIterator::Initialize                    8     0.1026      6.825      13.55   5.44%
+FillPatchSingleLevel                             8    0.08747      6.813      13.54   5.44%
+StateDataPhysBCFunct::()                         8     0.0582      6.792      13.53   5.43%
+amrex::Copy()                                    8   0.003567      6.666      13.33   5.35%
+StateData::FillBoundary(geom)                   96    0.01815     0.0245    0.03085   0.01%
+FabArray::ParallelCopy()                         8    0.01419    0.02173    0.02926   0.01%
+FabArray::ParallelCopy_finish()                  8     0.0088     0.0163    0.02381   0.01%
+CNS::estTimeStep()                               5   0.004881    0.01174     0.0186   0.01%
+FabArray::setDomainBndry()                       8   0.007449    0.01127    0.01509   0.01%
+FabArray::sum()                                 25   0.007857   0.008863   0.009869   0.00%
+Amr::init()                                      1   0.006453   0.007108   0.007763   0.00%
+Amr::initialInit()                               1   0.006452   0.007107   0.007762   0.00%
+Amr::FinalizeInit()                              1   0.004908   0.005275   0.005642   0.00%
+postCoarseTimeStep()                             4   0.004609   0.005037   0.005466   0.00%
+FabArray::ParallelCopy_nowait()                  8   0.005367   0.005402   0.005438   0.00%
+Amr::InitializeInit()                            1   0.001543   0.001831   0.002119   0.00%
+Amr::defBaseLevel()                              1     0.0015   0.001789   0.002078   0.00%
+CNS::initData()                                  1   0.001434   0.001663   0.001893   0.00%
+FabArray::Saxpy()                                4  0.0006925  0.0007479  0.0008032   0.00%
+Amr::InitAmr()                                   1  0.0002209  0.0002506  0.0002804   0.00%
+DistributionMapping::SFCProcessorMapDoIt()       1  1.392e-05  7.889e-05  0.0001439   0.00%
+DistributionMapping::LeastUsedCPUs()             1  7.037e-06  7.153e-05   0.000136   0.00%
+FabArrayBase::getCPC()                           8  7.551e-05  9.103e-05  0.0001066   0.00%
+FabArrayBase::CPC::define()                      1  6.681e-05  8.249e-05  9.816e-05   0.00%
+Amr::readProbinFile()                            1  3.332e-05  3.659e-05  3.985e-05   0.00%
+AmrLevel::AmrLevel(dm)                           1   2.55e-05  3.063e-05  3.576e-05   0.00%
+StateData::define()                              1  1.443e-05  1.565e-05  1.687e-05   0.00%
+Amr::initSubcycle()                              1  7.431e-06  7.743e-06  8.056e-06   0.00%
+post_timestep                                    4  1.942e-06  2.283e-06  2.625e-06   0.00%
+DistributionMapping::Distribute()                1   1.24e-06  1.245e-06   1.25e-06   0.00%
+-------------------------------------------------------------------------------------------
+
+Unused ParmParse Variables:
+  [TOP]::amr.ref_ratio(nvals = 4)  :: [2, 2, 2, 2]
+  [TOP]::amr.regrid_int(nvals = 4)  :: [2, 2, 2, 2]
+  [TOP]::amr.derive_plot_vars(nvals = 4)  :: [pressure, x_velocity, y_velocity, z_velocity]
+
+Managed Memory Usage:
+----------------------------------------------------------------------------------------------------------------------
+Name                             Nalloc  Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+----------------------------------------------------------------------------------------------------------------------
+The_Arena::Initialize()               2      2    8609   B    9499   B      10 KiB      11 GiB      11 GiB      11 GiB
+CNS::compute_dSdt()                 320    320      18 MiB      20 MiB      22 MiB      34 MiB      36 MiB      39 MiB
+ResizeRandomSeed                      2      2      30 MiB      30 MiB      30 MiB      30 MiB      30 MiB      30 MiB
+CNS::advance()                       72     72      26 MiB      26 MiB      26 MiB      26 MiB      26 MiB      26 MiB
+FillPatchIterator::Initialize        64     64    4458   B     553 KiB    1101 KiB       9 MiB       9 MiB       9 MiB
+StateData::define()                   8      8       9 MiB       9 MiB       9 MiB       9 MiB       9 MiB       9 MiB
+StateDataPhysBCFunct::()            128    128      28   B    3735   B    7442   B     267 KiB     267 KiB     267 KiB
+CNS::estTimeStep()                   14     14     657   B     657   B     657   B     160 KiB     160 KiB     160 KiB
+FabArray::sum()                      50     50       5   B       5   B       6   B     160 KiB     160 KiB     160 KiB
+FabArray::ParallelCopy_finish()      16     16       0   B       0   B       0   B    8272   B    8272   B    8272   B
+FabArray::ParallelCopy_nowait()      32     32       0   B       0   B       0   B    8272   B    8272   B    8272   B
+amrex::Copy()                        26     26     655   B     655   B     655   B    1168   B    1168   B    1168   B
+FabArray::LinComb()                  10     10     512   B     575   B     638   B    1024   B    1024   B    1024   B
+StateData::FillBoundary(geom)       192    192       0   B       0   B       0   B     176   B     176   B     176   B
+Amr::InitAmr()                        4      4     127   B     127   B     127   B     128   B     128   B     128   B
+----------------------------------------------------------------------------------------------------------------------
+
+Device Memory Usage:
+---------------------------------------------------------------------------------------------------------------------
+Name                            Nalloc  Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+---------------------------------------------------------------------------------------------------------------------
+The_Device_Arena::Initialize()       2      2      10   B      10   B      11   B    8192 KiB    8192 KiB    8192 KiB
+---------------------------------------------------------------------------------------------------------------------
+
+Pinned Memory Usage:
+----------------------------------------------------------------------------------------------------------------------
+Name                             Nalloc  Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+----------------------------------------------------------------------------------------------------------------------
+The_Pinned_Arena::Initialize()        2      2     116   B     124   B     132   B    8192 KiB    8192 KiB    8192 KiB
+FabArray::ParallelCopy_nowait()      64     64     123   B     188   B     254   B    2150 KiB    2150 KiB    2150 KiB
+FabArray::ParallelCopy_finish()      16     16       0   B       0   B       0   B    8272   B    8272   B    8272   B
+amrex::Copy()                        26     26     655   B     655   B     655   B    1168   B    1168   B    1168   B
+FabArray::LinComb()                  10     10     512   B     575   B     638   B    1024   B    1024   B    1024   B
+CNS::estTimeStep()                   14     14     655   B     655   B     655   B     672   B     672   B     672   B
+StateData::FillBoundary(geom)       192    192       0   B       0   B       0   B     176   B     176   B     176   B
+FabArray::sum()                      50     50       0   B       0   B       0   B      16   B      16   B      16   B
+----------------------------------------------------------------------------------------------------------------------
+
+Total GPU global memory (MB) spread across MPI: [16151 ... 16151]
+Free  GPU global memory (MB) spread across MPI: [6041 ... 6413]
+[The         Arena] space (MB) allocated spread across MPI: [12113 ... 12113]
+[The         Arena] space (MB) used      spread across MPI: [0 ... 0]
+[The  Device Arena] space (MB) allocated spread across MPI: [8 ... 8]
+[The  Device Arena] space (MB) used      spread across MPI: [0 ... 0]
+[The  Pinned Arena] space (MB) allocated spread across MPI: [8 ... 8]
+[The  Pinned Arena] space (MB) used      spread across MPI: [0 ... 0]
+==PROF== Disconnected from process 3838493
+AMReX (2b1434edf43e-dirty) finalized
+==PROF== Disconnected from process 3838492
+[3838492] CNS3d.gnu.TPROF.MPI.CUDA.ex@127.0.0.1
+  void amrex::launch_global<(int)256, void amrex::launch<(int)256, amrex::Box, amrex::StateDataPhysBCFunct::operator ()(amrex::MultiFab &, int, int, const amrex::IntVect &, double, int)::[lambda(const amrex::Box &) (instance 2)]>(const T2 &, T3 &&)::[lambda() (instance 1)]>(T2) (10, 1, 1)x(256, 1, 1), Context 1, Stream 17, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       677.05
+    SM Frequency            cycle/usecond       966.36
+    Elapsed Cycles                  cycle        9,442
+    Memory Throughput                   %         2.13
+    DRAM Throughput                     %         2.03
+    Duration                      usecond         9.76
+    L1/TEX Cache Throughput             %        13.18
+    L2 Cache Throughput                 %         2.13
+    SM Active Cycles                cycle       976.33
+    Compute (SM) Throughput             %         2.43
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.1 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                     10
+    Registers Per Thread             register/thread              90
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread           2,560
+    Waves Per SM                                                0.06
+    -------------------------------- --------------- ---------------
+
+    WRN   The grid for this launch is configured to execute only 10 blocks, which is less than the GPU's 80             
+          multiprocessors. This can underutilize some multiprocessors. If you do not intend to execute this kernel      
+          concurrently with other workloads, consider reducing the block size to have at least one block per            
+          multiprocessor or increase the size of the grid to fully utilize the available hardware resources. See the    
+          Hardware Model (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-hw-model)            
+          description for more details on launch configurations.                                                        
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            2
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           16
+    Theoretical Occupancy                     %           25
+    Achieved Occupancy                        %        11.74
+    Achieved Active Warps Per SM           warp         7.51
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (25.0%) is limited by the number of required registers. The difference    
+          between calculated theoretical (25.0%) and measured achieved occupancy (11.7%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::IsFabArray<T2, void>::value, void>::type amrex::experimental::detail::ParallelFor<(int)256, amrex::FabArray<amrex::FArrayBox>, void amrex::Copy<amrex::FArrayBox, amrex::FArrayBox, (int)0>(amrex::FabArray<T1> &, const amrex::FabArray<T2> &, int, int, int, const amrex::IntVect &)::[lambda(int, int, int, int, int) (instance 1)]>(const T2 &, const amrex::IntVect &, int, const amrex::IntVect &, bool, T3 &&)::[lambda() (instance 1)]>(T2) (732, 1, 1)x(256, 1, 1), Context 1, Stream 14, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       778.33
+    SM Frequency            cycle/nsecond         1.08
+    Elapsed Cycles                  cycle       35,299
+    Memory Throughput                   %        71.62
+    DRAM Throughput                     %        71.62
+    Duration                      usecond        32.48
+    L1/TEX Cache Throughput             %        47.55
+    L2 Cache Throughput                 %        33.51
+    SM Active Cycles                cycle    31,726.58
+    Compute (SM) Throughput             %        28.67
+    ----------------------- ------------- ------------
+
+    WRN   Memory is more heavily utilized than Compute: Look at the Memory Workload Analysis section to identify the    
+          DRAM bottleneck. Check memory replay (coalescing) metrics to make sure you're efficiently utilizing the       
+          bytes transferred. Also consider whether it is possible to do more work per memory access (kernel fusion) or  
+          whether there are values you can (re)compute.                                                                 
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    732
+    Registers Per Thread             register/thread              38
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread         187,392
+    Waves Per SM                                                1.53
+    -------------------------------- --------------- ---------------
+
+    WRN   A wave of thread blocks is defined as the maximum number of blocks that can be executed in parallel on the    
+          target GPU. The number of blocks in a wave depends on the number of multiprocessors and the theoretical       
+          occupancy of the kernel. This kernel launch results in 1 full waves and a partial wave of 252 thread blocks.  
+          Under the assumption of a uniform execution duration of all thread blocks, the partial wave may account for   
+          up to 50.0% of the total kernel runtime with a lower occupancy of 21.9%. Try launching a grid with no         
+          partial wave. The overall impact of this tail effect also lessens with the number of full waves executed for  
+          a grid. See the Hardware Model                                                                                
+          (https://docs.nvidia.com/nsight-compute/ProfilingGuide/index.html#metrics-hw-model) description for more      
+          details on launch configurations.                                                                             
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            6
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           48
+    Theoretical Occupancy                     %           75
+    Achieved Occupancy                        %        58.58
+    Achieved Active Warps Per SM           warp        37.49
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (75.0%) is limited by the number of required registers. The difference    
+          between calculated theoretical (75.0%) and measured achieved occupancy (58.6%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 1)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (183, 1, 1)x(256, 1, 1), Context 1, Stream 14, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       798.48
+    SM Frequency            cycle/nsecond         1.12
+    Elapsed Cycles                  cycle        9,492
+    Memory Throughput                   %        28.71
+    DRAM Throughput                     %        28.34
+    Duration                      usecond         8.42
+    L1/TEX Cache Throughput             %        39.20
+    L2 Cache Throughput                 %        28.71
+    SM Active Cycles                cycle     6,713.43
+    Compute (SM) Throughput             %        11.31
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.5 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    183
+    Registers Per Thread             register/thread              44
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          46,848
+    Waves Per SM                                                0.46
+    -------------------------------- --------------- ---------------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            5
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           40
+    Theoretical Occupancy                     %        62.50
+    Achieved Occupancy                        %        24.91
+    Achieved Active Warps Per SM           warp        15.94
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (62.5%) is limited by the number of required registers. The difference    
+          between calculated theoretical (62.5%) and measured achieved occupancy (24.9%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 2)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (136, 1, 1)x(256, 1, 1), Context 1, Stream 14, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       704.95
+    SM Frequency            cycle/usecond       983.69
+    Elapsed Cycles                  cycle        8,950
+    Memory Throughput                   %        27.26
+    DRAM Throughput                     %        27.26
+    Duration                      usecond         9.06
+    L1/TEX Cache Throughput             %        17.95
+    L2 Cache Throughput                 %        18.47
+    SM Active Cycles                cycle     6,457.23
+    Compute (SM) Throughput             %        24.58
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.4 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    136
+    Registers Per Thread             register/thread              58
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          34,816
+    Waves Per SM                                                0.42
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            4
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           32
+    Theoretical Occupancy                     %           50
+    Achieved Occupancy                        %        19.23
+    Achieved Active Warps Per SM           warp        12.31
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (50.0%) is limited by the number of required registers. The difference    
+          between calculated theoretical (50.0%) and measured achieved occupancy (19.2%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 3)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (132, 1, 1)x(256, 1, 1), Context 1, Stream 14, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       642.66
+    SM Frequency            cycle/usecond       895.39
+    Elapsed Cycles                  cycle       20,572
+    Memory Throughput                   %        21.12
+    DRAM Throughput                     %        21.12
+    Duration                      usecond        22.88
+    L1/TEX Cache Throughput             %        14.20
+    L2 Cache Throughput                 %        13.45
+    SM Active Cycles                cycle    16,424.74
+    Compute (SM) Throughput             %        39.43
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.8 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    132
+    Registers Per Thread             register/thread              93
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          33,792
+    Waves Per SM                                                0.82
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            2
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           16
+    Theoretical Occupancy                     %           25
+    Achieved Occupancy                        %        19.29
+    Achieved Active Warps Per SM           warp        12.35
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (25.0%) is limited by the number of required registers. See the CUDA Best 
+          Practices Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more      
+          details on optimizing occupancy.                                                                              
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 4)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (136, 1, 1)x(256, 1, 1), Context 1, Stream 14, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       684.21
+    SM Frequency            cycle/usecond       959.66
+    Elapsed Cycles                  cycle        9,960
+    Memory Throughput                   %        28.42
+    DRAM Throughput                     %        28.42
+    Duration                      usecond        10.34
+    L1/TEX Cache Throughput             %        20.76
+    L2 Cache Throughput                 %        19.20
+    SM Active Cycles                cycle     7,032.30
+    Compute (SM) Throughput             %        22.07
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.6 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    136
+    Registers Per Thread             register/thread              72
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          34,816
+    Waves Per SM                                                0.57
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            3
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           24
+    Theoretical Occupancy                     %        37.50
+    Achieved Occupancy                        %        19.07
+    Achieved Active Warps Per SM           warp        12.21
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (37.5%) is limited by the number of required registers. The difference    
+          between calculated theoretical (37.5%) and measured achieved occupancy (19.1%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 5)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (132, 1, 1)x(256, 1, 1), Context 1, Stream 14, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond          625
+    SM Frequency            cycle/usecond       871.28
+    Elapsed Cycles                  cycle       20,490
+    Memory Throughput                   %        22.43
+    DRAM Throughput                     %        22.43
+    Duration                      usecond        23.42
+    L1/TEX Cache Throughput             %        14.64
+    L2 Cache Throughput                 %        14.32
+    SM Active Cycles                cycle    16,289.48
+    Compute (SM) Throughput             %        39.58
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.8 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    132
+    Registers Per Thread             register/thread              98
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          33,792
+    Waves Per SM                                                0.82
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            2
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           16
+    Theoretical Occupancy                     %           25
+    Achieved Occupancy                        %        19.48
+    Achieved Active Warps Per SM           warp        12.47
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (25.0%) is limited by the number of required registers. See the CUDA Best 
+          Practices Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more      
+          details on optimizing occupancy.                                                                              
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 6)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (136, 1, 1)x(256, 1, 1), Context 1, Stream 14, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       693.01
+    SM Frequency            cycle/usecond       968.20
+    Elapsed Cycles                  cycle       10,231
+    Memory Throughput                   %        30.69
+    DRAM Throughput                     %        27.69
+    Duration                      usecond        10.53
+    L1/TEX Cache Throughput             %        26.46
+    L2 Cache Throughput                 %        30.69
+    SM Active Cycles                cycle     7,387.71
+    Compute (SM) Throughput             %        21.48
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.6 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    136
+    Registers Per Thread             register/thread              70
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          34,816
+    Waves Per SM                                                0.57
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            3
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           24
+    Theoretical Occupancy                     %        37.50
+    Achieved Occupancy                        %        19.26
+    Achieved Active Warps Per SM           warp        12.33
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (37.5%) is limited by the number of required registers. The difference    
+          between calculated theoretical (37.5%) and measured achieved occupancy (19.3%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 7)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (132, 1, 1)x(256, 1, 1), Context 1, Stream 14, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       613.73
+    SM Frequency            cycle/usecond       854.48
+    Elapsed Cycles                  cycle       20,390
+    Memory Throughput                   %        22.54
+    DRAM Throughput                     %        22.54
+    Duration                      usecond        23.78
+    L1/TEX Cache Throughput             %        18.08
+    L2 Cache Throughput                 %        20.90
+    SM Active Cycles                cycle    16,443.15
+    Compute (SM) Throughput             %        39.76
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.8 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    132
+    Registers Per Thread             register/thread              98
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          33,792
+    Waves Per SM                                                0.82
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            2
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           16
+    Theoretical Occupancy                     %           25
+    Achieved Occupancy                        %        19.29
+    Achieved Active Warps Per SM           warp        12.35
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (25.0%) is limited by the number of required registers. See the CUDA Best 
+          Practices Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more      
+          details on optimizing occupancy.                                                                              
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T3, void>::value, void>::type amrex::ParallelFor<(int)256, int, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int, int) (instance 1)], void>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2, T3 &&)::[lambda() (instance 1)]>(T2) (128, 1, 1)x(256, 1, 1), Context 1, Stream 14, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       616.33
+    SM Frequency            cycle/usecond       862.12
+    Elapsed Cycles                  cycle       13,571
+    Memory Throughput                   %        59.20
+    DRAM Throughput                     %        59.20
+    Duration                      usecond        15.68
+    L1/TEX Cache Throughput             %        29.42
+    L2 Cache Throughput                 %        37.39
+    SM Active Cycles                cycle    10,823.10
+    Compute (SM) Throughput             %        13.65
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.5 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    128
+    Registers Per Thread             register/thread              80
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          32,768
+    Waves Per SM                                                0.53
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            3
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           24
+    Theoretical Occupancy                     %        37.50
+    Achieved Occupancy                        %        19.38
+    Achieved Active Warps Per SM           warp        12.40
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (37.5%) is limited by the number of required registers. The difference    
+          between calculated theoretical (37.5%) and measured achieved occupancy (19.4%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 1)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (183, 1, 1)x(256, 1, 1), Context 1, Stream 15, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       774.91
+    SM Frequency            cycle/nsecond         1.09
+    Elapsed Cycles                  cycle        9,495
+    Memory Throughput                   %        28.71
+    DRAM Throughput                     %        28.17
+    Duration                      usecond         8.67
+    L1/TEX Cache Throughput             %        39.15
+    L2 Cache Throughput                 %        28.71
+    SM Active Cycles                cycle     6,673.32
+    Compute (SM) Throughput             %        11.30
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.5 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    183
+    Registers Per Thread             register/thread              44
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          46,848
+    Waves Per SM                                                0.46
+    -------------------------------- --------------- ---------------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            5
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           40
+    Theoretical Occupancy                     %        62.50
+    Achieved Occupancy                        %        25.75
+    Achieved Active Warps Per SM           warp        16.48
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (62.5%) is limited by the number of required registers. The difference    
+          between calculated theoretical (62.5%) and measured achieved occupancy (25.7%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 2)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (136, 1, 1)x(256, 1, 1), Context 1, Stream 15, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       686.64
+    SM Frequency            cycle/usecond       957.57
+    Elapsed Cycles                  cycle        8,990
+    Memory Throughput                   %        27.12
+    DRAM Throughput                     %        27.12
+    Duration                      usecond         9.34
+    L1/TEX Cache Throughput             %        17.87
+    L2 Cache Throughput                 %        18.39
+    SM Active Cycles                cycle     6,445.77
+    Compute (SM) Throughput             %        24.47
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.4 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    136
+    Registers Per Thread             register/thread              58
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          34,816
+    Waves Per SM                                                0.42
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            4
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           32
+    Theoretical Occupancy                     %           50
+    Achieved Occupancy                        %        19.31
+    Achieved Active Warps Per SM           warp        12.36
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (50.0%) is limited by the number of required registers. The difference    
+          between calculated theoretical (50.0%) and measured achieved occupancy (19.3%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 3)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (132, 1, 1)x(256, 1, 1), Context 1, Stream 15, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       641.56
+    SM Frequency            cycle/usecond       893.93
+    Elapsed Cycles                  cycle       20,615
+    Memory Throughput                   %        21.10
+    DRAM Throughput                     %        21.10
+    Duration                      usecond        22.94
+    L1/TEX Cache Throughput             %        14.18
+    L2 Cache Throughput                 %        13.44
+    SM Active Cycles                cycle    16,764.86
+    Compute (SM) Throughput             %        39.39
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.8 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    132
+    Registers Per Thread             register/thread              93
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          33,792
+    Waves Per SM                                                0.82
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            2
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           16
+    Theoretical Occupancy                     %           25
+    Achieved Occupancy                        %        19.32
+    Achieved Active Warps Per SM           warp        12.37
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (25.0%) is limited by the number of required registers. See the CUDA Best 
+          Practices Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more      
+          details on optimizing occupancy.                                                                              
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 4)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (136, 1, 1)x(256, 1, 1), Context 1, Stream 15, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       722.57
+    SM Frequency            cycle/nsecond         1.01
+    Elapsed Cycles                  cycle       10,403
+    Memory Throughput                   %        27.50
+    DRAM Throughput                     %        27.50
+    Duration                      usecond        10.21
+    L1/TEX Cache Throughput             %        19.89
+    L2 Cache Throughput                 %        18.43
+    SM Active Cycles                cycle     7,170.96
+    Compute (SM) Throughput             %        21.15
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.6 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    136
+    Registers Per Thread             register/thread              72
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          34,816
+    Waves Per SM                                                0.57
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            3
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           24
+    Theoretical Occupancy                     %        37.50
+    Achieved Occupancy                        %        19.31
+    Achieved Active Warps Per SM           warp        12.36
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (37.5%) is limited by the number of required registers. The difference    
+          between calculated theoretical (37.5%) and measured achieved occupancy (19.3%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 5)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (132, 1, 1)x(256, 1, 1), Context 1, Stream 15, Device 0, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       617.49
+    SM Frequency            cycle/usecond       858.66
+    Elapsed Cycles                  cycle       20,203
+    Memory Throughput                   %        22.69
+    DRAM Throughput                     %        22.69
+    Duration                      usecond        23.42
+    L1/TEX Cache Throughput             %        14.85
+    L2 Cache Throughput                 %        14.51
+    SM Active Cycles                cycle    16,175.58
+    Compute (SM) Throughput             %        40.17
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.8 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    132
+    Registers Per Thread             register/thread              98
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          33,792
+    Waves Per SM                                                0.82
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            2
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           16
+    Theoretical Occupancy                     %           25
+    Achieved Occupancy                        %        19.50
+    Achieved Active Warps Per SM           warp        12.48
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (25.0%) is limited by the number of required registers. See the CUDA Best 
+          Practices Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more      
+          details on optimizing occupancy.                                                                              
+
+[3838493] CNS3d.gnu.TPROF.MPI.CUDA.ex@127.0.0.1
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 5)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (132, 1, 1)x(256, 1, 1), Context 1, Stream 16, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       602.55
+    SM Frequency            cycle/usecond       844.93
+    Elapsed Cycles                  cycle       20,251
+    Memory Throughput                   %        22.83
+    DRAM Throughput                     %        22.83
+    Duration                      usecond        23.87
+    L1/TEX Cache Throughput             %        14.81
+    L2 Cache Throughput                 %        14.36
+    SM Active Cycles                cycle    16,342.40
+    Compute (SM) Throughput             %        40.05
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.8 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    132
+    Registers Per Thread             register/thread              98
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          33,792
+    Waves Per SM                                                0.82
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            2
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           16
+    Theoretical Occupancy                     %           25
+    Achieved Occupancy                        %        19.12
+    Achieved Active Warps Per SM           warp        12.24
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (25.0%) is limited by the number of required registers. See the CUDA Best 
+          Practices Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more      
+          details on optimizing occupancy.                                                                              
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 6)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (136, 1, 1)x(256, 1, 1), Context 1, Stream 16, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       690.91
+    SM Frequency            cycle/usecond       973.18
+    Elapsed Cycles                  cycle       10,303
+    Memory Throughput                   %        30.23
+    DRAM Throughput                     %        27.76
+    Duration                      usecond        10.56
+    L1/TEX Cache Throughput             %        26.24
+    L2 Cache Throughput                 %        30.23
+    SM Active Cycles                cycle     7,423.16
+    Compute (SM) Throughput             %        21.31
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.6 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    136
+    Registers Per Thread             register/thread              70
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          34,816
+    Waves Per SM                                                0.57
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            3
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           24
+    Theoretical Occupancy                     %        37.50
+    Achieved Occupancy                        %        19.26
+    Achieved Active Warps Per SM           warp        12.33
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (37.5%) is limited by the number of required registers. The difference    
+          between calculated theoretical (37.5%) and measured achieved occupancy (19.3%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 7)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (132, 1, 1)x(256, 1, 1), Context 1, Stream 16, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       617.14
+    SM Frequency            cycle/usecond       864.23
+    Elapsed Cycles                  cycle       20,735
+    Memory Throughput                   %        22.30
+    DRAM Throughput                     %        22.30
+    Duration                      usecond        23.90
+    L1/TEX Cache Throughput             %        17.78
+    L2 Cache Throughput                 %        20.37
+    SM Active Cycles                cycle    16,894.20
+    Compute (SM) Throughput             %        39.11
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.8 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    132
+    Registers Per Thread             register/thread              98
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          33,792
+    Waves Per SM                                                0.82
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            2
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           16
+    Theoretical Occupancy                     %           25
+    Achieved Occupancy                        %        19.26
+    Achieved Active Warps Per SM           warp        12.33
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (25.0%) is limited by the number of required registers. See the CUDA Best 
+          Practices Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more      
+          details on optimizing occupancy.                                                                              
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T3, void>::value, void>::type amrex::ParallelFor<(int)256, int, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int, int) (instance 1)], void>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2, T3 &&)::[lambda() (instance 1)]>(T2) (128, 1, 1)x(256, 1, 1), Context 1, Stream 16, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       660.75
+    SM Frequency            cycle/usecond       933.64
+    Elapsed Cycles                  cycle       13,735
+    Memory Throughput                   %        58.67
+    DRAM Throughput                     %        58.67
+    Duration                      usecond        14.66
+    L1/TEX Cache Throughput             %        29.12
+    L2 Cache Throughput                 %        36.60
+    SM Active Cycles                cycle    10,749.36
+    Compute (SM) Throughput             %        13.48
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.5 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    128
+    Registers Per Thread             register/thread              80
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          32,768
+    Waves Per SM                                                0.53
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            3
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           24
+    Theoretical Occupancy                     %        37.50
+    Achieved Occupancy                        %        19.28
+    Achieved Active Warps Per SM           warp        12.34
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (37.5%) is limited by the number of required registers. The difference    
+          between calculated theoretical (37.5%) and measured achieved occupancy (19.3%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 1)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (183, 1, 1)x(256, 1, 1), Context 1, Stream 17, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       785.19
+    SM Frequency            cycle/nsecond         1.11
+    Elapsed Cycles                  cycle        9,647
+    Memory Throughput                   %        28.35
+    DRAM Throughput                     %        28.35
+    Duration                      usecond         8.64
+    L1/TEX Cache Throughput             %        38.49
+    L2 Cache Throughput                 %        28.01
+    SM Active Cycles                cycle     6,838.10
+    Compute (SM) Throughput             %        11.10
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.5 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    183
+    Registers Per Thread             register/thread              44
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          46,848
+    Waves Per SM                                                0.46
+    -------------------------------- --------------- ---------------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            5
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           40
+    Theoretical Occupancy                     %        62.50
+    Achieved Occupancy                        %        24.98
+    Achieved Active Warps Per SM           warp        15.99
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (62.5%) is limited by the number of required registers. The difference    
+          between calculated theoretical (62.5%) and measured achieved occupancy (25.0%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 2)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (136, 1, 1)x(256, 1, 1), Context 1, Stream 17, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       682.93
+    SM Frequency            cycle/usecond       960.58
+    Elapsed Cycles                  cycle        8,846
+    Memory Throughput                   %        27.74
+    DRAM Throughput                     %        27.74
+    Duration                      usecond         9.18
+    L1/TEX Cache Throughput             %        18.13
+    L2 Cache Throughput                 %        18.52
+    SM Active Cycles                cycle     6,390.66
+    Compute (SM) Throughput             %        24.82
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.4 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    136
+    Registers Per Thread             register/thread              58
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          34,816
+    Waves Per SM                                                0.42
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            4
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           32
+    Theoretical Occupancy                     %           50
+    Achieved Occupancy                        %        19.23
+    Achieved Active Warps Per SM           warp        12.31
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (50.0%) is limited by the number of required registers. The difference    
+          between calculated theoretical (50.0%) and measured achieved occupancy (19.2%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 3)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (132, 1, 1)x(256, 1, 1), Context 1, Stream 17, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       617.39
+    SM Frequency            cycle/usecond       867.21
+    Elapsed Cycles                  cycle       20,593
+    Memory Throughput                   %        21.28
+    DRAM Throughput                     %        21.28
+    Duration                      usecond        23.65
+    L1/TEX Cache Throughput             %        14.19
+    L2 Cache Throughput                 %        13.35
+    SM Active Cycles                cycle    16,561.30
+    Compute (SM) Throughput             %        39.39
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.8 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    132
+    Registers Per Thread             register/thread              93
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          33,792
+    Waves Per SM                                                0.82
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            2
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           16
+    Theoretical Occupancy                     %           25
+    Achieved Occupancy                        %        19.22
+    Achieved Active Warps Per SM           warp        12.30
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (25.0%) is limited by the number of required registers. See the CUDA Best 
+          Practices Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more      
+          details on optimizing occupancy.                                                                              
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 4)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (136, 1, 1)x(256, 1, 1), Context 1, Stream 17, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       676.76
+    SM Frequency            cycle/usecond       953.96
+    Elapsed Cycles                  cycle        9,975
+    Memory Throughput                   %        28.39
+    DRAM Throughput                     %        28.39
+    Duration                      usecond        10.43
+    L1/TEX Cache Throughput             %        20.70
+    L2 Cache Throughput                 %        18.97
+    SM Active Cycles                cycle     7,008.81
+    Compute (SM) Throughput             %        22.00
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.6 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    136
+    Registers Per Thread             register/thread              72
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          34,816
+    Waves Per SM                                                0.57
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            3
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           24
+    Theoretical Occupancy                     %        37.50
+    Achieved Occupancy                        %        19.09
+    Achieved Active Warps Per SM           warp        12.22
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (37.5%) is limited by the number of required registers. The difference    
+          between calculated theoretical (37.5%) and measured achieved occupancy (19.1%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 5)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (132, 1, 1)x(256, 1, 1), Context 1, Stream 17, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       624.49
+    SM Frequency            cycle/usecond       876.80
+    Elapsed Cycles                  cycle       20,599
+    Memory Throughput                   %        22.47
+    DRAM Throughput                     %        22.47
+    Duration                      usecond        23.39
+    L1/TEX Cache Throughput             %        14.57
+    L2 Cache Throughput                 %        14.13
+    SM Active Cycles                cycle    16,136.62
+    Compute (SM) Throughput             %        39.39
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.8 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    132
+    Registers Per Thread             register/thread              98
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          33,792
+    Waves Per SM                                                0.82
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            2
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           16
+    Theoretical Occupancy                     %           25
+    Achieved Occupancy                        %        19.74
+    Achieved Active Warps Per SM           warp        12.63
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (25.0%) is limited by the number of required registers. See the CUDA Best 
+          Practices Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more      
+          details on optimizing occupancy.                                                                              
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 6)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (136, 1, 1)x(256, 1, 1), Context 1, Stream 17, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       714.97
+    SM Frequency            cycle/nsecond         1.01
+    Elapsed Cycles                  cycle       10,138
+    Memory Throughput                   %        30.71
+    DRAM Throughput                     %        28.12
+    Duration                      usecond        10.05
+    L1/TEX Cache Throughput             %        26.66
+    L2 Cache Throughput                 %        30.71
+    SM Active Cycles                cycle     7,317.93
+    Compute (SM) Throughput             %        21.65
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.6 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    136
+    Registers Per Thread             register/thread              70
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          34,816
+    Waves Per SM                                                0.57
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            3
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           24
+    Theoretical Occupancy                     %        37.50
+    Achieved Occupancy                        %        19.26
+    Achieved Active Warps Per SM           warp        12.33
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (37.5%) is limited by the number of required registers. The difference    
+          between calculated theoretical (37.5%) and measured achieved occupancy (19.3%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int) (instance 7)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (132, 1, 1)x(256, 1, 1), Context 1, Stream 17, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       626.38
+    SM Frequency            cycle/usecond       877.65
+    Elapsed Cycles                  cycle       20,414
+    Memory Throughput                   %        22.66
+    DRAM Throughput                     %        22.66
+    Duration                      usecond        23.17
+    L1/TEX Cache Throughput             %        18.06
+    L2 Cache Throughput                 %        20.74
+    SM Active Cycles                cycle    16,465.88
+    Compute (SM) Throughput             %        39.73
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.8 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    132
+    Registers Per Thread             register/thread              98
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          33,792
+    Waves Per SM                                                0.82
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            2
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           16
+    Theoretical Occupancy                     %           25
+    Achieved Occupancy                        %        19.26
+    Achieved Active Warps Per SM           warp        12.33
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (25.0%) is limited by the number of required registers. See the CUDA Best 
+          Practices Guide (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more      
+          details on optimizing occupancy.                                                                              
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T3, void>::value, void>::type amrex::ParallelFor<(int)256, int, CNS::compute_dSdt(const amrex::MultiFab &, amrex::MultiFab &, double, amrex::FluxRegister *, amrex::FluxRegister *)::[lambda(int, int, int, int) (instance 1)], void>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2, T3 &&)::[lambda() (instance 1)]>(T2) (128, 1, 1)x(256, 1, 1), Context 1, Stream 17, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       630.69
+    SM Frequency            cycle/usecond       887.07
+    Elapsed Cycles                  cycle       13,759
+    Memory Throughput                   %        58.75
+    DRAM Throughput                     %        58.75
+    Duration                      usecond        15.46
+    L1/TEX Cache Throughput             %        29.00
+    L2 Cache Throughput                 %        36.55
+    SM Active Cycles                cycle    10,928.64
+    Compute (SM) Throughput             %        13.46
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.5 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    128
+    Registers Per Thread             register/thread              80
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          32,768
+    Waves Per SM                                                0.53
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            3
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           24
+    Theoretical Occupancy                     %        37.50
+    Achieved Occupancy                        %        19.14
+    Achieved Active Warps Per SM           warp        12.25
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (37.5%) is limited by the number of required registers. The difference    
+          between calculated theoretical (37.5%) and measured achieved occupancy (19.1%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::IsFabArray<T2, void>::value, void>::type amrex::experimental::detail::ParallelFor<(int)256, amrex::FabArray<amrex::FArrayBox>, void amrex::FabArray<amrex::FArrayBox>::LinComb<amrex::FArrayBox, (int)0>(amrex::FabArray<amrex::FArrayBox> &, double, const amrex::FabArray<amrex::FArrayBox> &, int, double, const amrex::FabArray<amrex::FArrayBox> &, int, int, int, const amrex::IntVect &)::[lambda(int, int, int, int, int) (instance 1)]>(const T2 &, const amrex::IntVect &, int, const amrex::IntVect &, bool, T3 &&)::[lambda() (instance 1)]>(T2) (512, 1, 1)x(256, 1, 1), Context 1, Stream 14, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       822.20
+    SM Frequency            cycle/nsecond         1.16
+    Elapsed Cycles                  cycle       46,374
+    Memory Throughput                   %        68.94
+    DRAM Throughput                     %        68.94
+    Duration                      usecond        39.78
+    L1/TEX Cache Throughput             %        39.32
+    L2 Cache Throughput                 %        27.27
+    SM Active Cycles                cycle    38,980.90
+    Compute (SM) Throughput             %        21.19
+    ----------------------- ------------- ------------
+
+    WRN   Memory is more heavily utilized than Compute: Look at the Memory Workload Analysis section to identify the    
+          DRAM bottleneck. Check memory replay (coalescing) metrics to make sure you're efficiently utilizing the       
+          bytes transferred. Also consider whether it is possible to do more work per memory access (kernel fusion) or  
+          whether there are values you can (re)compute.                                                                 
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    512
+    Registers Per Thread             register/thread              40
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread         131,072
+    Waves Per SM                                                1.07
+    -------------------------------- --------------- ---------------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            6
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           48
+    Theoretical Occupancy                     %           75
+    Achieved Occupancy                        %        62.19
+    Achieved Active Warps Per SM           warp        39.80
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (75.0%) is limited by the number of required registers. The difference    
+          between calculated theoretical (75.0%) and measured achieved occupancy (62.2%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::computeTemp(amrex::MultiFab &, int)::[lambda(int, int, int) (instance 1)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (128, 1, 1)x(256, 1, 1), Context 1, Stream 14, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       734.97
+    SM Frequency            cycle/nsecond         1.04
+    Elapsed Cycles                  cycle        6,108
+    Memory Throughput                   %        33.46
+    DRAM Throughput                     %        33.46
+    Duration                      usecond         5.86
+    L1/TEX Cache Throughput             %        15.63
+    L2 Cache Throughput                 %        17.37
+    SM Active Cycles                cycle     4,034.74
+    Compute (SM) Throughput             %         9.34
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.3 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    128
+    Registers Per Thread             register/thread              34
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          32,768
+    Waves Per SM                                                0.27
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            6
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           48
+    Theoretical Occupancy                     %           75
+    Achieved Occupancy                        %        19.56
+    Achieved Active Warps Per SM           warp        12.52
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (75.0%) is limited by the number of required registers. The difference    
+          between calculated theoretical (75.0%) and measured achieved occupancy (19.6%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::computeTemp(amrex::MultiFab &, int)::[lambda(int, int, int) (instance 1)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (128, 1, 1)x(256, 1, 1), Context 1, Stream 15, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       711.34
+    SM Frequency            cycle/nsecond         1.00
+    Elapsed Cycles                  cycle        6,236
+    Memory Throughput                   %        32.61
+    DRAM Throughput                     %        32.61
+    Duration                      usecond         6.21
+    L1/TEX Cache Throughput             %        15.31
+    L2 Cache Throughput                 %        17.01
+    SM Active Cycles                cycle     4,168.54
+    Compute (SM) Throughput             %         9.15
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.3 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    128
+    Registers Per Thread             register/thread              34
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          32,768
+    Waves Per SM                                                0.27
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            6
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           48
+    Theoretical Occupancy                     %           75
+    Achieved Occupancy                        %        19.58
+    Achieved Active Warps Per SM           warp        12.53
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (75.0%) is limited by the number of required registers. The difference    
+          between calculated theoretical (75.0%) and measured achieved occupancy (19.6%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
+  void amrex::launch_global<(int)256, std::enable_if<amrex::MaybeDeviceRunnable<T2, void>::value, void>::type amrex::ParallelFor<(int)256, CNS::computeTemp(amrex::MultiFab &, int)::[lambda(int, int, int) (instance 1)]>(const amrex::Gpu::KernelInfo &, const amrex::Box &, T2 &&)::[lambda() (instance 1)]>(T2) (128, 1, 1)x(256, 1, 1), Context 1, Stream 16, Device 1, CC 7.0
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ------------- ------------
+    Metric Name               Metric Unit Metric Value
+    ----------------------- ------------- ------------
+    DRAM Frequency          cycle/usecond       732.24
+    SM Frequency            cycle/nsecond         1.04
+    Elapsed Cycles                  cycle        6,076
+    Memory Throughput                   %        33.59
+    DRAM Throughput                     %        33.59
+    Duration                      usecond         5.86
+    L1/TEX Cache Throughput             %        15.71
+    L2 Cache Throughput                 %        17.45
+    SM Active Cycles                cycle     4,090.04
+    Compute (SM) Throughput             %         9.39
+    ----------------------- ------------- ------------
+
+    WRN   This kernel grid is too small to fill the available resources on this device, resulting in only 0.3 full      
+          waves across all SMs. Look at Launch Statistics for more details.                                             
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ---------------
+    Metric Name                          Metric Unit    Metric Value
+    -------------------------------- --------------- ---------------
+    Block Size                                                   256
+    Function Cache Configuration                     CachePreferNone
+    Grid Size                                                    128
+    Registers Per Thread             register/thread              34
+    Shared Memory Configuration Size            byte               0
+    Driver Shared Memory Per Block        byte/block               0
+    Dynamic Shared Memory Per Block       byte/block               0
+    Static Shared Memory Per Block        byte/block               0
+    Threads                                   thread          32,768
+    Waves Per SM                                                0.27
+    -------------------------------- --------------- ---------------
+
+    WRN   If you execute __syncthreads() to synchronize the threads of a block, it is recommended to have more than the 
+          achieved 1 blocks per multiprocessor. This way, blocks that aren't waiting for __syncthreads() can keep the   
+          hardware busy.                                                                                                
+
+    Section: Occupancy
+    ------------------------------- ----------- ------------
+    Metric Name                     Metric Unit Metric Value
+    ------------------------------- ----------- ------------
+    Block Limit SM                        block           32
+    Block Limit Registers                 block            6
+    Block Limit Shared Mem                block           32
+    Block Limit Warps                     block            8
+    Theoretical Active Warps per SM        warp           48
+    Theoretical Occupancy                     %           75
+    Achieved Occupancy                        %        19.49
+    Achieved Active Warps Per SM           warp        12.47
+    ------------------------------- ----------- ------------
+
+    WRN   This kernel's theoretical occupancy (75.0%) is limited by the number of required registers. The difference    
+          between calculated theoretical (75.0%) and measured achieved occupancy (19.5%) can be the result of warp      
+          scheduling overheads or workload imbalances during the kernel execution. Load imbalances can occur between    
+          warps within a block as well as across blocks of the same kernel. See the CUDA Best Practices Guide           
+          (https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html#occupancy) for more details on           
+          optimizing occupancy.                                                                                         
+
