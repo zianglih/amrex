@@ -1,33 +1,0 @@
---------------------------------------------------------------------------
-There are not enough slots available in the system to satisfy the 4
-slots that were requested by the application:
-
-  CNS3d.gnu.TPROF.MPI.CUDA.ex
-
-Either request fewer slots for your application, or make more slots
-available for use.
-
-A "slot" is the Open MPI term for an allocatable unit where we can
-launch a process.  The number of slots available are defined by the
-environment in which Open MPI processes are run:
-
-  1. Hostfile, via "slots=N" clauses (N defaults to number of
-     processor cores if not provided)
-  2. The --host command line parameter, via a ":N" suffix on the
-     hostname (N defaults to 1 if not provided)
-  3. Resource manager (e.g., SLURM, PBS/Torque, LSF, etc.)
-  4. If none of a hostfile, the --host command line parameter, or an
-     RM is present, Open MPI defaults to the number of processor cores
-
-In all the above cases, if you want Open MPI to default to the number
-of hardware threads instead of the number of processor cores, use the
---use-hwthread-cpus option.
-
-Alternatively, you can use the --oversubscribe option to ignore the
-number of available slots when deciding the number of processes to
-launch.
---------------------------------------------------------------------------
-Generating '/tmp/nsys-report-1493.qdstrm'
-[1/1] [0%                          ] report3.nsys-rep[1/1] [0%                          ] report3.nsys-rep[1/1] [7%                          ] report3.nsys-rep[1/1] [12%                         ] report3.nsys-rep[1/1] [13%                         ] report3.nsys-rep[1/1] [14%                         ] report3.nsys-rep[1/1] [=15%                        ] report3.nsys-rep[1/1] [=====29%                    ] report3.nsys-rep[1/1] [=================72%        ] report3.nsys-rep[1/1] [=================74%        ] report3.nsys-rep[1/1] [=====================88%    ] report3.nsys-rep[1/1] [=====================89%    ] report3.nsys-rep[1/1] [======================90%   ] report3.nsys-rep[1/1] [======================91%   ] report3.nsys-rep[1/1] [========================97% ] report3.nsys-rep[1/1] [========================98% ] report3.nsys-rep[1/1] [========================99% ] report3.nsys-rep[1/1] [========================100%] report3.nsys-rep[1/1] [========================100%] report3.nsys-rep
-Generated:
-    /home/ziangli/amrex/Tutorials/GPU/CNS/Exec/Sod/report3.nsys-rep

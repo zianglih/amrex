@@ -1,4 +1,0 @@
-Illegal --backtrace argument: auto
-Possible --backtrace values are 'lbr', 'fp', 'dwarf', 'none'.
-usage: nsys profile [<args>] [application] [<application args>]
-Try 'nsys profile --help' for more information.

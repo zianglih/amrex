@@ -1,0 +1,49 @@
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+==PROF== Connected to process 1711862 (/home/ziangli/amrex/CNS/Exec/Sod/CNS3d.gnu.TPROF.MPI.CUDA.ex)
+CUDA initialized with 1 device.
+==PROF== Profiling "launch_global" - 0: 0%
+==WARNING== An error was reported by the driver
+
+==WARNING== Backing up device memory in system memory. Kernel replay might be slow. Consider using "--replay-mode application" to avoid memory save-and-restore.
+....50%....100% - 20 passes
+AMReX (2b1434edf43e-dirty) initialized
+Successfully read inputs file ... 
+Successfully read inputs file ... 
+Starting to call amrex_probinit ... 
+Successfully run amrex_probinit
+==PROF== Profiling "launch_global" - 1: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 2: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 3: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 4: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 5: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 6: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 7: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 8: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 9: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 10: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 11: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 12: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 13: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 14: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 15: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 16: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 17: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 18: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 19: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 20: 0%....50%....100% - 20 passes
+INITIAL GRIDS 
+  Level 0   8 grids  262144 cells  100 % of domain
+            smallest grid: 32 x 32 x 32  biggest grid: 32 x 32 x 32
+
+==PROF== Profiling "launch_global" - 21: 0%....50%....100% - 20 passes
+==PROF== Profiling "launch_global" - 22: 0%....50%....100% - 20 passes
+
+[CNS] Total mass       is 147456
+      Total x-momentum is 0
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000006
+[Level 0 step 1] ADVANCE with dt = 0.003961660569
+==PROF== Profiling "launch_global" - 23: slurmstepd: error: *** JOB 54684081 ON gl1017 CANCELLED AT 2023-06-22T21:51:24 DUE TO TIME LIMIT ***

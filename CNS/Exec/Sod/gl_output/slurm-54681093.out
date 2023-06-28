@@ -1,0 +1,4 @@
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+slurmstepd: error: *** JOB 54681093 ON gl1013 CANCELLED AT 2023-06-22T19:29:03 DUE TO TIME LIMIT ***

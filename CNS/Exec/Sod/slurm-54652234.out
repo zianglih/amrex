@@ -1,15 +1,0 @@
-MPI initialized with 1 MPI processes
-MPI initialized with thread support level 0
-Initializing CUDA...
---------------------------------------------------------------------------
-Primary job  terminated normally, but 1 process returned
-a non-zero exit code. Per user-direction, the job has been aborted.
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-mpirun noticed that process rank 0 with PID 3633747 on node gl1008 exited on signal 9 (Killed).
---------------------------------------------------------------------------
-Generating '/tmp/nsys-report-c26c.qdstrm'
-[1/1] [0%                          ] report9.nsys-rep[1/1] [0%                          ] report9.nsys-rep[1/1] [==========49%               ] report9.nsys-rep[1/1] [========================99% ] report9.nsys-rep[1/1] [========================100%] report9.nsys-rep[1/1] [8%                          ] report9.nsys-rep[1/1] [9%                          ] report9.nsys-rep[1/1] [10%                         ] report9.nsys-rep[1/1] [=17%                        ] report9.nsys-rep[1/1] [==18%                       ] report9.nsys-rep[1/1] [==19%                       ] report9.nsys-rep[1/1] [==20%                       ] report9.nsys-rep[1/1] [=====29%                    ] report9.nsys-rep[1/1] [=====30%                    ] report9.nsys-rep[1/1] [=====31%                    ] report9.nsys-rep[1/1] [=====32%                    ] report9.nsys-rep[1/1] [===========51%              ] report9.nsys-rep[1/1] [===========53%              ] report9.nsys-rep[1/1] [============54%             ] report9.nsys-rep[1/1] [============55%             ] report9.nsys-rep[1/1] [============57%             ] report9.nsys-rep[1/1] [==================78%       ] report9.nsys-rep[1/1] [========================99% ] report9.nsys-rep[1/1] [========================100%] report9.nsys-rep[1/1] [========================100%] report9.nsys-rep
-Generated:
-    /home/ziangli/amrex/CNS/Exec/Sod/report9.nsys-rep
-slurmstepd: error: Detected 1 oom_kill event in StepId=54652234.batch. Some of the step tasks have been OOM Killed.

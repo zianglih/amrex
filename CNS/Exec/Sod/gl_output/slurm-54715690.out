@@ -1,0 +1,260 @@
+MPI initialized with 2 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+MPI initialized with 2 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+amrex::Abort::1::CUDA error 46 in file ../../../Src/Base/AMReX_GpuDevice.cpp line 274: CUDA-capable device(s) is/are busy or unavailable !!!
+SIGABRT
+amrex::Abort::0::CUDA error 46 in file ../../../Src/Base/AMReX_GpuDevice.cpp line 274: CUDA-capable device(s) is/are busy or unavailable !!!
+SIGABRT
+CUDA initialized with 2 devices.
+AMReX (2b1434edf43e-dirty) initialized
+Successfully read inputs file ... 
+Successfully read inputs file ... 
+Starting to call amrex_probinit ... 
+Successfully run amrex_probinit
+INITIAL GRIDS 
+  Level 0   8 grids  262144 cells  100 % of domain
+            smallest grid: 32 x 32 x 32  biggest grid: 32 x 32 x 32
+
+
+[CNS] Total mass       is 147456
+      Total x-momentum is 0
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000006
+[Level 0 step 1] ADVANCE with dt = 0.003961660569
+[Level 0 step 1] Advanced 262144 cells
+
+STEP = 1 TIME = 0.003961660569 DT = 0.003961660569
+
+
+[CNS] Total mass       is 147456.00000000003
+      Total x-momentum is 934.6729933893613
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000017
+
+[STEP 1] Coarse TimeStep time: 0.069611907
+[STEP 1] FAB kilobyte spread across MPI nodes: [62878 ... 62878]
+
+[Level 0 step 2] ADVANCE with dt = 0.00270323629
+[Level 0 step 2] Advanced 262144 cells
+
+STEP = 2 TIME = 0.006664896859 DT = 0.00270323629
+
+
+[CNS] Total mass       is 147456
+      Total x-momentum is 1572.4464499343446
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448
+
+[STEP 2] Coarse TimeStep time: 0.032609201
+[STEP 2] FAB kilobyte spread across MPI nodes: [62878 ... 62878]
+
+[Level 0 step 3] ADVANCE with dt = 0.00246461758
+[Level 0 step 3] Advanced 262144 cells
+
+STEP = 3 TIME = 0.009129514439 DT = 0.00246461758
+
+
+[CNS] Total mass       is 147455.99999999997
+      Total x-momentum is 2153.9226896809505
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000017
+
+[STEP 3] Coarse TimeStep time: 0.049703109
+[STEP 3] FAB kilobyte spread across MPI nodes: [62878 ... 62878]
+
+[Level 0 step 4] ADVANCE with dt = 0.002365837545
+[Level 0 step 4] Advanced 262144 cells
+
+STEP = 4 TIME = 0.01149535198 DT = 0.002365837545
+
+
+[CNS] Total mass       is 147455.99999999991
+      Total x-momentum is 2712.0937952674672
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448
+
+[STEP 4] Coarse TimeStep time: 0.024934588
+[STEP 4] FAB kilobyte spread across MPI nodes: [62878 ... 62878]
+
+Run Time total        = 0.181700503
+Run Time init         = 0.014795867
+Run Time advance      = 0.166878693
+
+
+TinyProfiler total time across processes [min...avg...max]: 0.1777 ... 0.1798 ... 0.1819
+
+-------------------------------------------------------------------------------------------
+Name                                        NCalls  Excl. Min  Excl. Avg  Excl. Max   Max %
+-------------------------------------------------------------------------------------------
+CNS::estTimeStep()                               5   0.005616    0.03182    0.05803  31.91%
+FabArray::ParallelCopy_finish()                  8    0.03675    0.04626    0.05578  30.67%
+StateData::FillBoundary(geom)                   96    0.02196    0.03158    0.04121  22.66%
+StateDataPhysBCFunct::()                         8    0.02647    0.02797    0.02947  16.20%
+DistributionMapping::LeastUsedCPUs()             1   9.45e-06   0.006701    0.01339   7.36%
+CNS::compute_dSdt()                              8   0.007237   0.009046    0.01085   5.97%
+FabArray::ParallelCopy_nowait()                  8   0.007172   0.008155   0.009139   5.03%
+postCoarseTimeStep()                             4  2.708e-05   0.003621   0.007215   3.97%
+Amr::FinalizeInit()                              1  1.734e-05   0.003287   0.006557   3.61%
+Amr::coarseTimeStep()                            4  7.401e-05   0.002625   0.005175   2.85%
+Amr::timeStep()                                  4  0.0001089   0.001978   0.003848   2.12%
+amrex::Copy()                                    8   0.000962  0.0009698  0.0009777   0.54%
+main()                                           1   0.000252   0.000602  0.0009519   0.52%
+FabArray::setDomainBndry()                       8  0.0007733  0.0008094  0.0008455   0.46%
+FabArray::LinComb()                              8  0.0007657  0.0007827  0.0007998   0.44%
+AmrLevel::AmrLevel(dm)                           1  3.978e-05  0.0004158  0.0007918   0.44%
+CNS::advance()                                   4  0.0002801  0.0005091   0.000738   0.41%
+FabArray::sum()                                 25   0.000603  0.0006108  0.0006186   0.34%
+CNS::initData()                                  1  0.0003495  0.0004361  0.0005228   0.29%
+CNS::computeTemp()                               8  0.0002714  0.0002942  0.0003169   0.17%
+Amr::readProbinFile()                            1  3.935e-05  0.0001688  0.0002982   0.16%
+Amr::InitAmr()                                   1  0.0002213  0.0002282   0.000235   0.13%
+FabArray::Saxpy()                                4  0.0002028  0.0002043  0.0002058   0.11%
+FillPatchSingleLevel                             8  0.0001545  0.0001623  0.0001701   0.09%
+Amr::defBaseLevel()                              1  2.687e-05  9.055e-05  0.0001542   0.08%
+FabArrayBase::CPC::define()                      1  8.434e-05  9.068e-05  9.701e-05   0.05%
+FillPatchIterator::Initialize                    8  6.576e-05  6.858e-05   7.14e-05   0.04%
+FabArray::ParallelCopy()                         8  3.372e-05  4.094e-05  4.817e-05   0.03%
+StateData::define()                              1  2.903e-05  3.775e-05  4.648e-05   0.03%
+Amr::initSubcycle()                              1  8.743e-06  1.753e-05  2.632e-05   0.01%
+DistributionMapping::SFCProcessorMapDoIt()       1  8.227e-06  1.349e-05  1.876e-05   0.01%
+FabArrayBase::getCPC()                           8  1.504e-05  1.539e-05  1.574e-05   0.01%
+Amr::InitializeInit()                            1  4.541e-06  8.929e-06  1.332e-05   0.01%
+Amr::initialInit()                               1  5.305e-06  6.562e-06   7.82e-06   0.00%
+post_timestep                                    4  3.795e-06  4.808e-06  5.821e-06   0.00%
+Amr::init()                                      1  1.325e-06  3.174e-06  5.023e-06   0.00%
+DistributionMapping::Distribute()                1  1.742e-06  1.846e-06   1.95e-06   0.00%
+-------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------
+Name                                        NCalls  Incl. Min  Incl. Avg  Incl. Max   Max %
+-------------------------------------------------------------------------------------------
+main()                                           1     0.1774     0.1796     0.1818  99.99%
+Amr::coarseTimeStep()                            4     0.1645     0.1657     0.1669  91.76%
+Amr::timeStep()                                  4     0.1085     0.1289     0.1494  82.17%
+CNS::advance()                                   4     0.1083      0.127     0.1456  80.05%
+FillPatchIterator::Initialize                    8    0.09854     0.1152     0.1318  72.46%
+FillPatchSingleLevel                             8    0.09763     0.1143     0.1309  71.99%
+StateDataPhysBCFunct::()                         8    0.05142    0.05955    0.06768  37.22%
+FabArray::ParallelCopy()                         8    0.04604    0.05457    0.06309  34.69%
+CNS::estTimeStep()                               5   0.005616    0.03182    0.05803  31.91%
+FabArray::ParallelCopy_finish()                  8    0.03675    0.04626    0.05578  30.67%
+StateData::FillBoundary(geom)                   96    0.02196    0.03158    0.04121  22.66%
+Amr::init()                                      1    0.01181    0.01313    0.01445   7.94%
+Amr::initialInit()                               1    0.01181    0.01312    0.01444   7.94%
+Amr::InitializeInit()                            1   0.001655   0.007874    0.01409   7.75%
+Amr::defBaseLevel()                              1   0.001344   0.007696    0.01405   7.73%
+DistributionMapping::SFCProcessorMapDoIt()       1  1.942e-05   0.006716    0.01341   7.38%
+DistributionMapping::LeastUsedCPUs()             1   9.45e-06   0.006701    0.01339   7.36%
+CNS::compute_dSdt()                              8   0.007237   0.009046    0.01085   5.97%
+Amr::FinalizeInit()                              1   0.000342   0.005244    0.01015   5.58%
+FabArray::ParallelCopy_nowait()                  8   0.007284   0.008261   0.009238   5.08%
+postCoarseTimeStep()                             4  0.0004871   0.004094     0.0077   4.23%
+amrex::Copy()                                    8   0.000962  0.0009698  0.0009777   0.54%
+FabArray::setDomainBndry()                       8  0.0007733  0.0008094  0.0008455   0.46%
+AmrLevel::AmrLevel(dm)                           1  8.626e-05  0.0004535  0.0008208   0.45%
+FabArray::LinComb()                              8  0.0007657  0.0007827  0.0007998   0.44%
+FabArray::sum()                                 25   0.000603  0.0006108  0.0006186   0.34%
+CNS::initData()                                  1  0.0003495  0.0004361  0.0005228   0.29%
+CNS::computeTemp()                               8  0.0002714  0.0002942  0.0003169   0.17%
+Amr::readProbinFile()                            1  3.935e-05  0.0001688  0.0002982   0.16%
+Amr::InitAmr()                                   1  0.0002301  0.0002457  0.0002613   0.14%
+FabArray::Saxpy()                                4  0.0002028  0.0002043  0.0002058   0.11%
+FabArrayBase::getCPC()                           8  9.938e-05  0.0001061  0.0001127   0.06%
+FabArrayBase::CPC::define()                      1  8.434e-05  9.068e-05  9.701e-05   0.05%
+StateData::define()                              1  2.903e-05  3.775e-05  4.648e-05   0.03%
+Amr::initSubcycle()                              1  8.743e-06  1.753e-05  2.632e-05   0.01%
+post_timestep                                    4  3.795e-06  4.808e-06  5.821e-06   0.00%
+DistributionMapping::Distribute()                1  1.742e-06  1.846e-06   1.95e-06   0.00%
+-------------------------------------------------------------------------------------------
+
+Unused ParmParse Variables:
+  [TOP]::amr.ref_ratio(nvals = 4)  :: [2, 2, 2, 2]
+  [TOP]::amr.regrid_int(nvals = 4)  :: [2, 2, 2, 2]
+  [TOP]::amr.derive_plot_vars(nvals = 4)  :: [pressure, x_velocity, y_velocity, z_velocity]
+
+Managed Memory Usage:
+----------------------------------------------------------------------------------------------------------------------
+Name                             Nalloc  Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+----------------------------------------------------------------------------------------------------------------------
+The_Arena::Initialize()               2      2    1326 MiB    1334 MiB    1342 MiB      11 GiB      11 GiB      11 GiB
+CNS::compute_dSdt()                 320    320    1103 KiB    1371 KiB    1640 KiB      39 MiB      39 MiB      39 MiB
+ResizeRandomSeed                      2      2      32 MiB      33 MiB      34 MiB      30 MiB      30 MiB      30 MiB
+CNS::advance()                       72     72      17 MiB      19 MiB      21 MiB      26 MiB      26 MiB      26 MiB
+FillPatchIterator::Initialize        64     64    5429 KiB    6278 KiB    7126 KiB       9 MiB       9 MiB       9 MiB
+StateData::define()                   8      8    9154 KiB    9275 KiB    9395 KiB       9 MiB       9 MiB       9 MiB
+StateDataPhysBCFunct::()            128    128      94 KiB     108 KiB     121 KiB    1071 KiB    1071 KiB    1071 KiB
+CNS::estTimeStep()                   14     14     763   B     780   B     798   B     160 KiB     160 KiB     160 KiB
+FabArray::sum()                      50     50     488   B     499   B     510   B     160 KiB     160 KiB     160 KiB
+FabArray::ParallelCopy_finish()      16     16      48   B      48   B      49   B    8272   B    8272   B    8272   B
+FabArray::ParallelCopy_nowait()      32     32      54   B      54   B      55   B    8272   B    8272   B    8272   B
+StateData::FillBoundary(geom)       192    192     192   B     206   B     221   B    2112   B    2112   B    2112   B
+amrex::Copy()                        26     26     271   B     277   B     284   B    1168   B    1168   B    1168   B
+FabArray::LinComb()                  10     10     485   B     496   B     507   B    1024   B    1024   B    1024   B
+Amr::InitAmr()                        4      4     118   B     121   B     124   B     128   B     128   B     128   B
+----------------------------------------------------------------------------------------------------------------------
+
+Device Memory Usage:
+---------------------------------------------------------------------------------------------------------------------
+Name                            Nalloc  Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+---------------------------------------------------------------------------------------------------------------------
+The_Device_Arena::Initialize()       2      2      11 KiB      12 KiB      14 KiB    8192 KiB    8192 KiB    8192 KiB
+---------------------------------------------------------------------------------------------------------------------
+
+Pinned Memory Usage:
+----------------------------------------------------------------------------------------------------------------------
+Name                             Nalloc  Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+----------------------------------------------------------------------------------------------------------------------
+The_Pinned_Arena::Initialize()        2      2     188 KiB     189 KiB     190 KiB    8192 KiB    8192 KiB    8192 KiB
+FabArray::ParallelCopy_nowait()      64     64     516 KiB     562 KiB     608 KiB    2150 KiB    2150 KiB    2150 KiB
+FabArray::ParallelCopy_finish()      16     16      48   B      48   B      49   B    8272   B    8272   B    8272   B
+StateData::FillBoundary(geom)       192    192     192   B     206   B     221   B    2112   B    2112   B    2112   B
+amrex::Copy()                        26     26     271   B     277   B     284   B    1168   B    1168   B    1168   B
+FabArray::LinComb()                  10     10     485   B     496   B     507   B    1024   B    1024   B    1024   B
+CNS::estTimeStep()                   14     14     586   B     594   B     602   B     672   B     672   B     672   B
+FabArray::sum()                      50     50       0   B       0   B       0   B      16   B      16   B      16   B
+----------------------------------------------------------------------------------------------------------------------
+
+Total GPU global memory (MB) spread across MPI: [16151 ... 16151]
+Free  GPU global memory (MB) spread across MPI: [15687 ... 15687]
+[The         Arena] space (MB) allocated spread across MPI: [12113 ... 12113]
+[The         Arena] space (MB) used      spread across MPI: [0 ... 0]
+[The  Device Arena] space (MB) allocated spread across MPI: [8 ... 8]
+[The  Device Arena] space (MB) used      spread across MPI: [0 ... 0]
+[The  Pinned Arena] space (MB) allocated spread across MPI: [8 ... 8]
+[The  Pinned Arena] space (MB) used      spread across MPI: [0 ... 0]
+AMReX (2b1434edf43e-dirty) finalized
+See Backtrace.1 file for details
+See Backtrace.0 file for details
+Generating '/tmp/nsys-report-5f48.qdstrm'
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 1 in communicator MPI_COMM_WORLD
+with errorcode 6.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[1/1] [0%                          ] report34.nsys-rep[1/1] [0%                          ] report34.nsys-rep[1/1] [===========50%              ] report34.nsys-rep[1/1] [========================100%] report34.nsys-rep[1/1] [========================99% ] report34.nsys-rep[1/1] [========================100%] report34.nsys-rep[1/1] [========================99% ] report34.nsys-rep[1/1] [========================100%] report34.nsys-rep[1/1] [========================99% ] report34.nsys-rep[1/1] [========================100%] report34.nsys-rep[1/1] [========================99% ] report34.nsys-rep[1/1] [========================100%] report34.nsys-rep[1/1] [====26%                     ] report34.nsys-rep[1/1] [==18%                       ] report34.nsys-rep[1/1] [14%                         ] report34.nsys-rep[1/1] [12%                         ] report34.nsys-rep[1/1] [13%                         ] report34.nsys-rep[1/1] [=17%                        ] report34.nsys-rep[1/1] [==18%                       ] report34.nsys-rep[1/1] [==21%                       ] report34.nsys-rep[1/1] [===23%                      ] report34.nsys-rep[1/1] [===24%                      ] report34.nsys-rep[1/1] [====25%                     ] report34.nsys-rep[1/1] [====26%                     ] report34.nsys-rep[1/1] [=====32%                    ] report34.nsys-rep[1/1] [=======36%                  ] report34.nsys-rep[1/1] [=======39%                  ] report34.nsys-rep[1/1] [========41%                 ] report34.nsys-rep[1/1] [========42%                 ] report34.nsys-rep[1/1] [=========45%                ] report34.nsys-rep[1/1] [=========46%                ] report34.nsys-rep[1/1] [==========47%               ] report34.nsys-rep[1/1] [===========50%              ] report34.nsys-rep[1/1] [===============65%          ] report34.nsys-rep[1/1] [====================84%     ] report34.nsys-rep[1/1] [========================97% ] report34.nsys-rep[1/1] [========================100%] report34.nsys-rep[1/1] [========================100%] report34.nsys-rep
+Generated:
+    /home/ziangli/amrex/CNS/Exec/Sod/report34.nsys-rep
+Generating '/tmp/nsys-report-dfec.qdstrm'
+[1/1] [0%                          ] report35.nsys-rep[1/1] [0%                          ] report35.nsys-rep[1/1] [===========50%              ] report35.nsys-rep[1/1] [========================100%] report35.nsys-rep[1/1] [========================98% ] report35.nsys-rep[1/1] [========================99% ] report35.nsys-rep[1/1] [========================100%] report35.nsys-rep[1/1] [========================99% ] report35.nsys-rep[1/1] [========================100%] report35.nsys-rep[1/1] [========================99% ] report35.nsys-rep[1/1] [========================100%] report35.nsys-rep[1/1] [========================99% ] report35.nsys-rep[1/1] [========================100%] report35.nsys-rep[1/1] [========================99% ] report35.nsys-rep[1/1] [========================100%] report35.nsys-rep[1/1] [========================99% ] report35.nsys-rep[1/1] [========================100%] report35.nsys-rep[1/1] [========================99% ] report35.nsys-rep[1/1] [========================100%] report35.nsys-rep[1/1] [========================99% ] report35.nsys-rep[1/1] [========================100%] report35.nsys-rep[1/1] [========================99% ] report35.nsys-rep[1/1] [========================100%] report35.nsys-rep[1/1] [====27%                     ] report35.nsys-rep[1/1] [==20%                       ] report35.nsys-rep[1/1] [=15%                        ] report35.nsys-rep[1/1] [12%                         ] report35.nsys-rep[1/1] [10%                         ] report35.nsys-rep[1/1] [8%                          ] report35.nsys-rep[1/1] [7%                          ] report35.nsys-rep[1/1] [6%                          ] report35.nsys-rep[1/1] [5%                          ] report35.nsys-rep[1/1] [0%                          ] report35.nsys-rep[1/1] [5%                          ] report35.nsys-rep[1/1] [6%                          ] report35.nsys-rep[1/1] [7%                          ] report35.nsys-rep[1/1] [8%                          ] report35.nsys-rep[1/1] [10%                         ] report35.nsys-rep[1/1] [11%                         ] report35.nsys-rep[1/1] [12%                         ] report35.nsys-rep[1/1] [14%                         ] report35.nsys-rep[1/1] [=15%                        ] report35.nsys-rep[1/1] [=16%                        ] report35.nsys-rep[1/1] [=17%                        ] report35.nsys-rep[1/1] [==19%                       ] report35.nsys-rep[1/1] [==20%                       ] report35.nsys-rep[1/1] [==21%                       ] report35.nsys-rep[1/1] [===23%                      ] report35.nsys-rep[1/1] [===24%                      ] report35.nsys-rep[1/1] [====25%                     ] report35.nsys-rep[1/1] [====26%                     ] report35.nsys-rep[1/1] [====28%                     ] report35.nsys-rep[1/1] [=====29%                    ] report35.nsys-rep[1/1] [=====30%                    ] report35.nsys-rep[1/1] [=====32%                    ] report35.nsys-rep[1/1] [======33%                   ] report35.nsys-rep[1/1] [======34%                   ] report35.nsys-rep[1/1] [======35%                   ] report35.nsys-rep[1/1] [=======37%                  ] report35.nsys-rep[1/1] [=======38%                  ] report35.nsys-rep[1/1] [=======39%                  ] report35.nsys-rep[1/1] [========41%                 ] report35.nsys-rep[1/1] [========42%                 ] report35.nsys-rep[1/1] [=========43%                ] report35.nsys-rep[1/1] [=========44%                ] report35.nsys-rep[1/1] [=========46%                ] report35.nsys-rep[1/1] [==========47%               ] report35.nsys-rep[1/1] [==========48%               ] report35.nsys-rep[1/1] [===========50%              ] report35.nsys-rep[1/1] [===========51%              ] report35.nsys-rep[1/1] [===========52%              ] report35.nsys-rep[1/1] [===========53%              ] report35.nsys-rep[1/1] [============55%             ] report35.nsys-rep[1/1] [============56%             ] report35.nsys-rep[1/1] [============57%             ] report35.nsys-rep[1/1] [=============59%            ] report35.nsys-rep[1/1] [=============60%            ] report35.nsys-rep[1/1] [==============61%           ] report35.nsys-rep[1/1] [==============62%           ] report35.nsys-rep[1/1] [==============64%           ] report35.nsys-rep[1/1] [===============65%          ] report35.nsys-rep[1/1] [===============66%          ] report35.nsys-rep[1/1] [===============67%          ] report35.nsys-rep[1/1] [================69%         ] report35.nsys-rep[1/1] [================70%         ] report35.nsys-rep[1/1] [================71%         ] report35.nsys-rep[1/1] [=================73%        ] report35.nsys-rep[1/1] [=================74%        ] report35.nsys-rep[1/1] [==================75%       ] report35.nsys-rep[1/1] [==================76%       ] report35.nsys-rep[1/1] [==================78%       ] report35.nsys-rep[1/1] [===================79%      ] report35.nsys-rep[1/1] [===================80%      ] report35.nsys-rep[1/1] [===================82%      ] report35.nsys-rep[1/1] [====================83%     ] report35.nsys-rep[1/1] [====================84%     ] report35.nsys-rep[1/1] [====================85%     ] report35.nsys-rep[1/1] [=====================87%    ] report35.nsys-rep[1/1] [=====================88%    ] report35.nsys-rep[1/1] [=====================89%    ] report35.nsys-rep[1/1] [======================91%   ] report35.nsys-rep[1/1] [======================92%   ] report35.nsys-rep[1/1] [=======================93%  ] report35.nsys-rep[1/1] [=======================94%  ] report35.nsys-rep[1/1] [=======================96%  ] report35.nsys-rep[1/1] [========================97% ] report35.nsys-rep[1/1] [========================98% ] report35.nsys-rep[1/1] [========================100%] report35.nsys-rep[1/1] [========================100%] report35.nsys-rep[1/1] [========================100%] report35.nsys-rep
+Generated:
+    /home/ziangli/amrex/CNS/Exec/Sod/report35.nsys-rep
+srun: error: gl1002: task 1: Exited with exit code 6

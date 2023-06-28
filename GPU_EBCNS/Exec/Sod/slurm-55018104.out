@@ -1,0 +1,17 @@
+--------------------------------------------------------------------------
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       gl1023
+Executable: CNS3d.gnu.TPROF.MPI.CUDA.ex
+--------------------------------------------------------------------------
+2 total processes failed to start
+Generating '/tmp/nsys-report-4815.qdstrm'
+[1/1] [0%                          ] report3.nsys-rep[1/1] [0%                          ] report3.nsys-rep[1/1] [===========50%              ] report3.nsys-rep[1/1] [========================100%] report3.nsys-rep[1/1] [8%                          ] report3.nsys-rep[1/1] [7%                          ] report3.nsys-rep[1/1] [11%                         ] report3.nsys-rep[1/1] [12%                         ] report3.nsys-rep[1/1] [13%                         ] report3.nsys-rep[1/1] [=====================88%    ] report3.nsys-rep[1/1] [=====================89%    ] report3.nsys-rep[1/1] [======================90%   ] report3.nsys-rep[1/1] [======================91%   ] report3.nsys-rep[1/1] [========================99% ] report3.nsys-rep[1/1] [========================100%] report3.nsys-rep[1/1] [========================100%] report3.nsys-rep
+Generated:
+    /home/ziangli/amrex/GPU_EBCNS/Exec/Sod/report3.nsys-rep

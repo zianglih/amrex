@@ -1,0 +1,228 @@
+MPI initialized with 1 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+CUDA initialized with 1 device.
+AMReX (2b1434edf43e-dirty) initialized
+Successfully read inputs file ... 
+Successfully read inputs file ... 
+Starting to call amrex_probinit ... 
+Successfully run amrex_probinit
+INITIAL GRIDS 
+  Level 0   8 grids  262144 cells  100 % of domain
+            smallest grid: 32 x 32 x 32  biggest grid: 32 x 32 x 32
+
+
+[CNS] Total mass       is 147456
+      Total x-momentum is 0
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000006
+[Level 0 step 1] ADVANCE with dt = 0.003961660569
+[Level 0 step 1] Advanced 262144 cells
+
+STEP = 1 TIME = 0.003961660569 DT = 0.003961660569
+
+
+[CNS] Total mass       is 147456.00000000003
+      Total x-momentum is 934.6729933893613
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000017
+
+[STEP 1] Coarse TimeStep time: 0.02907905
+[STEP 1] FAB kilobyte spread across MPI nodes: [122840 ... 122840]
+
+[Level 0 step 2] ADVANCE with dt = 0.00270323629
+[Level 0 step 2] Advanced 262144 cells
+
+STEP = 2 TIME = 0.006664896859 DT = 0.00270323629
+
+
+[CNS] Total mass       is 147456
+      Total x-momentum is 1572.4464499343446
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448
+
+[STEP 2] Coarse TimeStep time: 0.007875411
+[STEP 2] FAB kilobyte spread across MPI nodes: [122840 ... 122840]
+
+[Level 0 step 3] ADVANCE with dt = 0.00246461758
+[Level 0 step 3] Advanced 262144 cells
+
+STEP = 3 TIME = 0.009129514439 DT = 0.00246461758
+
+
+[CNS] Total mass       is 147455.99999999997
+      Total x-momentum is 2153.9226896809505
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000017
+
+[STEP 3] Coarse TimeStep time: 0.010088494
+[STEP 3] FAB kilobyte spread across MPI nodes: [122840 ... 122840]
+
+[Level 0 step 4] ADVANCE with dt = 0.002365837545
+[Level 0 step 4] Advanced 262144 cells
+
+STEP = 4 TIME = 0.01149535198 DT = 0.002365837545
+
+
+[CNS] Total mass       is 147455.99999999991
+      Total x-momentum is 2712.0937952674672
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448
+
+[STEP 4] Coarse TimeStep time: 0.008246485
+[STEP 4] FAB kilobyte spread across MPI nodes: [122840 ... 122840]
+
+Run Time total        = 0.057157697
+Run Time init         = 0.001627252
+Run Time advance      = 0.055465181
+
+
+TinyProfiler total time across processes [min...avg...max]: 0.05745 ... 0.05745 ... 0.05745
+
+-------------------------------------------------------------------------------------------
+Name                                        NCalls  Excl. Min  Excl. Avg  Excl. Max   Max %
+-------------------------------------------------------------------------------------------
+StateDataPhysBCFunct::()                         8    0.02494    0.02494    0.02494  43.41%
+StateData::FillBoundary(geom)                  192     0.0139     0.0139     0.0139  24.19%
+CNS::compute_dSdt()                              8   0.008954   0.008954   0.008954  15.59%
+amrex::Copy()                                    8   0.001375   0.001375   0.001375   2.39%
+FabArray::LinComb()                              8   0.001242   0.001242   0.001242   2.16%
+FabArray::setDomainBndry()                       8   0.001221   0.001221   0.001221   2.12%
+FabArray::ParallelCopy_nowait()                  8  0.0008583  0.0008583  0.0008583   1.49%
+CNS::initData()                                  1  0.0006994  0.0006994  0.0006994   1.22%
+CNS::estTimeStep()                               5  0.0006882  0.0006882  0.0006882   1.20%
+FabArray::sum()                                 25  0.0006241  0.0006241  0.0006241   1.09%
+CNS::computeTemp()                               8  0.0003948  0.0003948  0.0003948   0.69%
+Amr::coarseTimeStep()                            4  0.0003678  0.0003678  0.0003678   0.64%
+main()                                           1  0.0003277  0.0003277  0.0003277   0.57%
+CNS::advance()                                   4  0.0003273  0.0003273  0.0003273   0.57%
+FabArray::Saxpy()                                4  0.0002982  0.0002982  0.0002982   0.52%
+Amr::InitAmr()                                   1  0.0001855  0.0001855  0.0001855   0.32%
+postCoarseTimeStep()                             4  0.0001848  0.0001848  0.0001848   0.32%
+Amr::FinalizeInit()                              1  0.0001411  0.0001411  0.0001411   0.25%
+Amr::readProbinFile()                            1  0.0001221  0.0001221  0.0001221   0.21%
+Amr::timeStep()                                  4  0.0001202  0.0001202  0.0001202   0.21%
+FabArrayBase::CPC::define()                      1  0.0001123  0.0001123  0.0001123   0.20%
+FillPatchIterator::Initialize                    8  6.124e-05  6.124e-05  6.124e-05   0.11%
+Amr::defBaseLevel()                              1  4.718e-05  4.718e-05  4.718e-05   0.08%
+Amr::initialInit()                               1  2.947e-05  2.947e-05  2.947e-05   0.05%
+StateData::define()                              1  1.843e-05  1.843e-05  1.843e-05   0.03%
+FillPatchSingleLevel                             8   1.27e-05   1.27e-05   1.27e-05   0.02%
+FabArray::ParallelCopy()                         8  1.267e-05  1.267e-05  1.267e-05   0.02%
+AmrLevel::AmrLevel(dm)                           1  1.176e-05  1.176e-05  1.176e-05   0.02%
+Amr::InitializeInit()                            1  9.372e-06  9.372e-06  9.372e-06   0.02%
+Amr::initSubcycle()                              1  8.814e-06  8.814e-06  8.814e-06   0.02%
+FabArrayBase::getCPC()                           8  6.845e-06  6.845e-06  6.845e-06   0.01%
+FabArray::ParallelCopy_finish()                  8   5.05e-06   5.05e-06   5.05e-06   0.01%
+DistributionMapping::SFCProcessorMapDoIt()       1  5.013e-06  5.013e-06  5.013e-06   0.01%
+post_timestep                                    4   2.87e-06   2.87e-06   2.87e-06   0.00%
+DistributionMapping::LeastUsedCPUs()             1  2.469e-06  2.469e-06  2.469e-06   0.00%
+Amr::init()                                      1   1.62e-06   1.62e-06   1.62e-06   0.00%
+DistributionMapping::Distribute()                1  1.282e-06  1.282e-06  1.282e-06   0.00%
+-------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------
+Name                                        NCalls  Incl. Min  Incl. Avg  Incl. Max   Max %
+-------------------------------------------------------------------------------------------
+main()                                           1    0.05732    0.05732    0.05732  99.76%
+Amr::coarseTimeStep()                            4    0.05546    0.05546    0.05546  96.54%
+Amr::timeStep()                                  4    0.05384    0.05384    0.05384  93.71%
+CNS::advance()                                   4    0.05372    0.05372    0.05372  93.50%
+FillPatchIterator::Initialize                    8    0.04113    0.04113    0.04113  71.58%
+FillPatchSingleLevel                             8    0.03984    0.03984    0.03984  69.35%
+StateDataPhysBCFunct::()                         8    0.03884    0.03884    0.03884  67.60%
+StateData::FillBoundary(geom)                  192     0.0139     0.0139     0.0139  24.19%
+CNS::compute_dSdt()                              8   0.008954   0.008954   0.008954  15.59%
+amrex::Copy()                                    8   0.001375   0.001375   0.001375   2.39%
+Amr::init()                                      1   0.001332   0.001332   0.001332   2.32%
+Amr::initialInit()                               1    0.00133    0.00133    0.00133   2.32%
+FabArray::LinComb()                              8   0.001242   0.001242   0.001242   2.16%
+FabArray::setDomainBndry()                       8   0.001221   0.001221   0.001221   2.12%
+FabArray::ParallelCopy()                         8  0.0009952  0.0009952  0.0009952   1.73%
+FabArray::ParallelCopy_nowait()                  8  0.0009775  0.0009775  0.0009775   1.70%
+Amr::InitializeInit()                            1  0.0009169  0.0009169  0.0009169   1.60%
+Amr::defBaseLevel()                              1  0.0007855  0.0007855  0.0007855   1.37%
+CNS::initData()                                  1  0.0006994  0.0006994  0.0006994   1.22%
+CNS::estTimeStep()                               5  0.0006882  0.0006882  0.0006882   1.20%
+postCoarseTimeStep()                             4  0.0006864  0.0006864  0.0006864   1.19%
+FabArray::sum()                                 25  0.0006241  0.0006241  0.0006241   1.09%
+CNS::computeTemp()                               8  0.0003948  0.0003948  0.0003948   0.69%
+Amr::FinalizeInit()                              1  0.0003839  0.0003839  0.0003839   0.67%
+FabArray::Saxpy()                                4  0.0002982  0.0002982  0.0002982   0.52%
+Amr::InitAmr()                                   1  0.0001943  0.0001943  0.0001943   0.34%
+Amr::readProbinFile()                            1  0.0001221  0.0001221  0.0001221   0.21%
+FabArrayBase::getCPC()                           8  0.0001192  0.0001192  0.0001192   0.21%
+FabArrayBase::CPC::define()                      1  0.0001123  0.0001123  0.0001123   0.20%
+AmrLevel::AmrLevel(dm)                           1  3.019e-05  3.019e-05  3.019e-05   0.05%
+StateData::define()                              1  1.843e-05  1.843e-05  1.843e-05   0.03%
+Amr::initSubcycle()                              1  8.814e-06  8.814e-06  8.814e-06   0.02%
+DistributionMapping::SFCProcessorMapDoIt()       1  8.764e-06  8.764e-06  8.764e-06   0.02%
+FabArray::ParallelCopy_finish()                  8   5.05e-06   5.05e-06   5.05e-06   0.01%
+post_timestep                                    4   2.87e-06   2.87e-06   2.87e-06   0.00%
+DistributionMapping::LeastUsedCPUs()             1  2.469e-06  2.469e-06  2.469e-06   0.00%
+DistributionMapping::Distribute()                1  1.282e-06  1.282e-06  1.282e-06   0.00%
+-------------------------------------------------------------------------------------------
+
+Unused ParmParse Variables:
+  [TOP]::amr.ref_ratio(nvals = 4)  :: [2, 2, 2, 2]
+  [TOP]::amr.regrid_int(nvals = 4)  :: [2, 2, 2, 2]
+  [TOP]::amr.derive_plot_vars(nvals = 4)  :: [pressure, x_velocity, y_velocity, z_velocity]
+
+Managed Memory Usage:
+------------------------------------------------------------------
+Name                             Nalloc  Nfree    AvgMem    MaxMem
+------------------------------------------------------------------
+The_Arena::Initialize()               1      1  4038 MiB    11 GiB
+CNS::compute_dSdt()                 320    320  8252 KiB    78 MiB
+CNS::advance()                       72     72    47 MiB    53 MiB
+ResizeRandomSeed                      1      1    33 MiB    30 MiB
+FillPatchIterator::Initialize        64     64    13 MiB    19 MiB
+StateData::define()                   8      8    18 MiB    19 MiB
+StateDataPhysBCFunct::()            128    128   644 KiB  2142 KiB
+CNS::estTimeStep()                    7      7  1846   B   161 KiB
+FabArray::sum()                      25     25  1601   B   160 KiB
+FabArray::ParallelCopy_nowait()       8      8   309   B    24 KiB
+StateData::FillBoundary(geom)       192    192  1218   B  4224   B
+amrex::Copy()                        13     13   598   B  2320   B
+FabArray::LinComb()                   5      5   825   B  2048   B
+Amr::InitAmr()                        2      2   119   B   128   B
+------------------------------------------------------------------
+
+Device Memory Usage:
+---------------------------------------------------------------
+Name                            Nalloc  Nfree  AvgMem    MaxMem
+---------------------------------------------------------------
+The_Device_Arena::Initialize()       1      1  23 KiB  8192 KiB
+---------------------------------------------------------------
+
+Pinned Memory Usage:
+------------------------------------------------------------------
+Name                             Nalloc  Nfree    AvgMem    MaxMem
+------------------------------------------------------------------
+The_Pinned_Arena::Initialize()        1      1   549 KiB  8192 KiB
+FabArray::ParallelCopy_nowait()       8      8   308   B    24 KiB
+StateData::FillBoundary(geom)       192    192  1219   B  4224   B
+amrex::Copy()                        13     13   598   B  2320   B
+FabArray::LinComb()                   5      5   825   B  2048   B
+CNS::estTimeStep()                    7      7  1186   B  1312   B
+FabArray::sum()                      25     25     0   B    16   B
+------------------------------------------------------------------
+
+Total GPU global memory (MB) spread across MPI: [16151 ... 16151]
+Free  GPU global memory (MB) spread across MPI: [15559 ... 15559]
+[The         Arena] space (MB) allocated spread across MPI: [12113 ... 12113]
+[The         Arena] space (MB) used      spread across MPI: [0 ... 0]
+[The  Device Arena] space (MB) allocated spread across MPI: [8 ... 8]
+[The  Device Arena] space (MB) used      spread across MPI: [0 ... 0]
+[The  Pinned Arena] space (MB) allocated spread across MPI: [8 ... 8]
+[The  Pinned Arena] space (MB) used      spread across MPI: [0 ... 0]
+AMReX (2b1434edf43e-dirty) finalized
+Generating '/tmp/nsys-report-83b3.qdstrm'
+[1/1] [0%                          ] report16.nsys-rep[1/1] [0%                          ] report16.nsys-rep[1/1] [===========50%              ] report16.nsys-rep[1/1] [========================100%] report16.nsys-rep[1/1] [========================99% ] report16.nsys-rep[1/1] [========================100%] report16.nsys-rep[1/1] [=16%                        ] report16.nsys-rep[1/1] [9%                          ] report16.nsys-rep[1/1] [7%                          ] report16.nsys-rep[1/1] [8%                          ] report16.nsys-rep[1/1] [9%                          ] report16.nsys-rep[1/1] [12%                         ] report16.nsys-rep[1/1] [13%                         ] report16.nsys-rep[1/1] [==18%                       ] report16.nsys-rep[1/1] [==19%                       ] report16.nsys-rep[1/1] [=====29%                    ] report16.nsys-rep[1/1] [=====30%                    ] report16.nsys-rep[1/1] [=====31%                    ] report16.nsys-rep[1/1] [=====32%                    ] report16.nsys-rep[1/1] [=======36%                  ] report16.nsys-rep[1/1] [=======37%                  ] report16.nsys-rep[1/1] [=======38%                  ] report16.nsys-rep[1/1] [==========47%               ] report16.nsys-rep[1/1] [==================75%       ] report16.nsys-rep[1/1] [========================97% ] report16.nsys-rep[1/1] [========================100%] report16.nsys-rep[1/1] [========================100%] report16.nsys-rep
+Generated:
+    /home/ziangli/amrex/CNS/Exec/Sod/report16.nsys-rep
