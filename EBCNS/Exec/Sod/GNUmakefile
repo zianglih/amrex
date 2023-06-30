@@ -5,7 +5,7 @@ DIM=3
 USE_MPI = TRUE
 USE_OMP = FALSE
 
-USE_CUDA = TRUE
+USE_CUDA = FALSE
 
 include ./Make.package
 include ../Make.CNS

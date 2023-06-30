@@ -1,0 +1,22 @@
+MPI initialized with 2 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+CUDA initialized with 2 devices.
+AMReX (806ad61ecaef-dirty) initialized
+Successfully read inputs file ... 
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 275081 on node gl1023 exited on signal 9 (Killed).
+--------------------------------------------------------------------------
+The target application terminated. One or more process it created re-parented.
+Waiting for termination of re-parented processes.
+Use the `--wait` option to modify this behavior.
+slurmstepd: error: *** JOB 55025065 ON gl1023 CANCELLED AT 2023-06-28T17:37:31 DUE TO TIME LIMIT ***
+slurmstepd: error: Detected 1 oom_kill event in StepId=55025065.batch. Some of the step tasks have been OOM Killed.

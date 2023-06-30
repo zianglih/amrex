@@ -1,6 +1,6 @@
 amrex.fpe_trap_invalid=1
 
-max_step  = 1
+max_step  = 4
 # stop_time = 0.2
 
 geometry.is_periodic = 0 1 1
@@ -23,7 +23,7 @@ cns.v = 2
 amr.v = 1
 
 # REFINEMENT / REGRIDDING 
-amr.max_level       = 4       # maximum level number allowed
+amr.max_level       = 5       # maximum level number allowed
 amr.ref_ratio       = 2 2 2 2 2 2 2 2 # refinement ratio
 amr.regrid_int      = 2 2 2 2 2 2 2 2 # how often to regrid
 amr.blocking_factor = 16
@@ -58,6 +58,6 @@ eb2.sphere_has_fluid_inside = false
 
 #eb2.geom_type = all_regular
 max_step = 1
-amr.plot_files_output = 1
+amr.plot_files_output = 0
 
 amrex.fpe_trap_invalid=1

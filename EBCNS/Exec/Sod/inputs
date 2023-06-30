@@ -27,7 +27,7 @@ amr.loadbalance_with_workestimates = 1
 amr.loadbalance_level0_int = 1000
 
 # REFINEMENT / REGRIDDING 
-amr.max_level       = 5       # maximum level number allowed
+amr.max_level       = 3       # maximum level number allowed
 amr.ref_ratio       = 2 2 2 2 2 2 2 2 # refinement ratio
 amr.regrid_int      = 2 2 2 2 2 2 2 2 # how often to regrid
 amr.blocking_factor = 8
