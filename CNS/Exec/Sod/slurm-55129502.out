@@ -1,0 +1,265 @@
+MPI initialized with 2 MPI processes
+MPI initialized with thread support level 0
+Initializing CUDA...
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+Multiple GPUs are visible to each MPI rank, but the number of GPUs per socket or node has not been provided.
+This may lead to incorrect or suboptimal rank-to-GPU mapping.!
+CUDA initialized with 2 devices.
+AMReX (1156f232c0aa) initialized
+Successfully read inputs file ... 
+Successfully read inputs file ... 
+Starting to call amrex_probinit ... 
+Successfully run amrex_probinit
+INITIAL GRIDS 
+  Level 0   8 grids  262144 cells  100 % of domain
+            smallest grid: 32 x 32 x 32  biggest grid: 32 x 32 x 32
+
+
+[CNS] Total mass       is 147456
+      Total x-momentum is 0
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000006
+[Level 0 step 1] ADVANCE with dt = 0.003961660569
+[Level 0 step 1] Advanced 262144 cells
+
+STEP = 1 TIME = 0.003961660569 DT = 0.003961660569
+
+
+[CNS] Total mass       is 147456.00000000003
+      Total x-momentum is 934.6729933893613
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000017
+
+[STEP 1] Coarse TimeStep time: 0.031083284
+[STEP 1] FAB kilobyte spread across MPI nodes: [62878 ... 62878]
+
+[Level 0 step 2] ADVANCE with dt = 0.00270323629
+[Level 0 step 2] Advanced 262144 cells
+
+STEP = 2 TIME = 0.006664896859 DT = 0.00270323629
+
+
+[CNS] Total mass       is 147456
+      Total x-momentum is 1572.4464499343446
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448
+
+[STEP 2] Coarse TimeStep time: 0.004144233
+[STEP 2] FAB kilobyte spread across MPI nodes: [62878 ... 62878]
+
+[Level 0 step 3] ADVANCE with dt = 0.00246461758
+[Level 0 step 3] Advanced 262144 cells
+
+STEP = 3 TIME = 0.009129514439 DT = 0.00246461758
+
+
+[CNS] Total mass       is 147455.99999999997
+      Total x-momentum is 2153.9226896809505
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448.00000000017
+
+[STEP 3] Coarse TimeStep time: 0.00402661
+[STEP 3] FAB kilobyte spread across MPI nodes: [62878 ... 62878]
+
+[Level 0 step 4] ADVANCE with dt = 0.002365837545
+[Level 0 step 4] Advanced 262144 cells
+
+STEP = 4 TIME = 0.01149535198 DT = 0.002365837545
+
+
+[CNS] Total mass       is 147455.99999999991
+      Total x-momentum is 2712.0937952674672
+      Total y-momentum is 0
+      Total z-momentum is 0
+      Total energy     is 360448
+
+[STEP 4] Coarse TimeStep time: 0.004077433
+[STEP 4] FAB kilobyte spread across MPI nodes: [62878 ... 62878]
+
+Run Time total        = 0.044234372
+Run Time init         = 0.001020042
+Run Time advance      = 0.043190324
+
+
+TinyProfiler total time across processes [min...avg...max]: 0.04422 ... 0.04426 ... 0.0443
+
+-------------------------------------------------------------------------------------------
+Name                                        NCalls  Excl. Min  Excl. Avg  Excl. Max   Max %
+-------------------------------------------------------------------------------------------
+StateDataPhysBCFunct::()                         8     0.0236    0.02363    0.02365  53.38%
+FabArray::ParallelCopy_finish()                  8   0.005131   0.005246   0.005361  12.10%
+StateData::FillBoundary(geom)                   96   0.004309   0.004445   0.004581  10.34%
+CNS::compute_dSdt()                              8   0.004039   0.004068   0.004098   9.25%
+FabArray::ParallelCopy_nowait()                  8   0.001945   0.001957   0.001969   4.44%
+amrex::Copy()                                    8   0.000817  0.0008177  0.0008185   1.85%
+FabArray::LinComb()                              8  0.0006539  0.0006748  0.0006956   1.57%
+FabArray::setDomainBndry()                       8  0.0006793  0.0006866   0.000694   1.57%
+CNS::estTimeStep()                               5  0.0005122  0.0005725  0.0006329   1.43%
+FabArray::sum()                                 25  0.0004468  0.0004917  0.0005365   1.21%
+CNS::initData()                                  1  0.0003101  0.0003418  0.0003734   0.84%
+Amr::InitAmr()                                   1   0.000164   0.000187    0.00021   0.47%
+FabArray::Saxpy()                                4  0.0001786  0.0001937  0.0002087   0.47%
+CNS::computeTemp()                               8  0.0001841  0.0001875   0.000191   0.43%
+main()                                           1  0.0001386  0.0001525  0.0001665   0.38%
+CNS::advance()                                   4  0.0001423  0.0001426  0.0001428   0.32%
+Amr::coarseTimeStep()                            4  5.568e-05   7.32e-05  9.073e-05   0.20%
+DistributionMapping::LeastUsedCPUs()             1  6.012e-06   4.76e-05  8.919e-05   0.20%
+FabArrayBase::CPC::define()                      1  8.135e-05  8.356e-05  8.577e-05   0.19%
+Amr::timeStep()                                  4  4.923e-05  6.732e-05  8.542e-05   0.19%
+FillPatchIterator::Initialize                    8  3.666e-05  3.703e-05   3.74e-05   0.08%
+Amr::readProbinFile()                            1  2.726e-05  2.943e-05   3.16e-05   0.07%
+Amr::FinalizeInit()                              1  4.394e-06  1.484e-05  2.529e-05   0.06%
+Amr::defBaseLevel()                              1  1.776e-05  1.891e-05  2.005e-05   0.05%
+StateData::define()                              1  1.714e-05  1.783e-05  1.852e-05   0.04%
+AmrLevel::AmrLevel(dm)                           1  1.146e-05  1.218e-05  1.289e-05   0.03%
+FabArray::ParallelCopy()                         8  9.414e-06  9.519e-06  9.624e-06   0.02%
+FillPatchSingleLevel                             8  8.185e-06  8.241e-06  8.298e-06   0.02%
+Amr::initSubcycle()                              1  7.756e-06  7.932e-06  8.109e-06   0.02%
+postCoarseTimeStep()                             4  5.833e-06  6.818e-06  7.803e-06   0.02%
+Amr::InitializeInit()                            1  2.501e-06  4.736e-06  6.971e-06   0.02%
+FabArrayBase::getCPC()                           8  4.452e-06   5.16e-06  5.867e-06   0.01%
+DistributionMapping::SFCProcessorMapDoIt()       1  5.074e-06  5.415e-06  5.757e-06   0.01%
+post_timestep                                    4  1.421e-06  1.495e-06  1.569e-06   0.00%
+DistributionMapping::Distribute()                1  1.157e-06  1.165e-06  1.173e-06   0.00%
+Amr::init()                                      1   8.02e-07  9.425e-07  1.083e-06   0.00%
+Amr::initialInit()                               1   9.08e-07  9.735e-07  1.039e-06   0.00%
+-------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------
+Name                                        NCalls  Incl. Min  Incl. Avg  Incl. Max   Max %
+-------------------------------------------------------------------------------------------
+main()                                           1     0.0442    0.04425    0.04429  99.97%
+Amr::coarseTimeStep()                            4    0.04315    0.04317    0.04319  97.49%
+Amr::timeStep()                                  4    0.04214    0.04226    0.04237  95.65%
+CNS::advance()                                   4    0.04209    0.04219    0.04229  95.45%
+FillPatchIterator::Initialize                    8    0.03604     0.0361    0.03617  81.65%
+FillPatchSingleLevel                             8    0.03532    0.03538    0.03544  80.00%
+StateDataPhysBCFunct::()                         8    0.02791    0.02807    0.02823  63.73%
+FabArray::ParallelCopy()                         8     0.0072   0.007301   0.007402  16.71%
+FabArray::ParallelCopy_finish()                  8   0.005131   0.005246   0.005361  12.10%
+StateData::FillBoundary(geom)                   96   0.004309   0.004445   0.004581  10.34%
+CNS::compute_dSdt()                              8   0.004039   0.004068   0.004098   9.25%
+FabArray::ParallelCopy_nowait()                  8   0.002032   0.002046   0.002059   4.65%
+amrex::Copy()                                    8   0.000817  0.0008177  0.0008185   1.85%
+Amr::init()                                      1  0.0006725  0.0007313  0.0007901   1.78%
+Amr::initialInit()                               1  0.0006717  0.0007303   0.000789   1.78%
+FabArray::LinComb()                              8  0.0006539  0.0006748  0.0006956   1.57%
+FabArray::setDomainBndry()                       8  0.0006793  0.0006866   0.000694   1.57%
+CNS::estTimeStep()                               5  0.0005122  0.0005725  0.0006329   1.43%
+Amr::InitializeInit()                            1   0.000402   0.000479  0.0005561   1.26%
+FabArray::sum()                                 25  0.0004468  0.0004917  0.0005365   1.21%
+Amr::defBaseLevel()                              1  0.0003722  0.0004449  0.0005175   1.17%
+postCoarseTimeStep()                             4  0.0003556  0.0003995  0.0004433   1.00%
+CNS::initData()                                  1  0.0003101  0.0003418  0.0003734   0.84%
+Amr::FinalizeInit()                              1  0.0002319  0.0002503  0.0002688   0.61%
+Amr::InitAmr()                                   1  0.0001718  0.0001949  0.0002181   0.49%
+FabArray::Saxpy()                                4  0.0001786  0.0001937  0.0002087   0.47%
+CNS::computeTemp()                               8  0.0001841  0.0001875   0.000191   0.43%
+DistributionMapping::SFCProcessorMapDoIt()       1  1.293e-05  5.418e-05  9.544e-05   0.22%
+FabArrayBase::getCPC()                           8  8.722e-05  8.872e-05  9.023e-05   0.20%
+DistributionMapping::LeastUsedCPUs()             1  6.012e-06   4.76e-05  8.919e-05   0.20%
+FabArrayBase::CPC::define()                      1  8.135e-05  8.356e-05  8.577e-05   0.19%
+Amr::readProbinFile()                            1  2.726e-05  2.943e-05   3.16e-05   0.07%
+AmrLevel::AmrLevel(dm)                           1   2.86e-05  3.001e-05  3.142e-05   0.07%
+StateData::define()                              1  1.714e-05  1.783e-05  1.852e-05   0.04%
+Amr::initSubcycle()                              1  7.756e-06  7.932e-06  8.109e-06   0.02%
+post_timestep                                    4  1.421e-06  1.495e-06  1.569e-06   0.00%
+DistributionMapping::Distribute()                1  1.157e-06  1.165e-06  1.173e-06   0.00%
+-------------------------------------------------------------------------------------------
+
+Unused ParmParse Variables:
+  [TOP]::amr.ref_ratio(nvals = 4)  :: [2, 2, 2, 2]
+  [TOP]::amr.regrid_int(nvals = 4)  :: [2, 2, 2, 2]
+  [TOP]::amr.derive_plot_vars(nvals = 4)  :: [pressure, x_velocity, y_velocity, z_velocity]
+
+Managed Memory Usage:
+----------------------------------------------------------------------------------------------------------------------
+Name                             Nalloc  Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+----------------------------------------------------------------------------------------------------------------------
+The_Arena::Initialize()               2      2      35 MiB      36 MiB      37 MiB      11 GiB      11 GiB      11 GiB
+CNS::compute_dSdt()                 320    320    3017 KiB    3028 KiB    3039 KiB      39 MiB      39 MiB      39 MiB
+ResizeRandomSeed                      2      2      34 MiB      34 MiB      34 MiB      30 MiB      30 MiB      30 MiB
+CNS::advance()                       72     72      25 MiB      25 MiB      25 MiB      26 MiB      26 MiB      26 MiB
+FillPatchIterator::Initialize        64     64    8396 KiB    8429 KiB    8462 KiB       9 MiB       9 MiB       9 MiB
+StateData::define()                   8      8    9947 KiB    9997 KiB       9 MiB       9 MiB       9 MiB       9 MiB
+StateDataPhysBCFunct::()            128    128     542 KiB     544 KiB     545 KiB    1071 KiB    1071 KiB    1071 KiB
+CNS::estTimeStep()                   14     14    1285   B    1337   B    1389   B     160 KiB     160 KiB     160 KiB
+FabArray::sum()                      50     50    1562   B    1722   B    1882   B     160 KiB     160 KiB     160 KiB
+FabArray::ParallelCopy_finish()      16     16     177   B     180   B     183   B    8272   B    8272   B    8272   B
+FabArray::ParallelCopy_nowait()      32     32     209   B     212   B     215   B    8272   B    8272   B    8272   B
+StateData::FillBoundary(geom)       192    192    1049   B    1052   B    1055   B    2112   B    2112   B    2112   B
+amrex::Copy()                        26     26     211   B     212   B     213   B    1168   B    1168   B    1168   B
+FabArray::LinComb()                  10     10     288   B     290   B     292   B    1024   B    1024   B    1024   B
+Amr::InitAmr()                        4      4     125   B     125   B     126   B     128   B     128   B     128   B
+----------------------------------------------------------------------------------------------------------------------
+
+Device Memory Usage:
+---------------------------------------------------------------------------------------------------------------------
+Name                            Nalloc  Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+---------------------------------------------------------------------------------------------------------------------
+The_Device_Arena::Initialize()       2      2      37 KiB      40 KiB      42 KiB    8192 KiB    8192 KiB    8192 KiB
+---------------------------------------------------------------------------------------------------------------------
+
+Pinned Memory Usage:
+----------------------------------------------------------------------------------------------------------------------
+Name                             Nalloc  Nfree  AvgMem min  AvgMem avg  AvgMem max  MaxMem min  MaxMem avg  MaxMem max
+----------------------------------------------------------------------------------------------------------------------
+The_Pinned_Arena::Initialize()        2      2     833 KiB     839 KiB     845 KiB    8192 KiB    8192 KiB    8192 KiB
+FabArray::ParallelCopy_nowait()      64     64     336 KiB     343 KiB     350 KiB    2150 KiB    2150 KiB    2150 KiB
+FabArray::ParallelCopy_finish()      16     16     177   B     180   B     183   B    8272   B    8272   B    8272   B
+StateData::FillBoundary(geom)       192    192    1049   B    1052   B    1055   B    2112   B    2112   B    2112   B
+amrex::Copy()                        26     26     211   B     212   B     213   B    1168   B    1168   B    1168   B
+FabArray::LinComb()                  10     10     288   B     290   B     292   B    1024   B    1024   B    1024   B
+CNS::estTimeStep()                   14     14     633   B     637   B     641   B     672   B     672   B     672   B
+FabArray::sum()                      50     50       0   B       0   B       0   B      16   B      16   B      16   B
+----------------------------------------------------------------------------------------------------------------------
+
+Total GPU global memory (MB) spread across MPI: [16151 ... 16151]
+Free  GPU global memory (MB) spread across MPI: [15699 ... 15699]
+[The         Arena] space (MB) allocated spread across MPI: [12113 ... 12113]
+[The         Arena] space (MB) used      spread across MPI: [0 ... 0]
+[The  Device Arena] space (MB) allocated spread across MPI: [8 ... 8]
+[The  Device Arena] space (MB) used      spread across MPI: [0 ... 0]
+[The  Pinned Arena] space (MB) allocated spread across MPI: [8 ... 8]
+[The  Pinned Arena] space (MB) used      spread across MPI: [0 ... 0]
+AMReX (1156f232c0aa) finalized
+##IPMv2.0.6########################################################
+#
+# command   : CNS3d.gnu.TPROF.MPI.CUDA.ex inputs 
+# start     : Fri Jun 30 15:14:10 2023   host      : gl1012.arc-ts.u 
+# stop      : Fri Jun 30 15:14:11 2023   wallclock : 0.72
+# mpi_tasks : 2 on 1 nodes               %comm     : 1.11
+# mem [GB]  : 1.04                       gflop/sec : 0.00
+#
+#           :       [total]        <avg>          min          max
+# wallclock :          1.43         0.71         0.71         0.72 
+# MPI       :          0.02         0.01         0.01         0.01 
+# %wall     :
+#   MPI     :                       1.11         0.72         1.51 
+# #calls    :
+#   MPI     :           546          273          273          273
+# mem [GB]  :          1.04         0.52         0.52         0.52 
+#
+#                             [time]        [count]        <%wall>
+# MPI_Waitall                   0.01             32           0.59
+# MPI_Allgather                 0.00              6           0.31
+# MPI_Bcast                     0.00             24           0.09
+# MPI_Isend                     0.00             16           0.07
+# MPI_Allreduce                 0.00             20           0.03
+# MPI_Reduce                    0.00             64           0.02
+# MPI_Gather                    0.00            340           0.00
+# MPI_Comm_free                 0.00              4           0.00
+# MPI_Irecv                     0.00             16           0.00
+# MPI_Comm_size                 0.00             10           0.00
+# MPI_Comm_compare              0.00              4           0.00
+# MPI_Comm_rank                 0.00              4           0.00
+# MPI_Comm_group                0.00              2           0.00
+# MPI_Init                      0.00              2           0.00
+# MPI_Finalize                  0.00              2           0.00
+#
+###################################################################

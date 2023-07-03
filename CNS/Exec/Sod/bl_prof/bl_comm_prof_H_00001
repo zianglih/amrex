@@ -1,0 +1,24 @@
+CommProfProc  1  nCommStats  282  datafile  bl_comm_prof_D_00001  seekpos  0  gl1003.arc-ts.umich.edu
+bNum  0 "Unnamed" 270
+bNum  1 "amrex::UtilCreateCleanDirectory" 272
+bNum  2 "BLProfiler::Finalize" 276
+nTag  0 6
+nTag  1 9
+nTag  2 10
+nTag  3 27
+nTag  2 28
+nTag  4 45
+nTag  2 46
+nTag  5 63
+nTag  2 64
+nTag  6 81
+timeMinMax  0.003628804999999957 2.420727805000000
+timerTime  2.685299999971580e-08
+nameTagNames  "Amr::InitializeInit TOP"
+nameTagNames  "Amr::initialInit BOTTOM"
+nameTagNames  "Amr::timeStep TOP"
+nameTagNames  "timeStep STEP 0"
+nameTagNames  "timeStep STEP 1"
+nameTagNames  "timeStep STEP 2"
+nameTagNames  "timeStep STEP 3"
+tagRange  1000 8388607
