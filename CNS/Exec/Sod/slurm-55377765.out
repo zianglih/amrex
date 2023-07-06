@@ -1,0 +1,6 @@
+--table is only supported with -r
+
+ Usage: perf stat [<options>] [<command>]
+
+    -r, --repeat <n>      repeat command and print average + stddev (max: 100, forever: 0)
+        --table           display details about each run (only with -r option)

@@ -1,0 +1,10 @@
+rm: cannot remove 'perf.data': No such file or directory
+Using CPUID GenuineIntel-6-55-4
+event syntax error: 'CPU_Utilization'
+                     \___ parser error
+Run 'perf list' for a list of valid events
+
+ Usage: perf record [<options>] [<command>]
+    or: perf record [<options>] -- <command> [<options>]
+
+    -e, --event <event>   event selector. use 'perf list' to list available events

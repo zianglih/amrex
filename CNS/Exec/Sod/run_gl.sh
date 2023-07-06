@@ -7,7 +7,7 @@
 
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=2
-#SBATCH --mem-per-cpu=8g
+#SBATCH --mem-per-cpu=16g
 #SBATCH --gpus-per-node=2
 #SBATCH --gpu-bind=closest
 ##SBATCH --gpu-bind=map_gpu:0,1
@@ -30,4 +30,14 @@ module load cuda gcc openmpi
 # mpirun -np 2 -x LD_PRELOAD=/home/ziangli/IPM_install_dir/lib/libipm.so CNS3d.gnu.TPROF.MPI.CUDA.ex inputs
 
 # For AMReX built-in profiler:
-mpirun -np 2 CNS3d.gnu.COMTR_PROF.MPI.CUDA.ex inputs
+# mpirun -np 2 CNS3d.gnu.COMTR_PROF.MPI.CUDA.ex inputs
+
+# For perf:
+rm perf.data
+# perf record -g -F 999 mpirun -np 2 CNS3d.gnu.TPROF.MPI.CUDA.ex inputs
+# perf mem record -a mpirun -np 2 CNS3d.gnu.TPROF.MPI.CUDA.ex inputs
+# perf stat record -d -v mpirun -np 2 CNS3d.gnu.TPROF.MPI.CUDA.ex inputs
+# perf script -F +pid > test.perf
+# valgrind --tool=cachegrind mpirun -np 2 CNS3d.gnu.TPROF.MPI.CUDA.ex inputs
+# valgrind --tool=massif mpirun -np 2 CNS3d.gnu.TPROF.MPI.CUDA.ex inputs
+perf record -a -v -e mem-loads mpirun -np 2 CNS3d.gnu.TPROF.MPI.CUDA.ex inputs

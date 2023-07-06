@@ -1,0 +1,2113 @@
+desc: (none)
+cmd: mpirun -np 2 CNS3d.gnu.TPROF.MPI.CUDA.ex inputs
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=6315092
+mem_heap_B=488
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=6706607
+mem_heap_B=5494
+mem_heap_extra_B=706
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=7536147
+mem_heap_B=4470
+mem_heap_extra_B=698
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=8363172
+mem_heap_B=174387
+mem_heap_extra_B=5229
+mem_stacks_B=0
+heap_tree=detailed
+n6: 174387 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 149856 0x51928BD: opal_hash_table_init2 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 66272 0x51C1281: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 66272 0x51C4A09: mca_base_pvar_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x51C12AD: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x51C7CC1: mca_base_var_group_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17312 0x51C12A4: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 17312 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 17312 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n0: 10083 in 49 places, all below massif's threshold (1.00%)
+ n1: 4096 0x51C3A5E: mca_base_var_cache_files (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 4096 0x519F636: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 4096 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 4096 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+     n0: 4096 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n2: 3920 0x77684CD: strdup (in /usr/lib64/libc-2.28.so)
+  n2: 2696 0x51C14D9: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 2246 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 2246 in 17 places, all below massif's threshold (1.00%)
+   n0: 450 in 1 place, below massif's threshold (1.00%)
+  n0: 1224 in 15 places, all below massif's threshold (1.00%)
+ n2: 3360 0x51C1423: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 2856 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 2856 in 17 places, all below massif's threshold (1.00%)
+  n0: 504 in 1 place, below massif's threshold (1.00%)
+ n1: 3072 0x5196E0F: opal_pointer_array_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n0: 3072 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=9338878
+mem_heap_B=220889
+mem_heap_extra_B=16495
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=9907751
+mem_heap_B=233501
+mem_heap_extra_B=20123
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=10750819
+mem_heap_B=252957
+mem_heap_extra_B=26907
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=11322038
+mem_heap_B=272897
+mem_heap_extra_B=33551
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=12185278
+mem_heap_B=298618
+mem_heap_extra_B=42614
+mem_stacks_B=0
+heap_tree=detailed
+n10: 298618 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 158528 0x51928BD: opal_hash_table_init2 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 66272 0x51C1281: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 66272 0x51C4A09: mca_base_pvar_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x51C12AD: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x51C7CC1: mca_base_var_group_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17312 0x51C12A4: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 17312 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 17312 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 8672 0x51BE7D9: mca_base_component_repository_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 8672 0x51BFE32: mca_base_open (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 8672 0x519F70F: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 8672 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 8672 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 8672 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n2: 35616 0x51C1423: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 33432 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 23520 in 117 places, all below massif's threshold (1.00%)
+   n1: 9912 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 9912 in 11 places, all below massif's threshold (1.00%)
+  n0: 2184 in 1 place, below massif's threshold (1.00%)
+ n3: 29115 0x77684CD: strdup (in /usr/lib64/libc-2.28.so)
+  n2: 15171 0x51C14D9: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 13586 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 13586 in 116 places, all below massif's threshold (1.00%)
+   n0: 1585 in 1 place, below massif's threshold (1.00%)
+  n0: 7877 in 26 places, all below massif's threshold (1.00%)
+  n2: 6067 0x51CD565: make_opt (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5691 0x51CD646: opal_cmd_line_add (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 5691 0x4F15F41: orte_schizo_base_define_cli (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 5691 0x4E90022: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 5691 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 5691 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+   n0: 376 in 2 places, all below massif's threshold (1.00%)
+ n0: 22470 in 75 places, all below massif's threshold (1.00%)
+ n2: 15960 0x51C82AF: group_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 11200 0x51C13D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n2: 10640 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 5880 in 11 places, all below massif's threshold (1.00%)
+    n1: 4760 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n0: 4760 in 6 places, all below massif's threshold (1.00%)
+   n0: 560 in 1 place, below massif's threshold (1.00%)
+  n0: 4760 in 3 places, all below massif's threshold (1.00%)
+ n3: 11717 0x51C101B: mca_base_var_generate_full_name4 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 5980 0x51C1533: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5634 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 5634 in 118 places, all below massif's threshold (1.00%)
+   n0: 346 in 1 place, below massif's threshold (1.00%)
+  n2: 4920 0x51C150D: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 4639 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 4639 in 118 places, all below massif's threshold (1.00%)
+   n0: 281 in 1 place, below massif's threshold (1.00%)
+  n0: 817 in 3 places, all below massif's threshold (1.00%)
+ n2: 10752 0x51CD4CF: make_opt (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 10304 0x51CD646: opal_cmd_line_add (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 10304 0x4F15F41: orte_schizo_base_define_cli (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 10304 0x4E90022: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 10304 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 10304 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 448 in 2 places, all below massif's threshold (1.00%)
+ n2: 5468 0x5192E75: opal_hash_table_set_value_ptr (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 4708 0x51C15D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 4440 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 4440 in 118 places, all below massif's threshold (1.00%)
+   n0: 268 in 1 place, below massif's threshold (1.00%)
+  n0: 760 in 1 place, below massif's threshold (1.00%)
+ n1: 4896 0x5196E0F: opal_pointer_array_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n0: 4896 in 5 places, all below massif's threshold (1.00%)
+ n1: 4096 0x51C3A5E: mca_base_var_cache_files (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 4096 0x519F636: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 4096 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 4096 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+     n0: 4096 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+#-----------
+snapshot=10
+#-----------
+time=12927297
+mem_heap_B=320417
+mem_heap_extra_B=50215
+mem_stacks_B=0
+heap_tree=detailed
+n10: 320417 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 158528 0x51928BD: opal_hash_table_init2 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 66272 0x51C1281: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 66272 0x51C4A09: mca_base_pvar_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x51C12AD: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x51C7CC1: mca_base_var_group_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17312 0x51C12A4: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 17312 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 17312 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 8672 0x51BE7D9: mca_base_component_repository_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 8672 0x51BFE32: mca_base_open (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 8672 0x519F70F: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 8672 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 8672 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 8672 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n2: 45024 0x51C1423: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 42000 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 27888 in 141 places, all below massif's threshold (1.00%)
+   n2: 14112 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 10248 in 19 places, all below massif's threshold (1.00%)
+    n1: 3864 0x51C8E29: mca_base_framework_components_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 3864 0x51C923B: mca_base_framework_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+      n1: 3864 0x51C928F: mca_base_framework_open (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n0: 3864 in 10 places, all below massif's threshold (1.00%)
+  n0: 3024 in 1 place, below massif's threshold (1.00%)
+ n4: 32517 0x77684CD: strdup (in /usr/lib64/libc-2.28.so)
+  n2: 17567 0x51C14D9: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 15624 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 15624 in 140 places, all below massif's threshold (1.00%)
+   n0: 1943 in 1 place, below massif's threshold (1.00%)
+  n2: 6067 0x51CD565: make_opt (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5691 0x51CD646: opal_cmd_line_add (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 5691 0x4F15F41: orte_schizo_base_define_cli (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 5691 0x4E90022: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 5691 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 5691 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+   n0: 376 in 2 places, all below massif's threshold (1.00%)
+  n0: 5065 in 27 places, all below massif's threshold (1.00%)
+  n1: 3818 0x51C14EA: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 3818 in 2 places, all below massif's threshold (1.00%)
+ n0: 24929 in 75 places, all below massif's threshold (1.00%)
+ n2: 18480 0x51C82AF: group_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 13440 0x51C13D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n2: 12600 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 6440 in 12 places, all below massif's threshold (1.00%)
+    n2: 6160 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 4200 0x51C8E29: mca_base_framework_components_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+      n1: 4200 0x51C923B: mca_base_framework_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 4200 0x51C928F: mca_base_framework_open (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+        n0: 4200 in 7 places, all below massif's threshold (1.00%)
+     n0: 1960 in 7 places, all below massif's threshold (1.00%)
+   n0: 840 in 1 place, below massif's threshold (1.00%)
+  n0: 5040 in 3 places, all below massif's threshold (1.00%)
+ n3: 14487 0x51C101B: mca_base_var_generate_full_name4 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 7445 0x51C1533: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 6990 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 6990 in 142 places, all below massif's threshold (1.00%)
+   n0: 455 in 1 place, below massif's threshold (1.00%)
+  n2: 6105 0x51C150D: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5740 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 5740 in 142 places, all below massif's threshold (1.00%)
+   n0: 365 in 1 place, below massif's threshold (1.00%)
+  n0: 937 in 3 places, all below massif's threshold (1.00%)
+ n2: 10752 0x51CD4CF: make_opt (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 10304 0x51CD646: opal_cmd_line_add (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 10304 0x4F15F41: orte_schizo_base_define_cli (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 10304 0x4E90022: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 10304 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 10304 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 448 in 2 places, all below massif's threshold (1.00%)
+ n2: 6708 0x5192E75: opal_hash_table_set_value_ptr (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 5837 0x51C15D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5490 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 5490 in 142 places, all below massif's threshold (1.00%)
+   n0: 347 in 1 place, below massif's threshold (1.00%)
+  n0: 871 in 1 place, below massif's threshold (1.00%)
+ n1: 4896 0x5196E0F: opal_pointer_array_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n0: 4896 in 5 places, all below massif's threshold (1.00%)
+ n1: 4096 0x51C3A5E: mca_base_var_cache_files (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 4096 0x519F636: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 4096 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 4096 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+     n0: 4096 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+#-----------
+snapshot=11
+#-----------
+time=13519623
+mem_heap_B=338595
+mem_heap_extra_B=54789
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=14042695
+mem_heap_B=344634
+mem_heap_extra_B=58086
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=14571290
+mem_heap_B=353829
+mem_heap_extra_B=59923
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=15439978
+mem_heap_B=376918
+mem_heap_extra_B=62794
+mem_stacks_B=0
+heap_tree=detailed
+n12: 376918 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 158528 0x51928BD: opal_hash_table_init2 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 66272 0x51C1281: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 66272 0x51C4A09: mca_base_pvar_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x51C12AD: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x51C7CC1: mca_base_var_group_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17312 0x51C12A4: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 17312 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 17312 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 8672 0x51BE7D9: mca_base_component_repository_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 8672 0x51BFE32: mca_base_open (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 8672 0x519F70F: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 8672 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 8672 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 8672 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n0: 49692 in 106 places, all below massif's threshold (1.00%)
+ n2: 45360 0x51C1423: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 42336 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 27888 in 141 places, all below massif's threshold (1.00%)
+   n1: 14448 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 14448 in 20 places, all below massif's threshold (1.00%)
+  n0: 3024 in 1 place, below massif's threshold (1.00%)
+ n3: 37865 0x77684CD: strdup (in /usr/lib64/libc-2.28.so)
+  n2: 17567 0x51C14D9: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 15624 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 15624 in 140 places, all below massif's threshold (1.00%)
+   n0: 1943 in 1 place, below massif's threshold (1.00%)
+  n0: 14231 in 34 places, all below massif's threshold (1.00%)
+  n2: 6067 0x51CD565: make_opt (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5691 0x51CD646: opal_cmd_line_add (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 5691 0x4F15F41: orte_schizo_base_define_cli (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 5691 0x4E90022: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 5691 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 5691 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+   n0: 376 in 2 places, all below massif's threshold (1.00%)
+ n4: 19344 0x6E26D29: hwloc_alloc_setup_object (in /usr/lib64/libhwloc.so.15.2.0)
+  n1: 9424 0x6E513D7: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 9424 0x6E53372: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 9424 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 9424 0x6E2C01D: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 9424 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 9424 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 9424 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 9424 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 9424 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 9424 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 4712 0x6E51B3A: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 4712 0x6E53372: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 4712 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 4712 0x6E2C01D: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 4712 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 4712 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 4712 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 4712 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 4712 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 4712 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 4464 0x6E50B30: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 4464 0x6E53372: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 4464 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 4464 0x6E2C01D: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 4464 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 4464 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 4464 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 4464 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 4464 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 4464 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 744 in 2 places, all below massif's threshold (1.00%)
+ n2: 18480 0x51C82AF: group_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 13440 0x51C13D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n2: 12600 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 6440 in 12 places, all below massif's threshold (1.00%)
+    n1: 6160 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n0: 6160 in 8 places, all below massif's threshold (1.00%)
+   n0: 840 in 1 place, below massif's threshold (1.00%)
+  n0: 5040 in 3 places, all below massif's threshold (1.00%)
+ n3: 14597 0x51C101B: mca_base_var_generate_full_name4 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 7505 0x51C1533: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 7050 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 7050 in 142 places, all below massif's threshold (1.00%)
+   n0: 455 in 1 place, below massif's threshold (1.00%)
+  n2: 6155 0x51C150D: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5790 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 5790 in 142 places, all below massif's threshold (1.00%)
+   n0: 365 in 1 place, below massif's threshold (1.00%)
+  n0: 937 in 3 places, all below massif's threshold (1.00%)
+ n2: 10752 0x51CD4CF: make_opt (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 10304 0x51CD646: opal_cmd_line_add (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 10304 0x4F15F41: orte_schizo_base_define_cli (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 10304 0x4E90022: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 10304 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 10304 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 448 in 2 places, all below massif's threshold (1.00%)
+ n2: 6756 0x5192E75: opal_hash_table_set_value_ptr (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 5885 0x51C15D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5538 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 5538 in 142 places, all below massif's threshold (1.00%)
+   n0: 347 in 1 place, below massif's threshold (1.00%)
+  n0: 871 in 1 place, below massif's threshold (1.00%)
+ n1: 5568 0x6E3416D: hwloc_bitmap_alloc (in /usr/lib64/libhwloc.so.15.2.0)
+  n0: 5568 in 12 places, all below massif's threshold (1.00%)
+ n1: 5112 0x5196CA9: grow_table (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n0: 5112 in 2 places, all below massif's threshold (1.00%)
+ n2: 4864 0x6E25A42: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+  n1: 4864 0x6E487C4: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 4864 0x6E529F4: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 4864 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 4864 0x6E2C01D: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 4864 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 4864 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 4864 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 4864 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 4864 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 4864 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 0 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=16247389
+mem_heap_B=393462
+mem_heap_extra_B=65258
+mem_stacks_B=0
+heap_tree=detailed
+n13: 393462 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 158528 0x51928BD: opal_hash_table_init2 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 66272 0x51C1281: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 66272 0x51C4A09: mca_base_pvar_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x51C12AD: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x51C7CC1: mca_base_var_group_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17312 0x51C12A4: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 17312 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 17312 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 8672 0x51BE7D9: mca_base_component_repository_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 8672 0x51BFE32: mca_base_open (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 8672 0x519F70F: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 8672 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 8672 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 8672 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n0: 47628 in 105 places, all below massif's threshold (1.00%)
+ n2: 45360 0x51C1423: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 42336 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 27888 in 141 places, all below massif's threshold (1.00%)
+   n1: 14448 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 14448 in 20 places, all below massif's threshold (1.00%)
+  n0: 3024 in 1 place, below massif's threshold (1.00%)
+ n3: 37865 0x77684CD: strdup (in /usr/lib64/libc-2.28.so)
+  n2: 17567 0x51C14D9: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 15624 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 15624 in 140 places, all below massif's threshold (1.00%)
+   n0: 1943 in 1 place, below massif's threshold (1.00%)
+  n0: 14231 in 34 places, all below massif's threshold (1.00%)
+  n2: 6067 0x51CD565: make_opt (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5691 0x51CD646: opal_cmd_line_add (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 5691 0x4F15F41: orte_schizo_base_define_cli (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 5691 0x4E90022: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 5691 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 5691 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+   n0: 376 in 2 places, all below massif's threshold (1.00%)
+ n4: 30256 0x6E26D29: hwloc_alloc_setup_object (in /usr/lib64/libhwloc.so.15.2.0)
+  n1: 14880 0x6E513D7: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 14880 0x6E53372: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 14880 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 14880 0x6E2C01D: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 14880 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 14880 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 14880 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 14880 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 14880 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 14880 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 7440 0x6E51B3A: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 7440 0x6E53372: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 7440 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 7440 0x6E2C01D: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 7440 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 7440 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 7440 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 7440 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 7440 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 7440 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 7192 0x6E50B30: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 7192 0x6E53372: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 7192 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 7192 0x6E2C01D: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 7192 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 7192 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 7192 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 7192 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 7192 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 7192 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 744 in 2 places, all below massif's threshold (1.00%)
+ n2: 18480 0x51C82AF: group_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 13440 0x51C13D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n2: 12600 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 6440 in 12 places, all below massif's threshold (1.00%)
+    n1: 6160 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n0: 6160 in 8 places, all below massif's threshold (1.00%)
+   n0: 840 in 1 place, below massif's threshold (1.00%)
+  n0: 5040 in 3 places, all below massif's threshold (1.00%)
+ n3: 14597 0x51C101B: mca_base_var_generate_full_name4 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 7505 0x51C1533: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 7050 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 7050 in 142 places, all below massif's threshold (1.00%)
+   n0: 455 in 1 place, below massif's threshold (1.00%)
+  n2: 6155 0x51C150D: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5790 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 5790 in 142 places, all below massif's threshold (1.00%)
+   n0: 365 in 1 place, below massif's threshold (1.00%)
+  n0: 937 in 3 places, all below massif's threshold (1.00%)
+ n2: 10752 0x51CD4CF: make_opt (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 10304 0x51CD646: opal_cmd_line_add (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 10304 0x4F15F41: orte_schizo_base_define_cli (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 10304 0x4E90022: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 10304 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 10304 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 448 in 2 places, all below massif's threshold (1.00%)
+ n1: 8384 0x6E3416D: hwloc_bitmap_alloc (in /usr/lib64/libhwloc.so.15.2.0)
+  n0: 8384 in 12 places, all below massif's threshold (1.00%)
+ n2: 6756 0x5192E75: opal_hash_table_set_value_ptr (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 5885 0x51C15D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5538 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 5538 in 142 places, all below massif's threshold (1.00%)
+   n0: 347 in 1 place, below massif's threshold (1.00%)
+  n0: 871 in 1 place, below massif's threshold (1.00%)
+ n1: 5112 0x5196CA9: grow_table (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n0: 5112 in 2 places, all below massif's threshold (1.00%)
+ n1: 4880 0x6E26D41: hwloc_alloc_setup_object (in /usr/lib64/libhwloc.so.15.2.0)
+  n0: 4880 in 5 places, all below massif's threshold (1.00%)
+ n2: 4864 0x6E25A42: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+  n1: 4864 0x6E487C4: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 4864 0x6E529F4: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 4864 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 4864 0x6E2C01D: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 4864 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 4864 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 4864 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 4864 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 4864 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 4864 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 0 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=16741445
+mem_heap_B=399013
+mem_heap_extra_B=66675
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=17504444
+mem_heap_B=479474
+mem_heap_extra_B=77230
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=18204766
+mem_heap_B=482890
+mem_heap_extra_B=77598
+mem_stacks_B=0
+heap_tree=detailed
+n15: 482890 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 158528 0x51928BD: opal_hash_table_init2 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 66272 0x51C1281: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 66272 0x51C4A09: mca_base_pvar_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x51C12AD: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x51C7CC1: mca_base_var_group_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17312 0x51C12A4: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 17312 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 17312 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 8672 0x51BE7D9: mca_base_component_repository_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 8672 0x51BFE32: mca_base_open (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 8672 0x519F70F: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 8672 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 8672 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 8672 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n0: 47531 in 129 places, all below massif's threshold (1.00%)
+ n4: 45880 0x6E26D29: hwloc_alloc_setup_object (in /usr/lib64/libhwloc.so.15.2.0)
+  n1: 20336 0x6E513D7: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 20336 0x6E53372: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 20336 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 20336 0x6E2C01D: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 20336 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 20336 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 20336 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 20336 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 20336 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 20336 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 9920 0x6E50B30: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 9920 0x6E53372: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 9920 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 9920 0x6E2C01D: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 9920 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 9920 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 9920 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 9920 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 9920 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 9920 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 9920 0x6E51B3A: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 9920 0x6E53372: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 9920 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 9920 0x6E2C01D: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 9920 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 9920 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 9920 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 9920 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 9920 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 9920 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 5704 in 6 places, all below massif's threshold (1.00%)
+ n2: 45360 0x51C1423: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 42336 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 27888 in 141 places, all below massif's threshold (1.00%)
+   n1: 14448 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 14448 in 20 places, all below massif's threshold (1.00%)
+  n0: 3024 in 1 place, below massif's threshold (1.00%)
+ n3: 33670 0x77684CD: strdup (in /usr/lib64/libc-2.28.so)
+  n2: 17567 0x51C14D9: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 15624 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 15624 in 140 places, all below massif's threshold (1.00%)
+   n0: 1943 in 1 place, below massif's threshold (1.00%)
+  n0: 10036 in 35 places, all below massif's threshold (1.00%)
+  n2: 6067 0x51CD565: make_opt (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5691 0x51CD646: opal_cmd_line_add (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 5691 0x4F15F41: orte_schizo_base_define_cli (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 5691 0x4E90022: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 5691 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 5691 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+   n0: 376 in 2 places, all below massif's threshold (1.00%)
+ n2: 32816 0x77BDDF9: __alloc_dir (in /usr/lib64/libc-2.28.so)
+  n2: 32816 0x77BE572: fdopendir (in /usr/lib64/libc-2.28.so)
+   n1: 32816 0x6E49A9E: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 32816 0x6E5261E: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 32816 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 32816 0x6E2C1F8: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+       n1: 32816 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+        n1: 32816 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 32816 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 32816 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 32816 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+            n0: 32816 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+   n0: 0 in 5 places, all below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n3: 22272 0x6E342A5: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+  n2: 11008 0x6E2390B: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n2: 10880 0x6E23874: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n2: 10752 0x6E23874: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n2: 10496 0x6E23874: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 7680 0x6E23874: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+       n0: 7680 in 2 places, all below massif's threshold (1.00%)
+      n0: 2816 in 1 place, below massif's threshold (1.00%)
+     n0: 256 in 1 place, below massif's threshold (1.00%)
+    n0: 128 in 1 place, below massif's threshold (1.00%)
+   n0: 128 in 1 place, below massif's threshold (1.00%)
+  n1: 10752 0x6E237B7: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n2: 10752 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n2: 10624 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n2: 10496 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+      n2: 10240 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+       n1: 7680 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+        n0: 7680 in 2 places, all below massif's threshold (1.00%)
+       n0: 2560 in 1 place, below massif's threshold (1.00%)
+      n0: 256 in 1 place, below massif's threshold (1.00%)
+     n0: 128 in 1 place, below massif's threshold (1.00%)
+    n0: 128 in 1 place, below massif's threshold (1.00%)
+  n0: 512 in 2 places, all below massif's threshold (1.00%)
+ n2: 22208 0x6E3416D: hwloc_bitmap_alloc (in /usr/lib64/libhwloc.so.15.2.0)
+  n0: 11456 in 21 places, all below massif's threshold (1.00%)
+  n1: 10752 0x6E237CC: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n2: 10752 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n2: 10624 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n2: 10496 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+      n2: 10240 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+       n1: 7680 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+        n0: 7680 in 2 places, all below massif's threshold (1.00%)
+       n0: 2560 in 1 place, below massif's threshold (1.00%)
+      n0: 256 in 1 place, below massif's threshold (1.00%)
+     n0: 128 in 1 place, below massif's threshold (1.00%)
+    n0: 128 in 1 place, below massif's threshold (1.00%)
+ n2: 18480 0x51C82AF: group_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 13440 0x51C13D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n2: 12600 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 6440 in 12 places, all below massif's threshold (1.00%)
+    n1: 6160 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n0: 6160 in 8 places, all below massif's threshold (1.00%)
+   n0: 840 in 1 place, below massif's threshold (1.00%)
+  n0: 5040 in 3 places, all below massif's threshold (1.00%)
+ n3: 14597 0x51C101B: mca_base_var_generate_full_name4 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 7505 0x51C1533: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 7050 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 7050 in 142 places, all below massif's threshold (1.00%)
+   n0: 455 in 1 place, below massif's threshold (1.00%)
+  n2: 6155 0x51C150D: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5790 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 5790 in 142 places, all below massif's threshold (1.00%)
+   n0: 365 in 1 place, below massif's threshold (1.00%)
+  n0: 937 in 3 places, all below massif's threshold (1.00%)
+ n2: 10752 0x51CD4CF: make_opt (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 10304 0x51CD646: opal_cmd_line_add (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 10304 0x4F15F41: orte_schizo_base_define_cli (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 10304 0x4E90022: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 10304 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 10304 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 448 in 2 places, all below massif's threshold (1.00%)
+ n1: 8352 0x6E34291: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+  n0: 8352 in 4 places, all below massif's threshold (1.00%)
+ n1: 8328 0x6E3414E: hwloc_bitmap_alloc (in /usr/lib64/libhwloc.so.15.2.0)
+  n0: 8328 in 22 places, all below massif's threshold (1.00%)
+ n1: 7360 0x6E26D41: hwloc_alloc_setup_object (in /usr/lib64/libhwloc.so.15.2.0)
+  n0: 7360 in 9 places, all below massif's threshold (1.00%)
+ n2: 6756 0x5192E75: opal_hash_table_set_value_ptr (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 5885 0x51C15D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 5885 in 2 places, all below massif's threshold (1.00%)
+  n0: 871 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=18937629
+mem_heap_B=492407
+mem_heap_extra_B=78369
+mem_stacks_B=0
+heap_tree=detailed
+n15: 492407 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 158528 0x51928BD: opal_hash_table_init2 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 66272 0x51C1281: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 66272 0x51C4A09: mca_base_pvar_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x51C12AD: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x51C7CC1: mca_base_var_group_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17312 0x51C12A4: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 17312 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 17312 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 8672 0x51BE7D9: mca_base_component_repository_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 8672 0x51BFE32: mca_base_open (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 8672 0x519F70F: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 8672 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 8672 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 8672 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n0: 52483 in 132 places, all below massif's threshold (1.00%)
+ n4: 49352 0x6E26D29: hwloc_alloc_setup_object (in /usr/lib64/libhwloc.so.15.2.0)
+  n1: 20336 0x6E513D7: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 20336 0x6E53372: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 20336 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 20336 0x6E2C01D: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 20336 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 20336 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 20336 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 20336 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 20336 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 20336 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 9920 0x6E50B30: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 9920 0x6E53372: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 9920 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 9920 0x6E2C01D: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 9920 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 9920 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 9920 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 9920 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 9920 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 9920 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 9920 0x6E51B3A: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 9920 0x6E53372: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 9920 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 9920 0x6E2C01D: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 9920 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 9920 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 9920 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 9920 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 9920 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 9920 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 9176 in 8 places, all below massif's threshold (1.00%)
+ n2: 45360 0x51C1423: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 42336 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 27888 in 141 places, all below massif's threshold (1.00%)
+   n1: 14448 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 14448 in 20 places, all below massif's threshold (1.00%)
+  n0: 3024 in 1 place, below massif's threshold (1.00%)
+ n3: 33723 0x77684CD: strdup (in /usr/lib64/libc-2.28.so)
+  n2: 17567 0x51C14D9: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 15624 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 15624 in 140 places, all below massif's threshold (1.00%)
+   n0: 1943 in 1 place, below massif's threshold (1.00%)
+  n0: 10089 in 36 places, all below massif's threshold (1.00%)
+  n1: 6067 0x51CD565: make_opt (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 6067 in 3 places, all below massif's threshold (1.00%)
+ n2: 32816 0x77BDDF9: __alloc_dir (in /usr/lib64/libc-2.28.so)
+  n2: 32816 0x77BE572: fdopendir (in /usr/lib64/libc-2.28.so)
+   n1: 32816 0x6E4B53F: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 32816 0x6E52407: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 32816 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 32816 0x6E2C21F: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+       n1: 32816 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+        n1: 32816 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 32816 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 32816 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 32816 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+            n0: 32816 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+   n0: 0 in 6 places, all below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n3: 22592 0x6E342A5: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+  n2: 11008 0x6E2390B: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n2: 10880 0x6E23874: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n2: 10752 0x6E23874: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n2: 10496 0x6E23874: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 7680 0x6E23874: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+       n0: 7680 in 2 places, all below massif's threshold (1.00%)
+      n0: 2816 in 1 place, below massif's threshold (1.00%)
+     n0: 256 in 1 place, below massif's threshold (1.00%)
+    n0: 128 in 1 place, below massif's threshold (1.00%)
+   n0: 128 in 1 place, below massif's threshold (1.00%)
+  n1: 10752 0x6E237B7: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n2: 10752 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n2: 10624 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n2: 10496 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+      n2: 10240 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+       n1: 7680 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+        n0: 7680 in 2 places, all below massif's threshold (1.00%)
+       n0: 2560 in 1 place, below massif's threshold (1.00%)
+      n0: 256 in 1 place, below massif's threshold (1.00%)
+     n0: 128 in 1 place, below massif's threshold (1.00%)
+    n0: 128 in 1 place, below massif's threshold (1.00%)
+  n0: 832 in 3 places, all below massif's threshold (1.00%)
+ n2: 22208 0x6E3416D: hwloc_bitmap_alloc (in /usr/lib64/libhwloc.so.15.2.0)
+  n0: 11456 in 22 places, all below massif's threshold (1.00%)
+  n1: 10752 0x6E237CC: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n2: 10752 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n2: 10624 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n2: 10496 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+      n2: 10240 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+       n1: 7680 0x6E23745: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+        n0: 7680 in 2 places, all below massif's threshold (1.00%)
+       n0: 2560 in 1 place, below massif's threshold (1.00%)
+      n0: 256 in 1 place, below massif's threshold (1.00%)
+     n0: 128 in 1 place, below massif's threshold (1.00%)
+    n0: 128 in 1 place, below massif's threshold (1.00%)
+ n2: 18480 0x51C82AF: group_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 13440 0x51C13D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n2: 12600 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 6440 in 12 places, all below massif's threshold (1.00%)
+    n1: 6160 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n0: 6160 in 8 places, all below massif's threshold (1.00%)
+   n0: 840 in 1 place, below massif's threshold (1.00%)
+  n0: 5040 in 3 places, all below massif's threshold (1.00%)
+ n3: 14597 0x51C101B: mca_base_var_generate_full_name4 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 7505 0x51C1533: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 7050 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 7050 in 142 places, all below massif's threshold (1.00%)
+   n0: 455 in 1 place, below massif's threshold (1.00%)
+  n2: 6155 0x51C150D: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5790 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 5790 in 142 places, all below massif's threshold (1.00%)
+   n0: 365 in 1 place, below massif's threshold (1.00%)
+  n0: 937 in 3 places, all below massif's threshold (1.00%)
+ n2: 10752 0x51CD4CF: make_opt (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 10304 0x51CD646: opal_cmd_line_add (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 10304 0x4F15F41: orte_schizo_base_define_cli (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 10304 0x4E90022: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 10304 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 10304 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 448 in 2 places, all below massif's threshold (1.00%)
+ n1: 8472 0x6E34291: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+  n0: 8472 in 5 places, all below massif's threshold (1.00%)
+ n1: 8328 0x6E3414E: hwloc_bitmap_alloc (in /usr/lib64/libhwloc.so.15.2.0)
+  n0: 8328 in 23 places, all below massif's threshold (1.00%)
+ n1: 7960 0x6E26D41: hwloc_alloc_setup_object (in /usr/lib64/libhwloc.so.15.2.0)
+  n0: 7960 in 11 places, all below massif's threshold (1.00%)
+ n2: 6756 0x5192E75: opal_hash_table_set_value_ptr (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 5885 0x51C15D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 5885 in 2 places, all below massif's threshold (1.00%)
+  n0: 871 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=19546328
+mem_heap_B=371540
+mem_heap_extra_B=62644
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=20103101
+mem_heap_B=388094
+mem_heap_extra_B=68538
+mem_stacks_B=0
+heap_tree=detailed
+n10: 388094 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 158528 0x51928BD: opal_hash_table_init2 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 66272 0x51C1281: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 66272 0x51C4A09: mca_base_pvar_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x51C12AD: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x51C7CC1: mca_base_var_group_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17312 0x51C12A4: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 17312 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 17312 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 8672 0x51BE7D9: mca_base_component_repository_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 8672 0x51BFE32: mca_base_open (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 8672 0x519F70F: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 8672 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 8672 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 8672 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n2: 56784 0x51C1423: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 53256 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 29568 in 142 places, all below massif's threshold (1.00%)
+   n4: 23688 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 6048 in 36 places, all below massif's threshold (1.00%)
+    n1: 5880 0x51C8E29: mca_base_framework_components_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 5880 0x51C923B: mca_base_framework_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+      n1: 5880 0x51C928F: mca_base_framework_open (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n0: 5880 in 14 places, all below massif's threshold (1.00%)
+    n1: 5880 0x51C8E54: mca_base_framework_components_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 5880 0x51C923B: mca_base_framework_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+      n1: 5880 0x51C928F: mca_base_framework_open (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n0: 5880 in 14 places, all below massif's threshold (1.00%)
+    n1: 5880 0x51C8E7F: mca_base_framework_components_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 5880 0x51C923B: mca_base_framework_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+      n1: 5880 0x51C928F: mca_base_framework_open (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n0: 5880 in 14 places, all below massif's threshold (1.00%)
+  n0: 3528 in 1 place, below massif's threshold (1.00%)
+ n0: 55244 in 142 places, all below massif's threshold (1.00%)
+ n4: 37794 0x77684CD: strdup (in /usr/lib64/libc-2.28.so)
+  n2: 19901 0x51C14D9: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17622 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 17622 in 141 places, all below massif's threshold (1.00%)
+   n0: 2279 in 1 place, below massif's threshold (1.00%)
+  n0: 7125 in 37 places, all below massif's threshold (1.00%)
+  n2: 6067 0x51CD565: make_opt (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 5691 0x51CD646: opal_cmd_line_add (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 5691 0x4F15F41: orte_schizo_base_define_cli (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 5691 0x4E90022: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 5691 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 5691 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+   n0: 376 in 2 places, all below massif's threshold (1.00%)
+  n1: 4701 0x51C14EA: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 4701 in 2 places, all below massif's threshold (1.00%)
+ n2: 23800 0x51C82AF: group_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 17920 0x51C13D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n2: 16800 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n2: 9240 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 5880 0x51C8E29: mca_base_framework_components_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+      n1: 5880 0x51C923B: mca_base_framework_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 5880 0x51C928F: mca_base_framework_open (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+        n0: 5880 in 10 places, all below massif's threshold (1.00%)
+     n0: 3360 in 12 places, all below massif's threshold (1.00%)
+    n0: 7560 in 12 places, all below massif's threshold (1.00%)
+   n0: 1120 in 1 place, below massif's threshold (1.00%)
+  n0: 5880 in 3 places, all below massif's threshold (1.00%)
+ n3: 18551 0x51C101B: mca_base_var_generate_full_name4 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 9495 0x51C1533: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 8973 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 8973 in 143 places, all below massif's threshold (1.00%)
+   n0: 522 in 1 place, below massif's threshold (1.00%)
+  n2: 7805 0x51C150D: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 7388 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 7388 in 143 places, all below massif's threshold (1.00%)
+   n0: 417 in 1 place, below massif's threshold (1.00%)
+  n0: 1251 in 3 places, all below massif's threshold (1.00%)
+ n2: 12896 0x6E26D29: hwloc_alloc_setup_object (in /usr/lib64/libhwloc.so.15.2.0)
+  n0: 8184 in 10 places, all below massif's threshold (1.00%)
+  n1: 4712 0x6E49C8F: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+   n1: 4712 0x6E5261E: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+    n1: 4712 0x6E23D5D: ??? (in /usr/lib64/libhwloc.so.15.2.0)
+     n1: 4712 0x6E2C1F8: hwloc_topology_load (in /usr/lib64/libhwloc.so.15.2.0)
+      n1: 4712 0x51FC1ED: opal_hwloc_base_get_topology (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 4712 0x4EB5315: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 4712 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 4712 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 4712 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 4712 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n2: 10752 0x51CD4CF: make_opt (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 10304 0x51CD646: opal_cmd_line_add (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 10304 0x4F15F41: orte_schizo_base_define_cli (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 10304 0x4E90022: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 10304 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 10304 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 448 in 2 places, all below massif's threshold (1.00%)
+ n2: 8633 0x5192E75: opal_hash_table_set_value_ptr (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 7467 0x51C15D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 7071 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 7071 in 143 places, all below massif's threshold (1.00%)
+   n0: 396 in 1 place, below massif's threshold (1.00%)
+  n0: 1166 in 1 place, below massif's threshold (1.00%)
+ n1: 5112 0x5196CA9: grow_table (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n0: 5112 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=20881859
+mem_heap_B=1033152
+mem_heap_extra_B=70992
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=21758380
+mem_heap_B=1139514
+mem_heap_extra_B=76054
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=22429948
+mem_heap_B=1250176
+mem_heap_extra_B=81376
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=23039939
+mem_heap_B=1259812
+mem_heap_extra_B=83284
+mem_stacks_B=0
+heap_tree=detailed
+n11: 1259812 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 557056 0x5193896: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 557056 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 557056 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 557056 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 557056 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 557056 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 557056 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n4: 158528 0x51928BD: opal_hash_table_init2 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 66272 0x51C1281: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 66272 0x51C4A09: mca_base_pvar_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x51C12AD: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x51C7CC1: mca_base_var_group_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17312 0x51C12A4: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 17312 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 17312 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 8672 in 1 place, below massif's threshold (1.00%)
+ n0: 150800 in 191 places, all below massif's threshold (1.00%)
+ n3: 92256 0x5F4FFB0: pmix_hash_table_init2 (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 66272 0x601A909: pmix_mca_base_var_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 66272 0x5FD9E54: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 66272 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+     n1: 66272 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+      n1: 66272 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+       n1: 66272 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 66272 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 66272 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x601D669: pmix_mca_base_var_group_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 17312 0x601A934: pmix_mca_base_var_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 17312 0x5FD9E54: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+     n1: 17312 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+      n1: 17312 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 17312 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 17312 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 17312 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 17312 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+            n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 8672 in 1 place, below massif's threshold (1.00%)
+ n1: 69632 0x5F509CB: pmix_hotel_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 69632 0x5FDA079: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 69632 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 69632 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 69632 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 69632 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+       n1: 69632 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 69632 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 69632 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+          n0: 69632 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n1: 65536 0x51938A7: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 65536 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 65536 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 65536 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 65536 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 65536 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 65536 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n2: 59304 0x51C1423: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 55776 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 30408 in 145 places, all below massif's threshold (1.00%)
+   n1: 25368 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 25368 in 43 places, all below massif's threshold (1.00%)
+  n0: 3528 in 1 place, below massif's threshold (1.00%)
+ n2: 46048 0x77684CD: strdup (in /usr/lib64/libc-2.28.so)
+  n0: 25737 in 71 places, all below massif's threshold (1.00%)
+  n2: 20311 0x51C14D9: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 18032 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 18032 in 144 places, all below massif's threshold (1.00%)
+   n0: 2279 in 1 place, below massif's threshold (1.00%)
+ n2: 24920 0x51C82AF: group_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 18760 0x51C13D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17640 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 17640 in 13 places, all below massif's threshold (1.00%)
+   n0: 1120 in 1 place, below massif's threshold (1.00%)
+  n0: 6160 in 3 places, all below massif's threshold (1.00%)
+ n1: 19348 0x51C101B: mca_base_var_generate_full_name4 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n0: 19348 in 5 places, all below massif's threshold (1.00%)
+ n1: 16384 0x51938BA: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 16384 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 16384 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 16384 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 16384 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 16384 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 16384 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+#-----------
+snapshot=26
+#-----------
+time=23627485
+mem_heap_B=1263128
+mem_heap_extra_B=83432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=24246572
+mem_heap_B=1290420
+mem_heap_extra_B=90900
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=24880137
+mem_heap_B=1301867
+mem_heap_extra_B=94029
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=25698256
+mem_heap_B=1312102
+mem_heap_extra_B=95714
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=26249525
+mem_heap_B=1330533
+mem_heap_extra_B=99843
+mem_stacks_B=0
+heap_tree=detailed
+n13: 1330533 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 557056 0x5193896: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 557056 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 557056 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 557056 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 557056 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 557056 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 557056 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n0: 173732 in 385 places, all below massif's threshold (1.00%)
+ n4: 158528 0x51928BD: opal_hash_table_init2 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 66272 0x51C1281: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 66272 0x51C4A09: mca_base_pvar_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x51C12AD: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x51C7CC1: mca_base_var_group_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17312 0x51C12A4: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 17312 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 17312 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 8672 in 1 place, below massif's threshold (1.00%)
+ n3: 92256 0x5F4FFB0: pmix_hash_table_init2 (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 66272 0x601A909: pmix_mca_base_var_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 66272 0x5FD9E54: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 66272 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+     n1: 66272 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+      n1: 66272 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+       n1: 66272 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 66272 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 66272 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x601D669: pmix_mca_base_var_group_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 17312 0x601A934: pmix_mca_base_var_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 17312 0x5FD9E54: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+     n1: 17312 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+      n1: 17312 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 17312 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 17312 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 17312 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 17312 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+            n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 8672 in 1 place, below massif's threshold (1.00%)
+ n1: 69632 0x5F509CB: pmix_hotel_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 69632 0x5FDA079: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 69632 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 69632 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 69632 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 69632 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+       n1: 69632 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 69632 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 69632 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+          n0: 69632 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n1: 65536 0x51938A7: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 65536 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 65536 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 65536 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 65536 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 65536 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 65536 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n2: 59304 0x51C1423: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 55776 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 30408 in 145 places, all below massif's threshold (1.00%)
+   n1: 25368 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 25368 in 43 places, all below massif's threshold (1.00%)
+  n0: 3528 in 1 place, below massif's threshold (1.00%)
+ n2: 51925 0x77684CD: strdup (in /usr/lib64/libc-2.28.so)
+  n0: 31614 in 251 places, all below massif's threshold (1.00%)
+  n2: 20311 0x51C14D9: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 18032 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 18032 in 144 places, all below massif's threshold (1.00%)
+   n0: 2279 in 1 place, below massif's threshold (1.00%)
+ n2: 24920 0x51C82AF: group_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 18760 0x51C13D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17640 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 17640 in 13 places, all below massif's threshold (1.00%)
+   n0: 1120 in 1 place, below massif's threshold (1.00%)
+  n0: 6160 in 3 places, all below massif's threshold (1.00%)
+ n2: 23520 0x601AC1B: register_variable (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 22680 0x601B636: pmix_mca_base_var_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n0: 22680 in 50 places, all below massif's threshold (1.00%)
+  n0: 840 in 1 place, below massif's threshold (1.00%)
+ n1: 19348 0x51C101B: mca_base_var_generate_full_name4 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n0: 19348 in 5 places, all below massif's threshold (1.00%)
+ n1: 18392 0x4010F56: UnknownInlinedFun (rtld-malloc.h:44)
+  n1: 18392 0x4010F56: _dl_new_object (dl-object.c:89)
+   n1: 18392 0x400B796: _dl_map_object_from_fd (dl-load.c:1014)
+    n2: 18392 0x400E6B4: _dl_map_object (dl-load.c:2273)
+     n1: 17182 0x4019188: dl_open_worker_begin (dl-open.c:532)
+      n1: 17182 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+       n1: 17182 0x4018AC6: dl_open_worker (dl-open.c:793)
+        n1: 17182 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+         n1: 17182 0x4018D10: _dl_open (dl-open.c:900)
+          n1: 17182 0x62731E9: dlopen_doit (in /usr/lib64/libdl-2.28.so)
+           n1: 17182 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+            n1: 17182 0x7832242: _dl_catch_error (in /usr/lib64/libc-2.28.so)
+             n1: 17182 0x6273968: _dlerror_run (in /usr/lib64/libdl-2.28.so)
+              n1: 17182 0x6273289: dlopen@@GLIBC_2.2.5 (in /usr/lib64/libdl-2.28.so)
+               n1: 17182 0x6032C83: pdlopen_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                n1: 17182 0x6016C83: pmix_mca_base_component_repository_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                 n1: 17182 0x6015DB9: pmix_mca_base_component_find (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                  n1: 17182 0x601E389: pmix_mca_base_framework_components_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                   n1: 17182 0x601E88B: pmix_mca_base_framework_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                    n1: 17182 0x601E8E0: pmix_mca_base_framework_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                     n0: 17182 in 7 places, all below massif's threshold (1.00%)
+     n0: 1210 in 1 place, below massif's threshold (1.00%)
+ n1: 16384 0x51938BA: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 16384 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 16384 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 16384 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 16384 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 16384 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 16384 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+#-----------
+snapshot=31
+#-----------
+time=26690699
+mem_heap_B=1337603
+mem_heap_extra_B=101861
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=27373800
+mem_heap_B=1350229
+mem_heap_extra_B=104947
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=27707489
+mem_heap_B=1354903
+mem_heap_extra_B=105785
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=28426591
+mem_heap_B=1437139
+mem_heap_extra_B=112013
+mem_stacks_B=0
+heap_tree=detailed
+n13: 1437139 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 557056 0x5193896: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 557056 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 557056 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 557056 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 557056 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 557056 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 557056 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n0: 187766 in 411 places, all below massif's threshold (1.00%)
+ n4: 170112 0x51928BD: opal_hash_table_init2 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 66272 0x51C1281: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 66272 0x51C4A09: mca_base_pvar_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x51C12AD: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 20256 in 3 places, all below massif's threshold (1.00%)
+  n1: 17312 0x51C7CC1: mca_base_var_group_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17312 0x51C12A4: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 17312 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 17312 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n6: 144192 0x5F4FFB0: pmix_hash_table_init2 (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 66272 0x601A909: pmix_mca_base_var_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 66272 0x5FD9E54: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 66272 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+     n1: 66272 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+      n1: 66272 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+       n1: 66272 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 66272 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 66272 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x601D669: pmix_mca_base_var_group_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 17312 0x601A934: pmix_mca_base_var_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 17312 0x5FD9E54: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+     n1: 17312 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+      n1: 17312 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 17312 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 17312 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 17312 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 17312 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+            n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x99EFE6D: ???
+   n1: 17312 0x99F0C30: ???
+    n1: 17312 0x99F3DEF: ???
+     n1: 17312 0x93D05E5: ???
+      n1: 17312 0x6047079: pmix_ptl_base_start_listening (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+       n1: 17312 0x5FBA5D5: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+        n1: 17312 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+         n1: 17312 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 17312 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 17312 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+            n1: 17312 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+             n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+              n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x99EFECD: ???
+   n1: 17312 0x99F0C30: ???
+    n1: 17312 0x99F3DEF: ???
+     n1: 17312 0x93D05E5: ???
+      n1: 17312 0x6047079: pmix_ptl_base_start_listening (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+       n1: 17312 0x5FBA5D5: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+        n1: 17312 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+         n1: 17312 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 17312 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 17312 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+            n1: 17312 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+             n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+              n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x99EFF2E: ???
+   n1: 17312 0x99F0C30: ???
+    n1: 17312 0x99F3DEF: ???
+     n1: 17312 0x93D05E5: ???
+      n1: 17312 0x6047079: pmix_ptl_base_start_listening (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+       n1: 17312 0x5FBA5D5: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+        n1: 17312 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+         n1: 17312 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 17312 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 17312 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+            n1: 17312 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+             n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+              n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 8672 in 1 place, below massif's threshold (1.00%)
+ n1: 69632 0x5F509CB: pmix_hotel_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 69632 0x5FDA079: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 69632 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 69632 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 69632 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 69632 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+       n1: 69632 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 69632 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 69632 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+          n0: 69632 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n1: 65536 0x51938A7: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 65536 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 65536 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 65536 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 65536 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 65536 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 65536 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n2: 64848 0x51C1423: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 60984 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n0: 31080 in 145 places, all below massif's threshold (1.00%)
+   n1: 29904 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 29904 in 58 places, all below massif's threshold (1.00%)
+  n0: 3864 in 1 place, below massif's threshold (1.00%)
+ n2: 56839 0x77684CD: strdup (in /usr/lib64/libc-2.28.so)
+  n0: 34315 in 262 places, all below massif's threshold (1.00%)
+  n2: 22524 0x51C14D9: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 19764 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 19764 in 144 places, all below massif's threshold (1.00%)
+   n0: 2760 in 1 place, below massif's threshold (1.00%)
+ n2: 29232 0x601AC1B: register_variable (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 28392 0x601B636: pmix_mca_base_var_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n0: 28392 in 52 places, all below massif's threshold (1.00%)
+  n0: 840 in 1 place, below massif's threshold (1.00%)
+ n2: 27440 0x51C82AF: group_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 20440 0x51C13D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 19320 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 19320 in 13 places, all below massif's threshold (1.00%)
+   n0: 1120 in 1 place, below massif's threshold (1.00%)
+  n0: 7000 in 3 places, all below massif's threshold (1.00%)
+ n1: 26997 0x4010F56: UnknownInlinedFun (rtld-malloc.h:44)
+  n1: 26997 0x4010F56: _dl_new_object (dl-object.c:89)
+   n1: 26997 0x400B796: _dl_map_object_from_fd (dl-load.c:1014)
+    n2: 26997 0x400E6B4: _dl_map_object (dl-load.c:2273)
+     n1: 25787 0x4019188: dl_open_worker_begin (dl-open.c:532)
+      n1: 25787 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+       n1: 25787 0x4018AC6: dl_open_worker (dl-open.c:793)
+        n1: 25787 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+         n1: 25787 0x4018D10: _dl_open (dl-open.c:900)
+          n1: 25787 0x62731E9: dlopen_doit (in /usr/lib64/libdl-2.28.so)
+           n1: 25787 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+            n1: 25787 0x7832242: _dl_catch_error (in /usr/lib64/libc-2.28.so)
+             n1: 25787 0x6273968: _dlerror_run (in /usr/lib64/libdl-2.28.so)
+              n1: 25787 0x6273289: dlopen@@GLIBC_2.2.5 (in /usr/lib64/libdl-2.28.so)
+               n1: 25787 0x6032C83: pdlopen_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                n1: 25787 0x6016C83: pmix_mca_base_component_repository_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                 n1: 25787 0x6015DB9: pmix_mca_base_component_find (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                  n1: 25787 0x601E389: pmix_mca_base_framework_components_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                   n1: 25787 0x601E88B: pmix_mca_base_framework_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                    n1: 25787 0x601E8E0: pmix_mca_base_framework_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                     n0: 25787 in 10 places, all below massif's threshold (1.00%)
+     n0: 1210 in 1 place, below massif's threshold (1.00%)
+ n1: 21105 0x51C101B: mca_base_var_generate_full_name4 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n0: 21105 in 6 places, all below massif's threshold (1.00%)
+ n1: 16384 0x51938BA: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 16384 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 16384 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 16384 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 16384 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 16384 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 16384 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+#-----------
+snapshot=35
+#-----------
+time=28991189
+mem_heap_B=1475746
+mem_heap_extra_B=117886
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=29418851
+mem_heap_B=1488164
+mem_heap_extra_B=122204
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=29978869
+mem_heap_B=1505940
+mem_heap_extra_B=127980
+mem_stacks_B=0
+heap_tree=detailed
+n13: 1505940 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 557056 0x5193896: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 557056 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 557056 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 557056 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 557056 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 557056 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 557056 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n0: 202259 in 435 places, all below massif's threshold (1.00%)
+ n4: 188448 0x51928BD: opal_hash_table_init2 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 66272 0x51C1281: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 66272 0x51C4A09: mca_base_pvar_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x51C12AD: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 38592 in 6 places, all below massif's threshold (1.00%)
+  n1: 17312 0x51C7CC1: mca_base_var_group_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 17312 0x51C12A4: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 17312 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 17312 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n6: 144192 0x5F4FFB0: pmix_hash_table_init2 (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 66272 0x601A909: pmix_mca_base_var_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 66272 0x5FD9E54: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 66272 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+     n1: 66272 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+      n1: 66272 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+       n1: 66272 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 66272 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 66272 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x601D669: pmix_mca_base_var_group_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 17312 0x601A934: pmix_mca_base_var_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 17312 0x5FD9E54: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+     n1: 17312 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+      n1: 17312 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 17312 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 17312 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 17312 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 17312 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+            n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x99EFE6D: ???
+   n1: 17312 0x99F0C30: ???
+    n1: 17312 0x99F3DEF: ???
+     n1: 17312 0x93D05E5: ???
+      n1: 17312 0x6047079: pmix_ptl_base_start_listening (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+       n1: 17312 0x5FBA5D5: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+        n1: 17312 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+         n1: 17312 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 17312 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 17312 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+            n1: 17312 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+             n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+              n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x99EFECD: ???
+   n1: 17312 0x99F0C30: ???
+    n1: 17312 0x99F3DEF: ???
+     n1: 17312 0x93D05E5: ???
+      n1: 17312 0x6047079: pmix_ptl_base_start_listening (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+       n1: 17312 0x5FBA5D5: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+        n1: 17312 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+         n1: 17312 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 17312 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 17312 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+            n1: 17312 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+             n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+              n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 17312 0x99EFF2E: ???
+   n1: 17312 0x99F0C30: ???
+    n1: 17312 0x99F3DEF: ???
+     n1: 17312 0x93D05E5: ???
+      n1: 17312 0x6047079: pmix_ptl_base_start_listening (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+       n1: 17312 0x5FBA5D5: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+        n1: 17312 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+         n1: 17312 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 17312 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 17312 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+            n1: 17312 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+             n1: 17312 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+              n0: 17312 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 8672 in 1 place, below massif's threshold (1.00%)
+ n2: 82320 0x51C1423: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 77280 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 40320 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 40320 in 81 places, all below massif's threshold (1.00%)
+   n0: 36960 in 169 places, all below massif's threshold (1.00%)
+  n0: 5040 in 1 place, below massif's threshold (1.00%)
+ n1: 69632 0x5F509CB: pmix_hotel_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 69632 0x5FDA079: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 69632 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 69632 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 69632 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 69632 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+       n1: 69632 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 69632 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 69632 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+          n0: 69632 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n1: 65536 0x51938A7: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 65536 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 65536 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 65536 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 65536 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 65536 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 65536 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n2: 63363 0x77684CD: strdup (in /usr/lib64/libc-2.28.so)
+  n0: 36329 in 272 places, all below massif's threshold (1.00%)
+  n2: 27034 0x51C14D9: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 23764 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 23764 in 168 places, all below massif's threshold (1.00%)
+   n0: 3270 in 1 place, below massif's threshold (1.00%)
+ n2: 33600 0x51C82AF: group_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 25480 0x51C13D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 24080 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 24080 in 14 places, all below massif's threshold (1.00%)
+   n0: 1400 in 1 place, below massif's threshold (1.00%)
+  n0: 8120 in 3 places, all below massif's threshold (1.00%)
+ n2: 29232 0x601AC1B: register_variable (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 28392 0x601B636: pmix_mca_base_var_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n0: 28392 in 52 places, all below massif's threshold (1.00%)
+  n0: 840 in 1 place, below massif's threshold (1.00%)
+ n1: 26997 0x4010F56: UnknownInlinedFun (rtld-malloc.h:44)
+  n1: 26997 0x4010F56: _dl_new_object (dl-object.c:89)
+   n1: 26997 0x400B796: _dl_map_object_from_fd (dl-load.c:1014)
+    n2: 26997 0x400E6B4: _dl_map_object (dl-load.c:2273)
+     n1: 25787 0x4019188: dl_open_worker_begin (dl-open.c:532)
+      n1: 25787 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+       n1: 25787 0x4018AC6: dl_open_worker (dl-open.c:793)
+        n1: 25787 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+         n1: 25787 0x4018D10: _dl_open (dl-open.c:900)
+          n1: 25787 0x62731E9: dlopen_doit (in /usr/lib64/libdl-2.28.so)
+           n1: 25787 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+            n1: 25787 0x7832242: _dl_catch_error (in /usr/lib64/libc-2.28.so)
+             n1: 25787 0x6273968: _dlerror_run (in /usr/lib64/libdl-2.28.so)
+              n1: 25787 0x6273289: dlopen@@GLIBC_2.2.5 (in /usr/lib64/libdl-2.28.so)
+               n1: 25787 0x6032C83: pdlopen_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                n1: 25787 0x6016C83: pmix_mca_base_component_repository_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                 n1: 25787 0x6015DB9: pmix_mca_base_component_find (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                  n1: 25787 0x601E389: pmix_mca_base_framework_components_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                   n1: 25787 0x601E88B: pmix_mca_base_framework_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                    n1: 25787 0x601E8E0: pmix_mca_base_framework_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                     n0: 25787 in 10 places, all below massif's threshold (1.00%)
+     n0: 1210 in 1 place, below massif's threshold (1.00%)
+ n1: 26921 0x51C101B: mca_base_var_generate_full_name4 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n0: 26921 in 6 places, all below massif's threshold (1.00%)
+ n1: 16384 0x51938BA: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 16384 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 16384 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 16384 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 16384 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 16384 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 16384 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+#-----------
+snapshot=38
+#-----------
+time=30603263
+mem_heap_B=1514584
+mem_heap_extra_B=131112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=31054706
+mem_heap_B=1536637
+mem_heap_extra_B=136603
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=31720618
+mem_heap_B=1812913
+mem_heap_extra_B=138487
+mem_stacks_B=0
+heap_tree=peak
+n16: 1812913 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 557056 0x5193896: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 557056 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 557056 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 557056 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 557056 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 557056 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 557056 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n0: 237968 in 520 places, all below massif's threshold (1.00%)
+ n3: 187456 0x51928BD: opal_hash_table_init2 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 66272 0x51C1281: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 66272 0x51C4A09: mca_base_pvar_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x51C12AD: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 54912 in 7 places, all below massif's threshold (1.00%)
+ n2: 144192 0x5F4FFB0: pmix_hash_table_init2 (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n0: 77920 in 5 places, all below massif's threshold (1.00%)
+  n1: 66272 0x601A909: pmix_mca_base_var_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 66272 0x5FD9E54: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 66272 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+     n1: 66272 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+      n1: 66272 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+       n1: 66272 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 66272 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 66272 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n2: 88872 0x51C1423: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 83832 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 44520 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 44520 in 85 places, all below massif's threshold (1.00%)
+   n0: 39312 in 176 places, all below massif's threshold (1.00%)
+  n0: 5040 in 1 place, below massif's threshold (1.00%)
+ n2: 77229 0x77684CD: strdup (in /usr/lib64/libc-2.28.so)
+  n0: 48813 in 296 places, all below massif's threshold (1.00%)
+  n2: 28416 0x51C14D9: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 25146 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 25146 in 175 places, all below massif's threshold (1.00%)
+   n0: 3270 in 1 place, below massif's threshold (1.00%)
+ n1: 69632 0x5F509CB: pmix_hotel_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 69632 0x5FDA079: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 69632 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 69632 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 69632 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 69632 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+       n1: 69632 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 69632 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 69632 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+          n0: 69632 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n1: 65536 0x51938A7: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 65536 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 65536 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 65536 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 65536 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 65536 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 65536 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n1: 65536 0x6C0A85A: deflateInit2_ (in /usr/lib64/libz.so.1.2.11)
+  n1: 65536 0x6C0A9F1: deflateInit_ (in /usr/lib64/libz.so.1.2.11)
+   n1: 65536 0x91C8C88: ???
+    n1: 65536 0xA422FC2: ???
+     n1: 65536 0x603912C: pmix_preg_base_generate_node_regex (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+      n1: 65536 0x5218938: ext3x_server_gen_regex (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 65536 0x4E97B54: orte_pmix_server_register_nspace (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 65536 0x4ECBD59: orte_odls_base_default_construct_child_list (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 65536 0x4ECFE41: orte_odls_default_launch_local_procs (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 65536 0x4E87269: orte_daemon_recv (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 65536 0x4F0E230: orte_rml_base_process_msg (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+            n1: 65536 0x708B9B4: ??? (in /usr/lib64/libevent_core-2.1.so.6.0.2)
+             n1: 65536 0x708C3B6: event_base_loop (in /usr/lib64/libevent_core-2.1.so.6.0.2)
+              n1: 65536 0x400F89: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+               n0: 65536 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n1: 65536 0x6C0A86D: deflateInit2_ (in /usr/lib64/libz.so.1.2.11)
+  n1: 65536 0x6C0A9F1: deflateInit_ (in /usr/lib64/libz.so.1.2.11)
+   n1: 65536 0x91C8C88: ???
+    n1: 65536 0xA422FC2: ???
+     n1: 65536 0x603912C: pmix_preg_base_generate_node_regex (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+      n1: 65536 0x5218938: ext3x_server_gen_regex (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 65536 0x4E97B54: orte_pmix_server_register_nspace (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 65536 0x4ECBD59: orte_odls_base_default_construct_child_list (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 65536 0x4ECFE41: orte_odls_default_launch_local_procs (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 65536 0x4E87269: orte_daemon_recv (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 65536 0x4F0E230: orte_rml_base_process_msg (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+            n1: 65536 0x708B9B4: ??? (in /usr/lib64/libevent_core-2.1.so.6.0.2)
+             n1: 65536 0x708C3B6: event_base_loop (in /usr/lib64/libevent_core-2.1.so.6.0.2)
+              n1: 65536 0x400F89: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+               n0: 65536 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n1: 65536 0x6C0A883: deflateInit2_ (in /usr/lib64/libz.so.1.2.11)
+  n1: 65536 0x6C0A9F1: deflateInit_ (in /usr/lib64/libz.so.1.2.11)
+   n1: 65536 0x91C8C88: ???
+    n1: 65536 0xA422FC2: ???
+     n1: 65536 0x603912C: pmix_preg_base_generate_node_regex (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+      n1: 65536 0x5218938: ext3x_server_gen_regex (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 65536 0x4E97B54: orte_pmix_server_register_nspace (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 65536 0x4ECBD59: orte_odls_base_default_construct_child_list (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 65536 0x4ECFE41: orte_odls_default_launch_local_procs (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 65536 0x4E87269: orte_daemon_recv (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 65536 0x4F0E230: orte_rml_base_process_msg (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+            n1: 65536 0x708B9B4: ??? (in /usr/lib64/libevent_core-2.1.so.6.0.2)
+             n1: 65536 0x708C3B6: event_base_loop (in /usr/lib64/libevent_core-2.1.so.6.0.2)
+              n1: 65536 0x400F89: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+               n0: 65536 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n1: 65536 0x6C0A8AD: deflateInit2_ (in /usr/lib64/libz.so.1.2.11)
+  n1: 65536 0x6C0A9F1: deflateInit_ (in /usr/lib64/libz.so.1.2.11)
+   n1: 65536 0x91C8C88: ???
+    n1: 65536 0xA422FC2: ???
+     n1: 65536 0x603912C: pmix_preg_base_generate_node_regex (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+      n1: 65536 0x5218938: ext3x_server_gen_regex (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+       n1: 65536 0x4E97B54: orte_pmix_server_register_nspace (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 65536 0x4ECBD59: orte_odls_base_default_construct_child_list (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 65536 0x4ECFE41: orte_odls_default_launch_local_procs (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 65536 0x4E87269: orte_daemon_recv (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+           n1: 65536 0x4F0E230: orte_rml_base_process_msg (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+            n1: 65536 0x708B9B4: ??? (in /usr/lib64/libevent_core-2.1.so.6.0.2)
+             n1: 65536 0x708C3B6: event_base_loop (in /usr/lib64/libevent_core-2.1.so.6.0.2)
+              n1: 65536 0x400F89: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+               n0: 65536 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n2: 37520 0x51C82AF: group_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 28560 0x51C13D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 27160 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 27160 in 14 places, all below massif's threshold (1.00%)
+   n0: 1400 in 1 place, below massif's threshold (1.00%)
+  n0: 8960 in 3 places, all below massif's threshold (1.00%)
+ n2: 29232 0x601AC1B: register_variable (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 28392 0x601B636: pmix_mca_base_var_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n0: 28392 in 52 places, all below massif's threshold (1.00%)
+  n0: 840 in 1 place, below massif's threshold (1.00%)
+ n1: 29079 0x51C101B: mca_base_var_generate_full_name4 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n0: 29079 in 6 places, all below massif's threshold (1.00%)
+ n1: 26997 0x4010F56: UnknownInlinedFun (rtld-malloc.h:44)
+  n1: 26997 0x4010F56: _dl_new_object (dl-object.c:89)
+   n1: 26997 0x400B796: _dl_map_object_from_fd (dl-load.c:1014)
+    n2: 26997 0x400E6B4: _dl_map_object (dl-load.c:2273)
+     n1: 25787 0x4019188: dl_open_worker_begin (dl-open.c:532)
+      n1: 25787 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+       n1: 25787 0x4018AC6: dl_open_worker (dl-open.c:793)
+        n1: 25787 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+         n1: 25787 0x4018D10: _dl_open (dl-open.c:900)
+          n1: 25787 0x62731E9: dlopen_doit (in /usr/lib64/libdl-2.28.so)
+           n1: 25787 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+            n1: 25787 0x7832242: _dl_catch_error (in /usr/lib64/libc-2.28.so)
+             n1: 25787 0x6273968: _dlerror_run (in /usr/lib64/libdl-2.28.so)
+              n1: 25787 0x6273289: dlopen@@GLIBC_2.2.5 (in /usr/lib64/libdl-2.28.so)
+               n1: 25787 0x6032C83: pdlopen_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                n1: 25787 0x6016C83: pmix_mca_base_component_repository_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                 n1: 25787 0x6015DB9: pmix_mca_base_component_find (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                  n1: 25787 0x601E389: pmix_mca_base_framework_components_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                   n1: 25787 0x601E88B: pmix_mca_base_framework_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                    n1: 25787 0x601E8E0: pmix_mca_base_framework_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                     n0: 25787 in 10 places, all below massif's threshold (1.00%)
+     n0: 1210 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=32403498
+mem_heap_B=1630372
+mem_heap_extra_B=142388
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=33320597
+mem_heap_B=1637608
+mem_heap_extra_B=144272
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=33792268
+mem_heap_B=1656937
+mem_heap_extra_B=148479
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=34701056
+mem_heap_B=1652888
+mem_heap_extra_B=145608
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=38995483
+mem_heap_B=1682911
+mem_heap_extra_B=147121
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=51580581
+mem_heap_B=1682967
+mem_heap_extra_B=147137
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=52032596
+mem_heap_B=1676901
+mem_heap_extra_B=146387
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=52710980
+mem_heap_B=1672883
+mem_heap_extra_B=146325
+mem_stacks_B=0
+heap_tree=detailed
+n12: 1672883 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 557056 0x5193896: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 557056 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 557056 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 557056 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 557056 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 557056 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 557056 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n0: 293956 in 687 places, all below massif's threshold (1.00%)
+ n5: 196128 0x5F4FFB0: pmix_hash_table_init2 (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 66272 0x601A909: pmix_mca_base_var_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 66272 0x5FD9E54: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 66272 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+     n1: 66272 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+      n1: 66272 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+       n1: 66272 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 66272 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 66272 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+          n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+           n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 34624 0x99EFE6D: ???
+   n1: 34624 0x99F0C30: ???
+    n0: 34624 in 2 places, all below massif's threshold (1.00%)
+  n1: 34624 0x99EFECD: ???
+   n1: 34624 0x99F0C30: ???
+    n0: 34624 in 2 places, all below massif's threshold (1.00%)
+  n1: 34624 0x99EFF2E: ???
+   n1: 34624 0x99F0C30: ???
+    n0: 34624 in 2 places, all below massif's threshold (1.00%)
+  n0: 25984 in 2 places, all below massif's threshold (1.00%)
+ n3: 187456 0x51928BD: opal_hash_table_init2 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 66272 0x51C1281: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+      n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n1: 66272 0x51C4A09: mca_base_pvar_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 66272 0x51C12AD: mca_base_var_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n1: 66272 0x519F611: opal_init_util (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 66272 0x4E8FE94: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 66272 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 66272 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+  n0: 54912 in 7 places, all below massif's threshold (1.00%)
+ n3: 90217 0x77684CD: strdup (in /usr/lib64/libc-2.28.so)
+  n0: 38190 in 374 places, all below massif's threshold (1.00%)
+  n2: 28416 0x51C14D9: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 25146 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 25146 in 175 places, all below massif's threshold (1.00%)
+   n0: 3270 in 1 place, below massif's threshold (1.00%)
+  n2: 23611 0x51C98CC: opal_argv_append_nosize (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 23335 0x51C99F4: opal_argv_append (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 23335 in 11 places, all below massif's threshold (1.00%)
+   n0: 276 in 21 places, all below massif's threshold (1.00%)
+ n2: 88872 0x51C1423: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 83832 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 44520 0x51C340D: mca_base_component_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 44520 in 85 places, all below massif's threshold (1.00%)
+   n0: 39312 in 176 places, all below massif's threshold (1.00%)
+  n0: 5040 in 1 place, below massif's threshold (1.00%)
+ n1: 69632 0x5F509CB: pmix_hotel_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 69632 0x5FDA079: pmix_rte_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n1: 69632 0x5FB9AF0: PMIx_server_init (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+    n1: 69632 0x5217C78: ext3x_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+     n1: 69632 0x4E95F4C: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 69632 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+       n1: 69632 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+        n1: 69632 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+         n1: 69632 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+          n0: 69632 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n1: 65536 0x51938A7: opal_hotel_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n1: 65536 0x4E95CF0: pmix_server_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+   n1: 65536 0x4EB466E: rte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+    n1: 65536 0x4F2361F: orte_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+     n1: 65536 0x4E9054A: orte_submit_init (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-rte.so.40.30.2)
+      n1: 65536 0x400EFE: orterun (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/bin/orterun)
+       n0: 65536 0x7702CF2: (below main) (in /usr/lib64/libc-2.28.so)
+ n2: 37520 0x51C82AF: group_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n2: 28560 0x51C13D8: register_variable (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+   n1: 27160 0x51C33C6: mca_base_var_register (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+    n0: 27160 in 14 places, all below massif's threshold (1.00%)
+   n0: 1400 in 1 place, below massif's threshold (1.00%)
+  n0: 8960 in 3 places, all below massif's threshold (1.00%)
+ n2: 29232 0x601AC1B: register_variable (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+  n1: 28392 0x601B636: pmix_mca_base_var_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+   n0: 28392 in 52 places, all below massif's threshold (1.00%)
+  n0: 840 in 1 place, below massif's threshold (1.00%)
+ n1: 29079 0x51C101B: mca_base_var_generate_full_name4 (in /sw/pkgs/arc/stacks/gcc/10.3.0/openmpi/4.1.4/lib/libopen-pal.so.40.30.2)
+  n0: 29079 in 6 places, all below massif's threshold (1.00%)
+ n1: 28199 0x4010F56: UnknownInlinedFun (rtld-malloc.h:44)
+  n1: 28199 0x4010F56: _dl_new_object (dl-object.c:89)
+   n1: 28199 0x400B796: _dl_map_object_from_fd (dl-load.c:1014)
+    n2: 28199 0x400E6B4: _dl_map_object (dl-load.c:2273)
+     n1: 26989 0x4019188: dl_open_worker_begin (dl-open.c:532)
+      n1: 26989 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+       n1: 26989 0x4018AC6: dl_open_worker (dl-open.c:793)
+        n1: 26989 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+         n2: 26989 0x4018D10: _dl_open (dl-open.c:900)
+          n1: 25787 0x62731E9: dlopen_doit (in /usr/lib64/libdl-2.28.so)
+           n1: 25787 0x7832183: _dl_catch_exception (in /usr/lib64/libc-2.28.so)
+            n1: 25787 0x7832242: _dl_catch_error (in /usr/lib64/libc-2.28.so)
+             n1: 25787 0x6273968: _dlerror_run (in /usr/lib64/libdl-2.28.so)
+              n1: 25787 0x6273289: dlopen@@GLIBC_2.2.5 (in /usr/lib64/libdl-2.28.so)
+               n1: 25787 0x6032C83: pdlopen_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                n1: 25787 0x6016C83: pmix_mca_base_component_repository_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                 n1: 25787 0x6015DB9: pmix_mca_base_component_find (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                  n1: 25787 0x601E389: pmix_mca_base_framework_components_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                   n1: 25787 0x601E88B: pmix_mca_base_framework_register (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                    n1: 25787 0x601E8E0: pmix_mca_base_framework_open (in /opt/pmix/3.2.3/lib/libpmix.so.2.2.33)
+                     n0: 25787 in 10 places, all below massif's threshold (1.00%)
+          n0: 1202 in 1 place, below massif's threshold (1.00%)
+     n0: 1210 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=53635805
+mem_heap_B=1427125
+mem_heap_extra_B=127155
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=53969868
+mem_heap_B=463377
+mem_heap_extra_B=92423
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=54303605
+mem_heap_B=115295
+mem_heap_extra_B=6785
+mem_stacks_B=0
+heap_tree=empty

@@ -1,0 +1,8 @@
+event syntax error: 'CPU-utilization'
+                        \___ parser error
+Run 'perf list' for a list of valid events
+
+ Usage: perf record [<options>] [<command>]
+    or: perf record [<options>] -- <command> [<options>]
+
+    -e, --event <event>   event selector. use 'perf list' to list available events
